@@ -1,0 +1,9 @@
+id: claim:o1-published-by-openai
+type: claim
+subject: release:o1
+predicate: published_by
+object: org:openai
+status: confirmed_primary
+evidence:
+  - source: source:o1-system-card
+    locator: Authors and OpenAI o1 System Card
