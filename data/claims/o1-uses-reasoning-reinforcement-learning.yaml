@@ -1,0 +1,9 @@
+id: claim:o1-uses-reasoning-reinforcement-learning
+type: claim
+subject: release:o1
+predicate: uses_technique
+object: technique:reasoning-reinforcement-learning
+status: confirmed_primary
+evidence:
+  - source: source:o1-system-card
+    locator: Introduction and Model data and training
