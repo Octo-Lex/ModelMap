@@ -8,8 +8,9 @@ import sys
 from pathlib import Path
 from typing import Any
 
-import yaml
 from jsonschema import Draft202012Validator, FormatChecker
+
+from records import iter_records
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
@@ -23,12 +24,11 @@ SCHEMA_BY_TYPE = {
     "event": "event.schema.json",
 }
 
-
-def load_document(path: Path) -> Any:
-    with path.open("r", encoding="utf-8") as fh:
-        if path.suffix == ".json":
-            return json.load(fh)
-        return yaml.safe_load(fh)
+CONCEPTUAL_PREDECESSOR_CLAIM_PREDICATES = {
+    "variant_of_technique",
+    "generalizes",
+    "extends",
+}
 
 
 def load_schema(name: str) -> dict[str, Any]:
@@ -36,22 +36,37 @@ def load_schema(name: str) -> dict[str, Any]:
         return json.load(fh)
 
 
-def iter_records() -> list[tuple[Path, dict[str, Any]]]:
-    records: list[tuple[Path, dict[str, Any]]] = []
-    for path in sorted(DATA.rglob("*")):
-        if path.suffix not in {".yaml", ".yml", ".json"}:
-            continue
-        doc = load_document(path)
-        if not isinstance(doc, dict):
-            raise ValueError(f"{path.relative_to(ROOT)} must contain one mapping/object")
-        records.append((path, doc))
-    return records
+def claim_supports_relationship(relationship: dict[str, Any], claim: dict[str, Any]) -> bool:
+    """Return whether a cited claim supports the relationship's predicate and endpoints.
+
+    Most materialized relationships require the supporting claim to use the same
+    subject, predicate, and object. Conceptual-predecessor relationships are the
+    deliberate exception: the edge is oriented predecessor -> successor while the
+    source claim is written from the successor's perspective using a small explicit
+    vocabulary such as `variant_of_technique`, `generalizes`, or `extends`.
+    """
+    relationship_subject = relationship.get("subject")
+    relationship_object = relationship.get("object")
+    relationship_predicate = relationship.get("predicate")
+
+    if relationship_predicate == "conceptual_predecessor_of":
+        return (
+            claim.get("subject") == relationship_object
+            and claim.get("object") == relationship_subject
+            and claim.get("predicate") in CONCEPTUAL_PREDECESSOR_CLAIM_PREDICATES
+        )
+
+    return (
+        claim.get("subject") == relationship_subject
+        and claim.get("object") == relationship_object
+        and claim.get("predicate") == relationship_predicate
+    )
 
 
 def main() -> int:
     errors: list[str] = []
     try:
-        records = iter_records()
+        records = list(iter_records(DATA))
     except Exception as exc:
         print(f"ERROR: failed to load corpus: {exc}")
         return 1
@@ -77,20 +92,24 @@ def main() -> int:
             else:
                 by_id[record_id] = (path, record)
 
-    def require_id(owner: Path, ref: Any, expected_type: str | None = None) -> None:
+    def require_id(
+        owner: Path, ref: Any, expected_type: str | None = None
+    ) -> tuple[Path, dict[str, Any]] | None:
         rel = owner.relative_to(ROOT)
         if not isinstance(ref, str):
             errors.append(f"{rel}: reference must be a string, got {type(ref).__name__}")
-            return
+            return None
         target = by_id.get(ref)
         if target is None:
             errors.append(f"{rel}: unresolved reference {ref!r}")
-            return
+            return None
         if expected_type is not None and target[1].get("type") != expected_type:
             errors.append(
                 f"{rel}: {ref!r} must reference type {expected_type!r}, "
                 f"found {target[1].get('type')!r}"
             )
+            return None
+        return target
 
     for path, record in records:
         record_type = record.get("type")
@@ -104,7 +123,17 @@ def main() -> int:
             require_id(path, record.get("subject"))
             require_id(path, record.get("object"))
             for claim_ref in record.get("claim_refs", []):
-                require_id(path, claim_ref, "claim")
+                claim_target = require_id(path, claim_ref, "claim")
+                if claim_target is None:
+                    continue
+                claim = claim_target[1]
+                if not claim_supports_relationship(record, claim):
+                    rel = path.relative_to(ROOT)
+                    errors.append(
+                        f"{rel}: claim_ref {claim_ref!r} does not support relationship "
+                        f"predicate/endpoints {record.get('subject')!r} "
+                        f"-{record.get('predicate')}-> {record.get('object')!r}"
+                    )
         elif record_type == "event":
             require_id(path, record.get("subject"))
             for source_ref in record.get("evidence", []):

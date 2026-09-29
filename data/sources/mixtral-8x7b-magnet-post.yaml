@@ -1,0 +1,9 @@
+id: source:mixtral-8x7b-magnet-post
+type: source
+title: Mistral AI Mixtral 8x7B magnet-link post
+source_type: official_announcement
+url: https://x.com/MistralAI/status/1733150512395038967
+publisher: Mistral AI
+published_at: '2023-12-08'
+retrieved_at: '2026-09-29T07:20:00Z'
+notes: Original Mistral AI post distributing the Mixtral 8x7B weights via magnet link.

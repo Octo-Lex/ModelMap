@@ -1,0 +1,9 @@
+id: event:2023-12-08-mixtral-8x7b-weights
+type: event
+name: Mixtral 8x7B weights released via magnet link
+event_type: weights_released
+subject: release:mixtral-8x7b
+occurred_at: '2023-12-08'
+evidence:
+  - source:mixtral-8x7b-magnet-post
+notes: The formal Mistral product announcement followed on 2023-12-11 and is represented as a separate event.

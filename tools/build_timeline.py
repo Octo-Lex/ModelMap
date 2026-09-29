@@ -8,7 +8,7 @@ import json
 from pathlib import Path
 from typing import Any
 
-import yaml
+from records import iter_records
 
 ROOT = Path(__file__).resolve().parents[1]
 EVENTS = ROOT / "data" / "events"
@@ -18,12 +18,9 @@ def load_events() -> list[dict[str, Any]]:
     events: list[dict[str, Any]] = []
     if not EVENTS.exists():
         return events
-    for path in sorted(EVENTS.glob("*.yaml")):
-        with path.open("r", encoding="utf-8") as fh:
-            record = yaml.safe_load(fh)
-        if not isinstance(record, dict) or record.get("type") != "event":
-            continue
-        events.append(record)
+    for _, record in iter_records(EVENTS):
+        if record.get("type") == "event":
+            events.append(record)
     return sorted(events, key=lambda item: (item["occurred_at"], item["id"]))
 
 

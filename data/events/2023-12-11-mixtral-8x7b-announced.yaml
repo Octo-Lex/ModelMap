@@ -1,0 +1,9 @@
+id: event:2023-12-11-mixtral-8x7b-announced
+type: event
+name: Mixtral 8x7B formally announced by Mistral AI
+event_type: model_announced
+subject: release:mixtral-8x7b
+occurred_at: '2023-12-11'
+evidence:
+  - source:mixtral-8x7b-announcement
+notes: Formal product announcement; the weights had already been distributed via magnet link on 2023-12-08.

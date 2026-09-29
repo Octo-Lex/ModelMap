@@ -35,15 +35,16 @@ Directories are introduced as canonical records are added; empty directories do 
 
 Initial canonical records should be YAML where hand-editability is valuable. JSON Schema files in `/schemas` define the contracts. Validation tooling may normalize YAML to JSON internally.
 
-One canonical entity per file is preferred for reviewable diffs:
+Exactly one canonical record is stored per YAML/JSON file. This is a repository invariant, not merely a preference: it keeps Git diffs, provenance, review state, and correction history scoped to one stable ID.
 
 ```text
 data/techniques/grouped-query-attention.yaml
 data/releases/deepseek-v3.yaml
 data/sources/deepseek-v3-technical-report.yaml
+data/claims/deepseek-v3-uses-mla.yaml
 ```
 
-Atomic claims may be grouped by subject when that improves review ergonomics, provided every claim retains a globally unique canonical ID.
+Do not store arrays of claims or other multi-record containers in canonical files. Related atomic claims may share a naming prefix or directory grouping, but each retains its own file and globally unique canonical ID.
 
 ## Identifier conventions
 
@@ -60,7 +61,7 @@ claim:llama-3.1-uses-gqa
 relationship:llama-3.1-uses-gqa
 ```
 
-IDs must remain stable if display names change.
+IDs must remain stable if display names change. Entity types are bound to canonical namespaces as documented in `docs/ontology.md`.
 
 ## Null, unknown, and not applicable
 
@@ -73,6 +74,10 @@ Do not overload values:
 ## Evidence locations
 
 Evidence references should identify a source plus the smallest useful locator available: section, table, page, config key, file/line range, release-note heading, or commit.
+
+## Dates and timestamps
+
+Quote ISO dates and timestamps in hand-authored YAML when practical. The shared record loader normalizes YAML-native `date` and `datetime` scalars to ISO strings before schema validation and generation, so equivalent unquoted YAML remains valid.
 
 ## Review policy
 

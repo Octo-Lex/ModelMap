@@ -6,24 +6,33 @@ from __future__ import annotations
 import argparse
 import json
 from pathlib import Path
+from typing import Any
 
-import yaml
+from records import iter_records
 
 ROOT = Path(__file__).resolve().parents[1]
 EVENTS = ROOT / "data" / "events"
 
 
-def load_events(year: int) -> list[dict]:
-    out = []
-    for path in sorted(EVENTS.glob("*.yaml")):
-        with path.open("r", encoding="utf-8") as fh:
-            event = yaml.safe_load(fh)
+def load_events(year: int) -> list[dict[str, Any]]:
+    out: list[dict[str, Any]] = []
+    for _, event in iter_records(EVENTS):
+        if event.get("type") != "event":
+            continue
         if str(event.get("occurred_at", "")).startswith(f"{year:04d}-"):
             out.append(event)
     return sorted(out, key=lambda e: (e["occurred_at"], e["id"]))
 
 
-def render_markdown(year: int, events: list[dict]) -> str:
+def build_payload(year: int, events: list[dict[str, Any]]) -> dict[str, Any]:
+    return {
+        "year": year,
+        "generated_from": "canonical-events",
+        "events": events,
+    }
+
+
+def render_markdown(year: int, events: list[dict[str, Any]]) -> str:
     lines = [f"# {year}", "", "Generated from canonical ModelMap event records.", ""]
     for event in events:
         title = event.get("name") or event["id"].split(":", 1)[-1].replace("-", " ").title()
@@ -38,7 +47,7 @@ def main() -> int:
     args = parser.parse_args()
     events = load_events(args.year)
     if args.format == "json":
-        print(json.dumps({"year": args.year, "events": events}, indent=2))
+        print(json.dumps(build_payload(args.year, events), indent=2, sort_keys=True))
     else:
         print(render_markdown(args.year, events), end="")
     return 0

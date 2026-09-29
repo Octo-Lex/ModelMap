@@ -54,5 +54,30 @@
     "updated_at": {"type": ["string", "null"], "format": "date-time"},
     "metadata": {"type": "object", "additionalProperties": true}
   },
+  "allOf": [
+    {"if": {"properties": {"type": {"const": "model_family"}}, "required": ["type"]}, "then": {"properties": {"id": {"pattern": "^family:[a-z0-9][a-z0-9._-]*$"}}}},
+    {"if": {"properties": {"type": {"const": "model_release"}}, "required": ["type"]}, "then": {"properties": {"id": {"pattern": "^release:[a-z0-9][a-z0-9._-]*$"}}}},
+    {"if": {"properties": {"type": {"const": "model_variant"}}, "required": ["type"]}, "then": {"properties": {"id": {"pattern": "^variant:[a-z0-9][a-z0-9._-]*$"}}}},
+    {"if": {"properties": {"type": {"const": "architecture_spec"}}, "required": ["type"]}, "then": {"properties": {"id": {"pattern": "^arch:[a-z0-9][a-z0-9._-]*$"}}}},
+    {"if": {"properties": {"type": {"const": "technique"}}, "required": ["type"]}, "then": {"properties": {"id": {"pattern": "^technique:[a-z0-9][a-z0-9._-]*$"}}}},
+    {"if": {"properties": {"type": {"const": "training_run"}}, "required": ["type"]}, "then": {"properties": {"id": {"pattern": "^training:[a-z0-9][a-z0-9._-]*$"}}}},
+    {"if": {"properties": {"type": {"const": "implementation"}}, "required": ["type"]}, "then": {"properties": {"id": {"pattern": "^implementation:[a-z0-9][a-z0-9._-]*$"}}}},
+    {"if": {"properties": {"type": {"const": "paper"}}, "required": ["type"]}, "then": {"properties": {"id": {"pattern": "^paper:[a-z0-9][a-z0-9._-]*$"}}}},
+    {"if": {"properties": {"type": {"const": "source"}}, "required": ["type"]}, "then": {"properties": {"id": {"pattern": "^source:[a-z0-9][a-z0-9._-]*$"}}}},
+    {"if": {"properties": {"type": {"const": "claim"}}, "required": ["type"]}, "then": {"properties": {"id": {"pattern": "^claim:[a-z0-9][a-z0-9._-]*$"}}}},
+    {"if": {"properties": {"type": {"const": "relationship"}}, "required": ["type"]}, "then": {"properties": {"id": {"pattern": "^relationship:[a-z0-9][a-z0-9._-]*$"}}}},
+    {"if": {"properties": {"type": {"const": "event"}}, "required": ["type"]}, "then": {"properties": {"id": {"pattern": "^event:[a-z0-9][a-z0-9._-]*$"}}}},
+    {"if": {"properties": {"type": {"const": "dataset"}}, "required": ["type"]}, "then": {"properties": {"id": {"pattern": "^dataset:[a-z0-9][a-z0-9._-]*$"}}}},
+    {"if": {"properties": {"type": {"const": "dataset_version"}}, "required": ["type"]}, "then": {"properties": {"id": {"pattern": "^dataset-version:[a-z0-9][a-z0-9._-]*$"}}}},
+    {"if": {"properties": {"type": {"const": "benchmark"}}, "required": ["type"]}, "then": {"properties": {"id": {"pattern": "^benchmark:[a-z0-9][a-z0-9._-]*$"}}}},
+    {"if": {"properties": {"type": {"const": "benchmark_version"}}, "required": ["type"]}, "then": {"properties": {"id": {"pattern": "^benchmark-version:[a-z0-9][a-z0-9._-]*$"}}}},
+    {"if": {"properties": {"type": {"const": "evaluation_protocol"}}, "required": ["type"]}, "then": {"properties": {"id": {"pattern": "^eval-protocol:[a-z0-9][a-z0-9._-]*$"}}}},
+    {"if": {"properties": {"type": {"const": "evaluation_run"}}, "required": ["type"]}, "then": {"properties": {"id": {"pattern": "^eval-run:[a-z0-9][a-z0-9._-]*$"}}}},
+    {"if": {"properties": {"type": {"const": "organization"}}, "required": ["type"]}, "then": {"properties": {"id": {"pattern": "^org:[a-z0-9][a-z0-9._-]*$"}}}},
+    {"if": {"properties": {"type": {"const": "person"}}, "required": ["type"]}, "then": {"properties": {"id": {"pattern": "^person:[a-z0-9][a-z0-9._-]*$"}}}},
+    {"if": {"properties": {"type": {"const": "license"}}, "required": ["type"]}, "then": {"properties": {"id": {"pattern": "^license:[a-z0-9][a-z0-9._-]*$"}}}},
+    {"if": {"properties": {"type": {"const": "hardware_system"}}, "required": ["type"]}, "then": {"properties": {"id": {"pattern": "^hardware:[a-z0-9][a-z0-9._-]*$"}}}},
+    {"if": {"properties": {"type": {"const": "product_system"}}, "required": ["type"]}, "then": {"properties": {"id": {"pattern": "^product:[a-z0-9][a-z0-9._-]*$"}}}}
+  ],
   "additionalProperties": false
 }
