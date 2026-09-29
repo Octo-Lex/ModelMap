@@ -1,0 +1,8 @@
+id: event:2023-10-10-mistral-7b-paper
+type: event
+name: Mistral 7B paper published
+event_type: paper_published
+subject: release:mistral-7b
+occurred_at: '2023-10-10'
+evidence:
+  - source:mistral-7b-paper

@@ -1,0 +1,8 @@
+id: event:2023-07-18-llama-2-paper
+type: event
+name: Llama 2 technical report published
+event_type: report_published
+subject: release:llama-2
+occurred_at: '2023-07-18'
+evidence:
+  - source:llama-2-paper

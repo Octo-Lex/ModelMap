@@ -1,0 +1,8 @@
+id: source:mixtral-paper
+type: source
+title: "Mixtral of Experts"
+source_type: paper
+url: https://arxiv.org/abs/2401.04088
+publisher: arXiv
+published_at: '2024-01-08'
+version: v1

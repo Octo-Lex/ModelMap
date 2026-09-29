@@ -1,0 +1,8 @@
+id: event:2023-05-22-gqa-introduced
+type: event
+name: Grouped-query attention introduced
+event_type: technique_introduced
+subject: technique:grouped-query-attention
+occurred_at: '2023-05-22'
+evidence:
+  - source:gqa-paper

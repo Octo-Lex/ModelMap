@@ -1,0 +1,9 @@
+id: technique:transformer
+type: technique
+name: Transformer
+aliases:
+  - Transformer architecture
+description: Attention-based sequence architecture introduced in Attention Is All You Need.
+status: reviewed
+metadata:
+  domain: architecture

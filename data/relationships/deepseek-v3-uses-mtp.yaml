@@ -1,0 +1,7 @@
+id: relationship:deepseek-v3-uses-mtp
+type: relationship
+subject: release:deepseek-v3
+predicate: uses_technique
+object: technique:multi-token-prediction
+claim_refs:
+  - claim:deepseek-v3-uses-mtp

@@ -1,0 +1,9 @@
+id: technique:multi-token-prediction
+type: technique
+name: Multi-token Prediction
+aliases:
+  - MTP
+description: Auxiliary training objective that predicts multiple future tokens from each position rather than only the immediate next token.
+status: reviewed
+metadata:
+  domain: training_objective

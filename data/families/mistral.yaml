@@ -1,0 +1,7 @@
+id: family:mistral
+type: model_family
+name: Mistral
+aliases:
+  - Mistral AI models
+description: Model family developed by Mistral AI, including dense Mistral models and sparse Mixtral models.
+status: reviewed

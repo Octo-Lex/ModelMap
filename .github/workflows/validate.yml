@@ -22,3 +22,5 @@ jobs:
         run: python -m pip install -r requirements-dev.txt
       - name: Validate schemas, records, and references
         run: python tools/validate.py
+      - name: Build chronological timeline
+        run: python tools/build_timeline.py --format json > /tmp/modelmap-timeline.json

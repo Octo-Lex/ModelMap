@@ -1,0 +1,9 @@
+id: technique:rotary-position-embedding
+type: technique
+name: Rotary Position Embedding
+aliases:
+  - RoPE
+description: Positional encoding method using rotations to incorporate absolute position and relative-position dependence in attention.
+status: reviewed
+metadata:
+  domain: positional_encoding

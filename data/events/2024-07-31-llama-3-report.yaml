@@ -1,0 +1,8 @@
+id: event:2024-07-31-llama-3-report
+type: event
+name: Llama 3 technical report published
+event_type: report_published
+subject: release:llama-3
+occurred_at: '2024-07-31'
+evidence:
+  - source:llama-3-paper
