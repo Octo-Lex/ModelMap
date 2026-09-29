@@ -32,7 +32,9 @@
             "benchmark_published",
             "model_deprecated",
             "training_completed",
-            "organization_founded"
+            "organization_founded",
+            "access_suspended",
+            "access_restored"
           ]
         },
         "subject": {"$ref": "#/$defs/canonicalId"},
@@ -52,10 +54,7 @@
   "properties": {
     "year": {"type": "integer", "minimum": 2017},
     "generated_from": {"const": "canonical-events"},
-    "events": {
-      "type": "array",
-      "items": {"$ref": "#/$defs/event"}
-    }
+    "events": {"type": "array", "items": {"$ref": "#/$defs/event"}}
   },
   "additionalProperties": false
 }

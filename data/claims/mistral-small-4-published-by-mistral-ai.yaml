@@ -1,0 +1,9 @@
+id: claim:mistral-small-4-published-by-mistral-ai
+type: claim
+subject: release:mistral-small-4
+predicate: published_by
+object: org:mistral-ai
+status: confirmed_primary
+evidence:
+  - source: source:mistral-small-4-announcement
+    locator: Mistral AI announcement

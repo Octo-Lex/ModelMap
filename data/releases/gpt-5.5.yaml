@@ -1,0 +1,4 @@
+id: release:gpt-5.5
+type: model_release
+name: GPT-5.5
+status: canonical

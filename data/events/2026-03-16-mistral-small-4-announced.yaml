@@ -1,0 +1,8 @@
+id: event:2026-03-16-mistral-small-4-announced
+type: event
+name: Mistral Small 4 released
+event_type: model_announced
+subject: release:mistral-small-4
+occurred_at: '2026-03-16'
+evidence:
+  - source:mistral-small-4-announcement

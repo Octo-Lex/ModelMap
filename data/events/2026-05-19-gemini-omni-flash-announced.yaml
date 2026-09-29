@@ -1,0 +1,8 @@
+id: event:2026-05-19-gemini-omni-flash-announced
+type: event
+name: Gemini Omni Flash released
+event_type: model_announced
+subject: release:gemini-omni-flash
+occurred_at: '2026-05-19'
+evidence:
+  - source:gemini-omni-announcement

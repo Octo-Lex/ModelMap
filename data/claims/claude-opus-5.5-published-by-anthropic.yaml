@@ -1,0 +1,9 @@
+id: claim:claude-opus-5.5-published-by-anthropic
+type: claim
+subject: release:claude-opus-5.5
+predicate: published_by
+object: org:anthropic
+status: confirmed_primary
+evidence:
+  - source: source:claude-opus-5.5-announcement
+    locator: Anthropic release

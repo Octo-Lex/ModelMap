@@ -1,0 +1,8 @@
+id: event:2026-07-01-claude-fable-5-access-restored
+type: event
+name: Claude Fable 5 access restored
+event_type: access_restored
+subject: release:claude-fable-5
+occurred_at: '2026-07-01'
+evidence:
+  - source:claude-fable-5-redeployment

@@ -1,0 +1,9 @@
+id: claim:deepseek-v4.1-flash-uses-sparse-moe
+type: claim
+subject: release:deepseek-v4.1-flash
+predicate: uses_technique
+object: technique:sparse-mixture-of-experts
+status: confirmed_primary
+evidence:
+  - source: source:deepseek-v4.1-flash-announcement
+    locator: 552B mixture-of-experts model with sparse active computation

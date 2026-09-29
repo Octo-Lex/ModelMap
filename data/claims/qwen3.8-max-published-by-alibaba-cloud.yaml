@@ -1,0 +1,9 @@
+id: claim:qwen3.8-max-published-by-alibaba-cloud
+type: claim
+subject: release:qwen3.8-max
+predicate: published_by
+object: org:alibaba-cloud
+status: confirmed_primary
+evidence:
+  - source: source:qwen3.8-max-announcement
+    locator: Alibaba Cloud announcement

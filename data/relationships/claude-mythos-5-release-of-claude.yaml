@@ -1,0 +1,7 @@
+id: relationship:claude-mythos-5-release-of-claude
+type: relationship
+subject: release:claude-mythos-5
+predicate: release_of
+object: family:claude
+claim_refs:
+  - claim:claude-mythos-5-release-of-claude

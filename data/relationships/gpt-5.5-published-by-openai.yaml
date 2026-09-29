@@ -1,0 +1,7 @@
+id: relationship:gpt-5.5-published-by-openai
+type: relationship
+subject: release:gpt-5.5
+predicate: published_by
+object: org:openai
+claim_refs:
+  - claim:gpt-5.5-published-by-openai

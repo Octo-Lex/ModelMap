@@ -1,0 +1,7 @@
+id: relationship:deepseek-v4.1-flash-uses-sparse-moe
+type: relationship
+subject: release:deepseek-v4.1-flash
+predicate: uses_technique
+object: technique:sparse-mixture-of-experts
+claim_refs:
+  - claim:deepseek-v4.1-flash-uses-sparse-moe

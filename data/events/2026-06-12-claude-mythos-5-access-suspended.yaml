@@ -1,0 +1,8 @@
+id: event:2026-06-12-claude-mythos-5-access-suspended
+type: event
+name: Claude Mythos 5 access suspended
+event_type: access_suspended
+subject: release:claude-mythos-5
+occurred_at: '2026-06-12'
+evidence:
+  - source:claude-fable-mythos-5-suspension

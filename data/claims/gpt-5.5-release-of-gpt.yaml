@@ -1,0 +1,9 @@
+id: claim:gpt-5.5-release-of-gpt
+type: claim
+subject: release:gpt-5.5
+predicate: release_of
+object: family:gpt
+status: confirmed_primary
+evidence:
+  - source: source:gpt-5.5-announcement
+    locator: release introduction

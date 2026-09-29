@@ -1,0 +1,4 @@
+id: release:deepseek-v4.1-flash
+type: model_release
+name: DeepSeek-V4.1-Flash
+status: canonical

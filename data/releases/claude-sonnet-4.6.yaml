@@ -1,0 +1,4 @@
+id: release:claude-sonnet-4.6
+type: model_release
+name: Claude Sonnet 4.6
+status: canonical

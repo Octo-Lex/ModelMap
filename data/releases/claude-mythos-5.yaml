@@ -1,0 +1,4 @@
+id: release:claude-mythos-5
+type: model_release
+name: Claude Mythos 5
+status: canonical

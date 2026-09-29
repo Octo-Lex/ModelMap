@@ -1,0 +1,9 @@
+id: claim:claude-fable-5-release-of-claude
+type: claim
+subject: release:claude-fable-5
+predicate: release_of
+object: family:claude
+status: confirmed_primary
+evidence:
+  - source: source:claude-fable-mythos-5-announcement
+    locator: launch introduction

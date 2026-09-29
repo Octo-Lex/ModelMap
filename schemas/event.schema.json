@@ -31,7 +31,9 @@
         "benchmark_published",
         "model_deprecated",
         "training_completed",
-        "organization_founded"
+        "organization_founded",
+        "access_suspended",
+        "access_restored"
       ]
     },
     "subject": {"$ref": "#/$defs/canonicalId"},

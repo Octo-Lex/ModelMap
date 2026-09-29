@@ -1,0 +1,9 @@
+id: claim:deepseek-v4.1-flash-uses-causal-encoder-decoder
+type: claim
+subject: release:deepseek-v4.1-flash
+predicate: uses_technique
+object: technique:causal-encoder-decoder
+status: confirmed_primary
+evidence:
+  - source: source:deepseek-v4.1-flash-announcement
+    locator: Causal Encoder-Decoder architecture with asymmetric active parameters

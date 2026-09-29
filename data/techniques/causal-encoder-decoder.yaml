@@ -1,0 +1,5 @@
+id: technique:causal-encoder-decoder
+type: technique
+name: Causal Encoder-Decoder Architecture
+status: canonical
+description: An asymmetric causal architecture that can allocate different active computation to input encoding and autoregressive output decoding.

@@ -1,0 +1,7 @@
+id: source:claude-fable-5-redeployment
+type: source
+title: 'Redeploying Claude Fable 5'
+source_type: official_announcement
+url: https://www.anthropic.com/news/redeploying-fable-5
+publisher: Anthropic
+published_at: '2026-06-30'

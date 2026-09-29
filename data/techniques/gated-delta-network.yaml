@@ -1,0 +1,5 @@
+id: technique:gated-delta-network
+type: technique
+name: Gated Delta Network
+status: canonical
+description: A linear-attention recurrent mechanism using gated delta-rule state updates, used in hybrid attention architectures to improve long-context inference efficiency.

@@ -1,0 +1,8 @@
+id: event:2026-06-09-claude-mythos-5-announced
+type: event
+name: Claude Mythos 5 released to trusted access
+event_type: model_announced
+subject: release:claude-mythos-5
+occurred_at: '2026-06-09'
+evidence:
+  - source:claude-fable-mythos-5-announcement

@@ -1,0 +1,7 @@
+id: relationship:deepseek-v4.1-flash-published-by-deepseek
+type: relationship
+subject: release:deepseek-v4.1-flash
+predicate: published_by
+object: org:deepseek
+claim_refs:
+  - claim:deepseek-v4.1-flash-published-by-deepseek

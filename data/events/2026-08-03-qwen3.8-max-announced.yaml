@@ -1,0 +1,8 @@
+id: event:2026-08-03-qwen3.8-max-announced
+type: event
+name: Qwen3.8-Max released
+event_type: model_announced
+subject: release:qwen3.8-max
+occurred_at: '2026-08-03'
+evidence:
+  - source:qwen3.8-max-announcement

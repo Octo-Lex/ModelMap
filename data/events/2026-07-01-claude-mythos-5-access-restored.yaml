@@ -1,0 +1,9 @@
+id: event:2026-07-01-claude-mythos-5-access-restored
+type: event
+name: Claude Mythos 5 access restored for approved US organizations
+event_type: access_restored
+subject: release:claude-mythos-5
+occurred_at: '2026-07-01'
+evidence:
+  - source:claude-fable-5-redeployment
+notes: Access restoration was narrower than Fable 5's global restoration.

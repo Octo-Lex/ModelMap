@@ -1,0 +1,9 @@
+id: claim:mistral-small-4-uses-hybrid-reasoning
+type: claim
+subject: release:mistral-small-4
+predicate: uses_technique
+object: technique:hybrid-reasoning
+status: confirmed_primary
+evidence:
+  - source: source:mistral-small-4-announcement
+    locator: configurable reasoning effort spanning fast and deeper reasoning

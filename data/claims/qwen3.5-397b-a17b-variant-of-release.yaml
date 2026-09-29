@@ -1,0 +1,9 @@
+id: claim:qwen3.5-397b-a17b-variant-of-release
+type: claim
+subject: variant:qwen3.5-397b-a17b
+predicate: variant_of
+object: release:qwen3.5
+status: confirmed_primary
+evidence:
+  - source: source:qwen3.5-announcement
+    locator: first open-weight model Qwen3.5-397B-A17B

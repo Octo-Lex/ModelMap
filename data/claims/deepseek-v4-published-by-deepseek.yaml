@@ -1,0 +1,9 @@
+id: claim:deepseek-v4-published-by-deepseek
+type: claim
+subject: release:deepseek-v4
+predicate: published_by
+object: org:deepseek
+status: confirmed_primary
+evidence:
+  - source: source:deepseek-v4-changelog
+    locator: DeepSeek API change log

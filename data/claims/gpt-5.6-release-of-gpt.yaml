@@ -1,0 +1,9 @@
+id: claim:gpt-5.6-release-of-gpt
+type: claim
+subject: release:gpt-5.6
+predicate: release_of
+object: family:gpt
+status: confirmed_primary
+evidence:
+  - source: source:gpt-5.6-announcement
+    locator: GPT-5.6 family general availability

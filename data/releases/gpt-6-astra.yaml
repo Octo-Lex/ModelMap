@@ -1,0 +1,4 @@
+id: release:gpt-6-astra
+type: model_release
+name: GPT-6 Astra
+status: canonical

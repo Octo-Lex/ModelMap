@@ -1,0 +1,9 @@
+id: claim:gemini-omni-flash-release-of-gemini-omni
+type: claim
+subject: release:gemini-omni-flash
+predicate: release_of
+object: family:gemini-omni
+status: confirmed_primary
+evidence:
+  - source: source:gemini-omni-announcement
+    locator: first model in the Omni family

@@ -1,0 +1,9 @@
+id: claim:gpt-6-astra-published-by-openai
+type: claim
+subject: release:gpt-6-astra
+predicate: published_by
+object: org:openai
+status: confirmed_primary
+evidence:
+  - source: source:gpt-6-astra-safety-overview
+    locator: OpenAI safety overview

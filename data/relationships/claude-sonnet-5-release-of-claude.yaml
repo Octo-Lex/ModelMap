@@ -1,0 +1,7 @@
+id: relationship:claude-sonnet-5-release-of-claude
+type: relationship
+subject: release:claude-sonnet-5
+predicate: release_of
+object: family:claude
+claim_refs:
+  - claim:claude-sonnet-5-release-of-claude

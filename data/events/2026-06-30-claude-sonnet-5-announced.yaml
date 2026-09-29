@@ -1,0 +1,8 @@
+id: event:2026-06-30-claude-sonnet-5-announced
+type: event
+name: Claude Sonnet 5 released
+event_type: model_announced
+subject: release:claude-sonnet-5
+occurred_at: '2026-06-30'
+evidence:
+  - source:claude-sonnet-5-announcement

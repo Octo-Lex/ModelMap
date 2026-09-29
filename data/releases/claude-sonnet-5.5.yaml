@@ -1,0 +1,4 @@
+id: release:claude-sonnet-5.5
+type: model_release
+name: Claude Sonnet 5.5
+status: canonical

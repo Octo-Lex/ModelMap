@@ -1,0 +1,4 @@
+id: release:qwen3.8-max
+type: model_release
+name: Qwen3.8-Max
+status: canonical

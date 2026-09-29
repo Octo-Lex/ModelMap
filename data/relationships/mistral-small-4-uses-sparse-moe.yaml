@@ -1,0 +1,7 @@
+id: relationship:mistral-small-4-uses-sparse-moe
+type: relationship
+subject: release:mistral-small-4
+predicate: uses_technique
+object: technique:sparse-mixture-of-experts
+claim_refs:
+  - claim:mistral-small-4-uses-sparse-moe
