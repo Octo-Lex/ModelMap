@@ -1,0 +1,8 @@
+id: event:2020-01-23-scaling-laws-paper
+type: event
+name: Neural language-model scaling laws paper published
+event_type: paper_published
+subject: technique:neural-scaling-laws
+occurred_at: '2020-01-23'
+evidence:
+  - source:scaling-laws-paper

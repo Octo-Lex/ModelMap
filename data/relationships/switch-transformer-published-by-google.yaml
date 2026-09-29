@@ -1,0 +1,7 @@
+id: relationship:switch-transformer-published-by-google
+type: relationship
+subject: release:switch-transformer
+predicate: published_by
+object: org:google
+claim_refs:
+  - claim:switch-transformer-published-by-google

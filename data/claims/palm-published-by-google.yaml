@@ -1,0 +1,9 @@
+id: claim:palm-published-by-google
+type: claim
+subject: release:palm
+predicate: published_by
+object: org:google
+status: confirmed_primary
+evidence:
+  - source: source:palm-paper
+    locator: Google authors and Pathways publication

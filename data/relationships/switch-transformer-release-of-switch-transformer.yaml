@@ -1,0 +1,7 @@
+id: relationship:switch-transformer-release-of-switch-transformer
+type: relationship
+subject: release:switch-transformer
+predicate: release_of
+object: family:switch-transformer
+claim_refs:
+  - claim:switch-transformer-release-of-switch-transformer

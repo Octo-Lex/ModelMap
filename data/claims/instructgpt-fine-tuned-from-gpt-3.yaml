@@ -1,0 +1,9 @@
+id: claim:instructgpt-fine-tuned-from-gpt-3
+type: claim
+subject: release:instructgpt
+predicate: fine_tuned_from
+object: release:gpt-3
+status: confirmed_primary
+evidence:
+  - source: source:instructgpt-paper
+    locator: fine-tuning GPT-3 to follow a broad class of written instructions

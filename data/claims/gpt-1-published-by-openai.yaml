@@ -1,0 +1,9 @@
+id: claim:gpt-1-published-by-openai
+type: claim
+subject: release:gpt-1
+predicate: published_by
+object: org:openai
+status: confirmed_primary
+evidence:
+  - source: source:gpt1-openai-announcement
+    locator: OpenAI milestone announcement

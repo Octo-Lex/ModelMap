@@ -1,0 +1,9 @@
+id: claim:chinchilla-uses-compute-optimal-training
+type: claim
+subject: release:chinchilla
+predicate: uses_technique
+object: technique:compute-optimal-training
+status: confirmed_primary
+evidence:
+  - source: source:chinchilla-paper
+    locator: compute-optimal model/data scaling analysis and Chinchilla training recipe

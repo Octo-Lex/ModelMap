@@ -1,0 +1,7 @@
+id: relationship:t5-uses-transformer
+type: relationship
+subject: release:t5
+predicate: uses_technique
+object: technique:transformer
+claim_refs:
+  - claim:t5-uses-transformer

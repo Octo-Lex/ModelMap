@@ -1,0 +1,7 @@
+id: relationship:instructgpt-fine-tuned-from-gpt-3
+type: relationship
+subject: release:instructgpt
+predicate: fine_tuned_from
+object: release:gpt-3
+claim_refs:
+  - claim:instructgpt-fine-tuned-from-gpt-3

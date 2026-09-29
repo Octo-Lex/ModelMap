@@ -1,0 +1,9 @@
+id: claim:gpt-2-uses-transformer
+type: claim
+subject: release:gpt-2
+predicate: uses_technique
+object: technique:transformer
+status: confirmed_primary
+evidence:
+  - source: source:gpt2-openai-announcement
+    locator: GPT-2 is a large transformer-based language model

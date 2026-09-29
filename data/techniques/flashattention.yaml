@@ -1,0 +1,5 @@
+id: technique:flashattention
+type: technique
+name: FlashAttention
+status: canonical
+description: IO-aware exact attention algorithm that reduces memory traffic through tiling between GPU memory levels.

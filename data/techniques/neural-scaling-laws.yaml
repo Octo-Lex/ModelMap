@@ -1,0 +1,5 @@
+id: technique:neural-scaling-laws
+type: technique
+name: Neural language-model scaling laws
+status: canonical
+description: Empirical power-law relationships between language-model loss, model size, dataset size, and training compute.

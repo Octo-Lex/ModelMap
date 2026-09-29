@@ -1,0 +1,9 @@
+id: claim:instructgpt-published-by-openai
+type: claim
+subject: release:instructgpt
+predicate: published_by
+object: org:openai
+status: confirmed_primary
+evidence:
+  - source: source:instructgpt-paper
+    locator: OpenAI authors and publication

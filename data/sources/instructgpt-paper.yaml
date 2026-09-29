@@ -1,0 +1,8 @@
+id: source:instructgpt-paper
+type: source
+title: Training language models to follow instructions with human feedback
+source_type: paper
+url: https://arxiv.org/abs/2203.02155
+publisher: OpenAI
+published_at: '2022-03-04'
+version: v1

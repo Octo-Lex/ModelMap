@@ -1,0 +1,7 @@
+id: source:flashattention-paper
+type: source
+title: 'FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness'
+source_type: paper
+url: https://arxiv.org/abs/2205.14135
+published_at: '2022-05-27'
+version: v1

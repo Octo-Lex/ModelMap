@@ -1,0 +1,9 @@
+id: claim:switch-transformer-published-by-google
+type: claim
+subject: release:switch-transformer
+predicate: published_by
+object: org:google
+status: confirmed_primary
+evidence:
+  - source: source:switch-transformer-paper
+    locator: Google authors and publication

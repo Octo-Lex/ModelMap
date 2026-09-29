@@ -1,0 +1,9 @@
+id: claim:bert-uses-masked-language-modeling
+type: claim
+subject: release:bert
+predicate: uses_technique
+object: technique:masked-language-modeling
+status: confirmed_primary
+evidence:
+  - source: source:bert-paper
+    locator: pre-training tasks — masked language model

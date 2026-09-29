@@ -1,0 +1,8 @@
+id: source:switch-transformer-paper
+type: source
+title: 'Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity'
+source_type: paper
+url: https://arxiv.org/abs/2101.03961
+publisher: Google
+published_at: '2021-01-11'
+version: v1

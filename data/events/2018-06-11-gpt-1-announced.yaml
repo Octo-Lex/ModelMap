@@ -1,0 +1,8 @@
+id: event:2018-06-11-gpt-1-announced
+type: event
+name: OpenAI generative pre-training model announced
+event_type: model_announced
+subject: release:gpt-1
+occurred_at: '2018-06-11'
+evidence:
+  - source:gpt1-openai-announcement

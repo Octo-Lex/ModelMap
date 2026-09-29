@@ -1,0 +1,9 @@
+id: claim:bert-published-by-google
+type: claim
+subject: release:bert
+predicate: published_by
+object: org:google
+status: confirmed_primary
+evidence:
+  - source: source:bert-paper
+    locator: author affiliations — Google AI Language

@@ -1,0 +1,7 @@
+id: relationship:switch-transformer-uses-sparse-moe
+type: relationship
+subject: release:switch-transformer
+predicate: uses_technique
+object: technique:sparse-mixture-of-experts
+claim_refs:
+  - claim:switch-transformer-uses-sparse-moe

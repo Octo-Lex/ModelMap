@@ -1,0 +1,7 @@
+id: relationship:bert-uses-transformer
+type: relationship
+subject: release:bert
+predicate: uses_technique
+object: technique:transformer
+claim_refs:
+  - claim:bert-uses-transformer

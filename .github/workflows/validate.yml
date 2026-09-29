@@ -26,6 +26,18 @@ jobs:
         run: python tools/validate.py
       - name: Build chronological timeline
         run: python tools/build_timeline.py --format json > /tmp/modelmap-timeline.json
+      - name: Build 2017 year view
+        run: python tools/build_year.py 2017 --format json > /tmp/modelmap-2017.json
+      - name: Build 2018 year view
+        run: python tools/build_year.py 2018 --format json > /tmp/modelmap-2018.json
+      - name: Build 2019 year view
+        run: python tools/build_year.py 2019 --format json > /tmp/modelmap-2019.json
+      - name: Build 2020 year view
+        run: python tools/build_year.py 2020 --format json > /tmp/modelmap-2020.json
+      - name: Build 2021 year view
+        run: python tools/build_year.py 2021 --format json > /tmp/modelmap-2021.json
+      - name: Build 2022 year view
+        run: python tools/build_year.py 2022 --format json > /tmp/modelmap-2022.json
       - name: Build 2023 year view
         run: python tools/build_year.py 2023 --format json > /tmp/modelmap-2023.json
       - name: Build 2024 year view

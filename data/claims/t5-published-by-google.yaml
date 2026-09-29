@@ -1,0 +1,9 @@
+id: claim:t5-published-by-google
+type: claim
+subject: release:t5
+predicate: published_by
+object: org:google
+status: confirmed_primary
+evidence:
+  - source: source:t5-paper
+    locator: Google authors and publication

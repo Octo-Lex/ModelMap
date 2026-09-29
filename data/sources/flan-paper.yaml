@@ -1,0 +1,8 @@
+id: source:flan-paper
+type: source
+title: Finetuned Language Models Are Zero-Shot Learners
+source_type: paper
+url: https://arxiv.org/abs/2109.01652
+publisher: Google Research
+published_at: '2021-09-03'
+version: v1

@@ -1,0 +1,9 @@
+id: claim:chinchilla-release-of-chinchilla
+type: claim
+subject: release:chinchilla
+predicate: release_of
+object: family:chinchilla
+status: confirmed_primary
+evidence:
+  - source: source:chinchilla-paper
+    locator: paper introduces the 70B-parameter Chinchilla model

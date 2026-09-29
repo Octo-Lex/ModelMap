@@ -1,0 +1,9 @@
+id: claim:bert-uses-transformer
+type: claim
+subject: release:bert
+predicate: uses_technique
+object: technique:transformer
+status: confirmed_primary
+evidence:
+  - source: source:bert-paper
+    locator: title and abstract — bidirectional Transformers

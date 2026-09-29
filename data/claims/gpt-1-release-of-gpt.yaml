@@ -1,0 +1,9 @@
+id: claim:gpt-1-release-of-gpt
+type: claim
+subject: release:gpt-1
+predicate: release_of
+object: family:gpt
+status: confirmed_primary
+evidence:
+  - source: source:gpt1-openai-announcement
+    locator: OpenAI presents its generative pre-training Transformer approach

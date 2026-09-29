@@ -1,0 +1,4 @@
+id: family:t5
+type: model_family
+name: T5
+status: canonical

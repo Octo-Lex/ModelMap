@@ -1,0 +1,9 @@
+id: claim:gpt-1-uses-transformer
+type: claim
+subject: release:gpt-1
+predicate: uses_technique
+object: technique:transformer
+status: confirmed_primary
+evidence:
+  - source: source:gpt1-openai-announcement
+    locator: approach combines transformers and unsupervised pre-training

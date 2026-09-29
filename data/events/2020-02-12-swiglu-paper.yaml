@@ -1,0 +1,8 @@
+id: event:2020-02-12-swiglu-paper
+type: event
+name: GLU variants and SwiGLU paper published
+event_type: paper_published
+subject: technique:swiglu
+occurred_at: '2020-02-12'
+evidence:
+  - source:swiglu-paper

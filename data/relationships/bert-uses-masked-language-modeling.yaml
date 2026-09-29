@@ -1,0 +1,7 @@
+id: relationship:bert-uses-masked-language-modeling
+type: relationship
+subject: release:bert
+predicate: uses_technique
+object: technique:masked-language-modeling
+claim_refs:
+  - claim:bert-uses-masked-language-modeling

@@ -1,0 +1,6 @@
+id: technique:reinforcement-learning-from-human-feedback
+type: technique
+name: Reinforcement learning from human feedback
+aliases:
+  - RLHF
+status: canonical

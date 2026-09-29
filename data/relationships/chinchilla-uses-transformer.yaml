@@ -1,0 +1,7 @@
+id: relationship:chinchilla-uses-transformer
+type: relationship
+subject: release:chinchilla
+predicate: uses_technique
+object: technique:transformer
+claim_refs:
+  - claim:chinchilla-uses-transformer

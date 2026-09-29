@@ -1,0 +1,7 @@
+id: relationship:instructgpt-release-of-gpt
+type: relationship
+subject: release:instructgpt
+predicate: release_of
+object: family:gpt
+claim_refs:
+  - claim:instructgpt-release-of-gpt

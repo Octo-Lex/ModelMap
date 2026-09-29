@@ -1,0 +1,4 @@
+id: release:instructgpt
+type: model_release
+name: InstructGPT
+status: canonical

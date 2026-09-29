@@ -1,0 +1,5 @@
+id: technique:generative-pretraining
+type: technique
+name: Generative language-model pretraining
+status: canonical
+description: Pretrain an autoregressive language model on unlabeled text before adapting it to downstream tasks.

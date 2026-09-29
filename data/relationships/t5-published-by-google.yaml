@@ -1,0 +1,7 @@
+id: relationship:t5-published-by-google
+type: relationship
+subject: release:t5
+predicate: published_by
+object: org:google
+claim_refs:
+  - claim:t5-published-by-google

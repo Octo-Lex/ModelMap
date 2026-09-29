@@ -1,0 +1,9 @@
+id: claim:gpt-3-uses-transformer
+type: claim
+subject: release:gpt-3
+predicate: uses_technique
+object: technique:transformer
+status: confirmed_primary
+evidence:
+  - source: source:gpt3-paper
+    locator: autoregressive Transformer language-model architecture

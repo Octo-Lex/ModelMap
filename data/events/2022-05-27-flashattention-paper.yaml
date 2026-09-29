@@ -1,0 +1,8 @@
+id: event:2022-05-27-flashattention-paper
+type: event
+name: FlashAttention paper published
+event_type: paper_published
+subject: technique:flashattention
+occurred_at: '2022-05-27'
+evidence:
+  - source:flashattention-paper
