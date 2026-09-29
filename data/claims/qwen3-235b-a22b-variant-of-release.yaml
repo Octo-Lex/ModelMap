@@ -1,0 +1,9 @@
+id: claim:qwen3-235b-a22b-variant-of-release
+type: claim
+subject: variant:qwen3-235b-a22b
+predicate: variant_of
+object: release:qwen3
+status: confirmed_primary
+evidence:
+  - source: source:qwen3-announcement
+    locator: Introduction — Qwen3-235B-A22B in the open-weighted MoE lineup

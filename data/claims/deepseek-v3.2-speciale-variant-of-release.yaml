@@ -1,0 +1,9 @@
+id: claim:deepseek-v3.2-speciale-variant-of-release
+type: claim
+subject: variant:deepseek-v3.2-speciale
+predicate: variant_of
+object: release:deepseek-v3.2
+status: confirmed_primary
+evidence:
+  - source: source:deepseek-v3.2-announcement
+    locator: launch opening and World-Leading Reasoning section

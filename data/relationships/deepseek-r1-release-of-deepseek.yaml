@@ -1,0 +1,7 @@
+id: relationship:deepseek-r1-release-of-deepseek
+type: relationship
+subject: release:deepseek-r1
+predicate: release_of
+object: family:deepseek
+claim_refs:
+  - claim:deepseek-r1-release-of-family

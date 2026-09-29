@@ -1,0 +1,9 @@
+id: claim:gpt-5.2-codex-variant-of-release
+type: claim
+subject: variant:gpt-5.2-codex
+predicate: variant_of
+object: release:gpt-5.2
+status: confirmed_primary
+evidence:
+  - source: source:gpt-5.2-codex-announcement
+    locator: a version of GPT-5.2 optimized for agentic coding in Codex

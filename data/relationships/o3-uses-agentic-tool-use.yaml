@@ -1,0 +1,7 @@
+id: relationship:o3-uses-agentic-tool-use
+type: relationship
+subject: release:o3
+predicate: uses_technique
+object: technique:agentic-tool-use
+claim_refs:
+  - claim:o3-uses-agentic-tool-use

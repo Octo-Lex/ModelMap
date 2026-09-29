@@ -1,0 +1,8 @@
+id: event:2025-11-24-claude-opus-4.5-announced
+type: event
+name: Claude Opus 4.5 released
+event_type: model_announced
+subject: release:claude-opus-4.5
+occurred_at: '2025-11-24'
+evidence:
+  - source:claude-opus-4.5-announcement

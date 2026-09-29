@@ -1,0 +1,9 @@
+id: claim:gpt-oss-published-by-openai
+type: claim
+subject: release:gpt-oss
+predicate: published_by
+object: org:openai
+status: confirmed_primary
+evidence:
+  - source: source:gpt-oss-announcement
+    locator: OpenAI announcement

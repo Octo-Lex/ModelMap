@@ -1,0 +1,9 @@
+id: claim:deepseek-r1-release-of-family
+type: claim
+subject: release:deepseek-r1
+predicate: release_of
+object: family:deepseek
+status: confirmed_primary
+evidence:
+  - source: source:deepseek-r1-release
+    locator: README.md §1 Introduction

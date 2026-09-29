@@ -1,0 +1,9 @@
+id: claim:gpt-oss-release-of-family
+type: claim
+subject: release:gpt-oss
+predicate: release_of
+object: family:gpt-oss
+status: confirmed_primary
+evidence:
+  - source: source:gpt-oss-announcement
+    locator: announcement introduction

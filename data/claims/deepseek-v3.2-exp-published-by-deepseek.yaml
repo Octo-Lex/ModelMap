@@ -1,0 +1,9 @@
+id: claim:deepseek-v3.2-exp-published-by-deepseek
+type: claim
+subject: release:deepseek-v3.2-exp
+predicate: published_by
+object: org:deepseek
+status: confirmed_primary
+evidence:
+  - source: source:deepseek-v3.2-exp-announcement
+    locator: DeepSeek announcement

@@ -1,0 +1,4 @@
+id: variant:qwen3-max-instruct
+type: model_variant
+name: Qwen3-Max-Instruct
+status: canonical

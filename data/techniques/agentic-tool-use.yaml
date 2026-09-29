@@ -1,0 +1,5 @@
+id: technique:agentic-tool-use
+type: technique
+name: Agentic Tool Use
+status: canonical
+description: Reasoning that selects, sequences, and adapts tool calls as part of solving a multi-step task rather than treating tools as isolated post-processing actions.

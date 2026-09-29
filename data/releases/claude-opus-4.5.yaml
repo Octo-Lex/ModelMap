@@ -1,0 +1,4 @@
+id: release:claude-opus-4.5
+type: model_release
+name: Claude Opus 4.5
+status: canonical

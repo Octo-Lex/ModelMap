@@ -1,0 +1,9 @@
+id: claim:gpt-5-unified-system-uses-adaptive-reasoning-routing
+type: claim
+subject: product:gpt-5-unified-system
+predicate: uses_technique
+object: technique:adaptive-reasoning-routing
+status: confirmed_primary
+evidence:
+  - source: source:gpt-5-announcement
+    locator: One unified system

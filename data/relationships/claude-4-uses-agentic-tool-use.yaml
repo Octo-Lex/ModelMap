@@ -1,0 +1,7 @@
+id: relationship:claude-4-uses-agentic-tool-use
+type: relationship
+subject: release:claude-4
+predicate: uses_technique
+object: technique:agentic-tool-use
+claim_refs:
+  - claim:claude-4-uses-agentic-tool-use

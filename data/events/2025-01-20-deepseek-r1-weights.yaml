@@ -1,0 +1,8 @@
+id: event:2025-01-20-deepseek-r1-weights
+type: event
+name: DeepSeek-R1 weights released
+event_type: weights_released
+subject: release:deepseek-r1
+occurred_at: '2025-01-20'
+evidence:
+  - source:deepseek-r1-release

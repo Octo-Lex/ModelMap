@@ -1,0 +1,5 @@
+id: technique:hybrid-reasoning
+type: technique
+name: Hybrid Reasoning
+status: canonical
+description: A model-level inference design that supports both rapid direct responses and extended reasoning within the same model family or model interface.

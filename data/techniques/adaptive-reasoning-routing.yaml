@@ -1,0 +1,5 @@
+id: technique:adaptive-reasoning-routing
+type: technique
+name: Adaptive Reasoning Routing
+status: canonical
+description: Dynamic selection or allocation of fast-response versus deeper-reasoning computation according to task complexity, tool needs, or explicit user intent.

@@ -1,0 +1,8 @@
+id: event:2025-05-22-claude-4-announced
+type: event
+name: Claude 4 introduced
+event_type: model_announced
+subject: release:claude-4
+occurred_at: '2025-05-22'
+evidence:
+  - source:claude-4-announcement

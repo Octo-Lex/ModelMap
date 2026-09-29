@@ -1,0 +1,9 @@
+id: claim:gpt-5.2-release-of-family
+type: claim
+subject: release:gpt-5.2
+predicate: release_of
+object: family:gpt
+status: confirmed_primary
+evidence:
+  - source: source:gpt-5.2-announcement
+    locator: announcement opening

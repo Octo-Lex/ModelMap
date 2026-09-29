@@ -1,0 +1,9 @@
+id: claim:gpt-5.1-release-of-family
+type: claim
+subject: release:gpt-5.1
+predicate: release_of
+object: family:gpt
+status: confirmed_primary
+evidence:
+  - source: source:gpt-5.1-system-card
+    locator: Introduction

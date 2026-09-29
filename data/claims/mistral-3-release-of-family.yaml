@@ -1,0 +1,9 @@
+id: claim:mistral-3-release-of-family
+type: claim
+subject: release:mistral-3
+predicate: release_of
+object: family:mistral
+status: confirmed_primary
+evidence:
+  - source: source:mistral-3-announcement
+    locator: announcement opening

@@ -1,0 +1,9 @@
+id: source:deepseek-r1-release
+type: source
+title: 'DeepSeek-R1 official repository snapshot'
+source_type: official_repository
+url: https://github.com/deepseek-ai/DeepSeek-R1/blob/f7fdff6b839fdb5f9cbdc2696a01d46dee548d32/README.md
+publisher: DeepSeek
+published_at: '2025-01-20'
+version: f7fdff6b839fdb5f9cbdc2696a01d46dee548d32
+retrieved_at: '2026-09-29T09:50:00Z'

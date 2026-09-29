@@ -1,0 +1,9 @@
+id: claim:qwen3-0.6b-uses-hybrid-reasoning
+type: claim
+subject: variant:qwen3-0.6b
+predicate: uses_technique
+object: technique:hybrid-reasoning
+status: confirmed_primary
+evidence:
+  - source: source:qwen3-announcement
+    locator: 'Key Features: Hybrid Thinking Modes'

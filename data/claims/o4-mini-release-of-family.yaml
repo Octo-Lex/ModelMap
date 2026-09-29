@@ -1,6 +1,6 @@
-id: claim:o3-release-of-family
+id: claim:o4-mini-release-of-family
 type: claim
-subject: release:o3
+subject: release:o4-mini
 predicate: release_of
 object: family:o-series
 status: confirmed_primary

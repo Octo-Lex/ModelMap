@@ -1,0 +1,9 @@
+id: claim:claude-opus-4.5-release-of-family
+type: claim
+subject: release:claude-opus-4.5
+predicate: release_of
+object: family:claude
+status: confirmed_primary
+evidence:
+  - source: source:claude-opus-4.5-announcement
+    locator: announcement opening

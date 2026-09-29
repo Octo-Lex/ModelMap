@@ -6,4 +6,4 @@ object: family:o-series
 status: confirmed_primary
 evidence:
   - source: source:o1-reasoning-release
-    locator: OpenAI o1 reasoning-series release
+    locator: release opening

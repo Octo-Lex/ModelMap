@@ -1,0 +1,9 @@
+id: claim:deepseek-r1-published-by-deepseek
+type: claim
+subject: release:deepseek-r1
+predicate: published_by
+object: org:deepseek
+status: confirmed_primary
+evidence:
+  - source: source:deepseek-r1-release
+    locator: official DeepSeek-R1 repository

@@ -1,0 +1,4 @@
+id: variant:qwen3-235b-a22b
+type: model_variant
+name: Qwen3-235B-A22B
+status: canonical

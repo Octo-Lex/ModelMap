@@ -1,0 +1,9 @@
+id: claim:gemini-3-release-of-family
+type: claim
+subject: release:gemini-3
+predicate: release_of
+object: family:gemini
+status: confirmed_primary
+evidence:
+  - source: source:gemini-3-announcement
+    locator: announcement introduction

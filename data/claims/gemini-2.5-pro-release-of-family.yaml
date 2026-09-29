@@ -1,0 +1,9 @@
+id: claim:gemini-2.5-pro-release-of-family
+type: claim
+subject: release:gemini-2.5-pro
+predicate: release_of
+object: family:gemini
+status: confirmed_primary
+evidence:
+  - source: source:gemini-2.5-announcement
+    locator: announcement introduction

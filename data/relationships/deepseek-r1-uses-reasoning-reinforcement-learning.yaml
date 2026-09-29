@@ -1,0 +1,7 @@
+id: relationship:deepseek-r1-uses-reasoning-reinforcement-learning
+type: relationship
+subject: release:deepseek-r1
+predicate: uses_technique
+object: technique:reasoning-reinforcement-learning
+claim_refs:
+  - claim:deepseek-r1-uses-reasoning-reinforcement-learning

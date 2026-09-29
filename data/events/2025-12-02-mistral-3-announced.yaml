@@ -1,0 +1,8 @@
+id: event:2025-12-02-mistral-3-announced
+type: event
+name: Mistral 3 released
+event_type: model_announced
+subject: release:mistral-3
+occurred_at: '2025-12-02'
+evidence:
+  - source:mistral-3-announcement

@@ -1,0 +1,7 @@
+id: relationship:mistral-3-published-by-mistral-ai
+type: relationship
+subject: release:mistral-3
+predicate: published_by
+object: org:mistral-ai
+claim_refs:
+  - claim:mistral-3-published-by-mistral-ai

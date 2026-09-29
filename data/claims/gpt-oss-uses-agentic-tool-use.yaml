@@ -1,0 +1,9 @@
+id: claim:gpt-oss-uses-agentic-tool-use
+type: claim
+subject: release:gpt-oss
+predicate: uses_technique
+object: technique:agentic-tool-use
+status: confirmed_primary
+evidence:
+  - source: source:gpt-oss-announcement
+    locator: Introduction

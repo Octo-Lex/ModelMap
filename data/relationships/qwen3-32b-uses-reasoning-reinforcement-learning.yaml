@@ -1,0 +1,7 @@
+id: relationship:qwen3-32b-uses-reasoning-reinforcement-learning
+type: relationship
+subject: variant:qwen3-32b
+predicate: uses_technique
+object: technique:reasoning-reinforcement-learning
+claim_refs:
+  - claim:qwen3-32b-uses-reasoning-reinforcement-learning

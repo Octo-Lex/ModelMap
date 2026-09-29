@@ -1,0 +1,9 @@
+id: claim:deepseek-r1-uses-reasoning-reinforcement-learning
+type: claim
+subject: release:deepseek-r1
+predicate: uses_technique
+object: technique:reasoning-reinforcement-learning
+status: confirmed_primary
+evidence:
+  - source: source:deepseek-r1-release
+    locator: README.md §2 Model Summary — Post-Training

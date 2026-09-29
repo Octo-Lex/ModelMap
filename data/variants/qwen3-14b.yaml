@@ -1,0 +1,4 @@
+id: variant:qwen3-14b
+type: model_variant
+name: Qwen3-14B
+status: canonical

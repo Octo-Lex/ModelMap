@@ -1,0 +1,7 @@
+id: relationship:gpt-5.2-codex-variant-of-release
+type: relationship
+subject: variant:gpt-5.2-codex
+predicate: variant_of
+object: release:gpt-5.2
+claim_refs:
+  - claim:gpt-5.2-codex-variant-of-release
