@@ -1,0 +1,9 @@
+id: claim:switch-transformer-uses-transformer
+type: claim
+subject: release:switch-transformer
+predicate: uses_technique
+object: technique:transformer
+status: confirmed_primary
+evidence:
+  - source: source:switch-transformer-paper
+    locator: Switch Transformer models based on T5 Transformer models

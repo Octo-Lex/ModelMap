@@ -1,0 +1,7 @@
+id: relationship:palm-uses-transformer
+type: relationship
+subject: release:palm
+predicate: uses_technique
+object: technique:transformer
+claim_refs:
+  - claim:palm-uses-transformer

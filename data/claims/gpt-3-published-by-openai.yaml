@@ -1,0 +1,9 @@
+id: claim:gpt-3-published-by-openai
+type: claim
+subject: release:gpt-3
+predicate: published_by
+object: org:openai
+status: confirmed_primary
+evidence:
+  - source: source:gpt3-paper
+    locator: OpenAI author affiliations

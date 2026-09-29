@@ -1,0 +1,5 @@
+id: technique:instruction-tuning
+type: technique
+name: Instruction tuning
+status: canonical
+description: Fine-tune a pretrained language model across tasks expressed through natural-language instructions to improve generalization to unseen instructions.

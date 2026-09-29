@@ -1,0 +1,7 @@
+id: technique:chain-of-thought-prompting
+type: technique
+name: Chain-of-thought prompting
+aliases:
+  - CoT prompting
+status: canonical
+description: Prompt a language model with intermediate reasoning-step demonstrations to elicit multi-step reasoning.

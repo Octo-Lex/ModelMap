@@ -1,0 +1,9 @@
+id: claim:instructgpt-release-of-gpt
+type: claim
+subject: release:instructgpt
+predicate: release_of
+object: family:gpt
+status: confirmed_primary
+evidence:
+  - source: source:instructgpt-paper
+    locator: InstructGPT models are fine-tuned from GPT-3

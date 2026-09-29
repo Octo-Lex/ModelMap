@@ -1,0 +1,5 @@
+id: technique:in-context-learning
+type: technique
+name: In-context learning
+status: canonical
+description: Adapt model behavior from instructions or demonstrations supplied in the prompt without gradient updates.

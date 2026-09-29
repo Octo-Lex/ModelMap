@@ -1,0 +1,7 @@
+id: relationship:chinchilla-uses-compute-optimal-training
+type: relationship
+subject: release:chinchilla
+predicate: uses_technique
+object: technique:compute-optimal-training
+claim_refs:
+  - claim:chinchilla-uses-compute-optimal-training

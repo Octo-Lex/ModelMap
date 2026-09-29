@@ -1,0 +1,4 @@
+id: release:bert
+type: model_release
+name: BERT
+status: canonical

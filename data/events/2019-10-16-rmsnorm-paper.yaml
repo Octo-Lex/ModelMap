@@ -1,0 +1,8 @@
+id: event:2019-10-16-rmsnorm-paper
+type: event
+name: RMSNorm paper published
+event_type: paper_published
+subject: technique:rmsnorm
+occurred_at: '2019-10-16'
+evidence:
+  - source:rmsnorm-paper

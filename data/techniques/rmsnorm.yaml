@@ -1,0 +1,6 @@
+id: technique:rmsnorm
+type: technique
+name: Root Mean Square Layer Normalization
+aliases:
+  - RMSNorm
+status: canonical

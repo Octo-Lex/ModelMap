@@ -1,0 +1,5 @@
+id: technique:swiglu
+type: technique
+name: SwiGLU
+status: canonical
+description: Gated feed-forward activation using Swish in a GLU-style Transformer feed-forward block.

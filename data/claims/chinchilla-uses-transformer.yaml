@@ -1,0 +1,9 @@
+id: claim:chinchilla-uses-transformer
+type: claim
+subject: release:chinchilla
+predicate: uses_technique
+object: technique:transformer
+status: confirmed_primary
+evidence:
+  - source: source:chinchilla-paper
+    locator: autoregressive Transformer language-model setup

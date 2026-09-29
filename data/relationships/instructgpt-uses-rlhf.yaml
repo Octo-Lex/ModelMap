@@ -1,0 +1,7 @@
+id: relationship:instructgpt-uses-rlhf
+type: relationship
+subject: release:instructgpt
+predicate: uses_technique
+object: technique:reinforcement-learning-from-human-feedback
+claim_refs:
+  - claim:instructgpt-uses-rlhf

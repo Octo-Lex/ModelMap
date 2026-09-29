@@ -1,0 +1,7 @@
+id: relationship:bert-release-of-bert
+type: relationship
+subject: release:bert
+predicate: release_of
+object: family:bert
+claim_refs:
+  - claim:bert-release-of-bert

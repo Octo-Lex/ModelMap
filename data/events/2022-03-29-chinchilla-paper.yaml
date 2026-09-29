@@ -1,0 +1,8 @@
+id: event:2022-03-29-chinchilla-paper
+type: event
+name: Chinchilla compute-optimal training paper published
+event_type: paper_published
+subject: release:chinchilla
+occurred_at: '2022-03-29'
+evidence:
+  - source:chinchilla-paper

@@ -1,0 +1,9 @@
+id: claim:switch-transformer-release-of-switch-transformer
+type: claim
+subject: release:switch-transformer
+predicate: release_of
+object: family:switch-transformer
+status: confirmed_primary
+evidence:
+  - source: source:switch-transformer-paper
+    locator: paper introduces Switch Transformer

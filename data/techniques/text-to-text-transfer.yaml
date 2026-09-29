@@ -1,0 +1,5 @@
+id: technique:text-to-text-transfer
+type: technique
+name: Text-to-text transfer
+status: canonical
+description: Frame diverse NLP tasks as text input to text output under one model and objective interface.

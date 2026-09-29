@@ -1,0 +1,7 @@
+id: source:rmsnorm-paper
+type: source
+title: Root Mean Square Layer Normalization
+source_type: paper
+url: https://arxiv.org/abs/1910.07467
+published_at: '2019-10-16'
+version: v1

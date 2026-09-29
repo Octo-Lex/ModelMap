@@ -1,0 +1,7 @@
+id: relationship:t5-release-of-t5
+type: relationship
+subject: release:t5
+predicate: release_of
+object: family:t5
+claim_refs:
+  - claim:t5-release-of-t5

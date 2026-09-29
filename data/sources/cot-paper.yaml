@@ -1,0 +1,8 @@
+id: source:cot-paper
+type: source
+title: Chain-of-Thought Prompting Elicits Reasoning in Large Language Models
+source_type: paper
+url: https://arxiv.org/abs/2201.11903
+publisher: Google Research
+published_at: '2022-01-28'
+version: v1

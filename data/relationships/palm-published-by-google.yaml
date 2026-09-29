@@ -1,0 +1,7 @@
+id: relationship:palm-published-by-google
+type: relationship
+subject: release:palm
+predicate: published_by
+object: org:google
+claim_refs:
+  - claim:palm-published-by-google

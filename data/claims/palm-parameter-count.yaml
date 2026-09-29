@@ -1,0 +1,9 @@
+id: claim:palm-parameter-count
+type: claim
+subject: release:palm
+predicate: parameter_count
+value: 540000000000
+status: confirmed_primary
+evidence:
+  - source: source:palm-paper
+    locator: abstract — 540-billion parameter densely activated Transformer language model

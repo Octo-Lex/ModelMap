@@ -1,0 +1,5 @@
+id: technique:masked-language-modeling
+type: technique
+name: Masked language modeling
+status: canonical
+description: Pretraining objective that predicts masked tokens using bidirectional context.

@@ -1,0 +1,8 @@
+id: source:gpt3-paper
+type: source
+title: Language Models are Few-Shot Learners
+source_type: paper
+url: https://arxiv.org/abs/2005.14165
+publisher: OpenAI
+published_at: '2020-05-28'
+version: v1

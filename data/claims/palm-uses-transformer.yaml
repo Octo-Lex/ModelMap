@@ -1,0 +1,9 @@
+id: claim:palm-uses-transformer
+type: claim
+subject: release:palm
+predicate: uses_technique
+object: technique:transformer
+status: confirmed_primary
+evidence:
+  - source: source:palm-paper
+    locator: abstract — 540-billion parameter densely activated Transformer language model

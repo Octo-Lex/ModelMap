@@ -1,0 +1,9 @@
+id: claim:bert-release-of-bert
+type: claim
+subject: release:bert
+predicate: release_of
+object: family:bert
+status: confirmed_primary
+evidence:
+  - source: source:bert-paper
+    locator: title and abstract introduce BERT

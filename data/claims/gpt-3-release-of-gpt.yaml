@@ -1,0 +1,9 @@
+id: claim:gpt-3-release-of-gpt
+type: claim
+subject: release:gpt-3
+predicate: release_of
+object: family:gpt
+status: confirmed_primary
+evidence:
+  - source: source:gpt3-paper
+    locator: paper presents GPT-3 as a 175B autoregressive language model

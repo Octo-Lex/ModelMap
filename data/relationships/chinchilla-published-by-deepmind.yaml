@@ -1,0 +1,7 @@
+id: relationship:chinchilla-published-by-deepmind
+type: relationship
+subject: release:chinchilla
+predicate: published_by
+object: org:deepmind
+claim_refs:
+  - claim:chinchilla-published-by-deepmind

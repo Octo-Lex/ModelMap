@@ -1,0 +1,12 @@
+id: claim:gpt-1-release-of-gpt
+type: claim
+subject: release:gpt-1
+predicate: release_of
+object: family:gpt
+status: confirmed_primary
+evidence:
+  - source: source:gpt1-openai-announcement
+    locator: OpenAI's 2018 generative pre-training Transformer model
+  - source: source:gpt2-openai-announcement
+    locator: GPT-2 is explicitly described as a successor to GPT
+notes: GPT-1 is the retrospective label used here for the 2018 model.

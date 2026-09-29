@@ -1,0 +1,7 @@
+id: relationship:chinchilla-release-of-chinchilla
+type: relationship
+subject: release:chinchilla
+predicate: release_of
+object: family:chinchilla
+claim_refs:
+  - claim:chinchilla-release-of-chinchilla

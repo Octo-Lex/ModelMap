@@ -1,0 +1,5 @@
+id: technique:compute-optimal-training
+type: technique
+name: Compute-optimal language-model training
+status: canonical
+description: Allocate a fixed training-compute budget between model parameters and training tokens to improve compute efficiency.

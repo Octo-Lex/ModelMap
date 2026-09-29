@@ -1,0 +1,7 @@
+id: relationship:instructgpt-published-by-openai
+type: relationship
+subject: release:instructgpt
+predicate: published_by
+object: org:openai
+claim_refs:
+  - claim:instructgpt-published-by-openai

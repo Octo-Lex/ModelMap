@@ -1,0 +1,4 @@
+id: release:t5
+type: model_release
+name: T5
+status: canonical

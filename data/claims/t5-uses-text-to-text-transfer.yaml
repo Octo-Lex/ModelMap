@@ -1,0 +1,9 @@
+id: claim:t5-uses-text-to-text-transfer
+type: claim
+subject: release:t5
+predicate: uses_technique
+object: technique:text-to-text-transfer
+status: confirmed_primary
+evidence:
+  - source: source:t5-paper
+    locator: unified text-to-text framework

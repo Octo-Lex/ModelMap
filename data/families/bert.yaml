@@ -1,0 +1,4 @@
+id: family:bert
+type: model_family
+name: BERT
+status: canonical

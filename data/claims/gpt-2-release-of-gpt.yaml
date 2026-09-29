@@ -1,0 +1,9 @@
+id: claim:gpt-2-release-of-gpt
+type: claim
+subject: release:gpt-2
+predicate: release_of
+object: family:gpt
+status: confirmed_primary
+evidence:
+  - source: source:gpt2-openai-announcement
+    locator: GPT-2 is described as a successor to GPT

@@ -1,0 +1,9 @@
+id: claim:t5-release-of-t5
+type: claim
+subject: release:t5
+predicate: release_of
+object: family:t5
+status: confirmed_primary
+evidence:
+  - source: source:t5-paper
+    locator: paper introduces the Text-to-Text Transfer Transformer (T5)

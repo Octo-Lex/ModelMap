@@ -1,0 +1,9 @@
+id: claim:instructgpt-uses-rlhf
+type: claim
+subject: release:instructgpt
+predicate: uses_technique
+object: technique:reinforcement-learning-from-human-feedback
+status: confirmed_primary
+evidence:
+  - source: source:instructgpt-paper
+    locator: supervised demonstrations, preference comparisons, reward model, and PPO fine-tuning

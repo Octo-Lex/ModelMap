@@ -1,0 +1,8 @@
+id: source:bert-paper
+type: source
+title: 'BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding'
+source_type: paper
+url: https://arxiv.org/abs/1810.04805
+publisher: Google AI Language
+published_at: '2018-10-11'
+version: v1

@@ -1,0 +1,7 @@
+id: relationship:gpt-2-release-of-gpt
+type: relationship
+subject: release:gpt-2
+predicate: release_of
+object: family:gpt
+claim_refs:
+  - claim:gpt-2-release-of-gpt

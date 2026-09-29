@@ -1,0 +1,9 @@
+id: claim:palm-release-of-palm
+type: claim
+subject: release:palm
+predicate: release_of
+object: family:palm
+status: confirmed_primary
+evidence:
+  - source: source:palm-paper
+    locator: paper introduces Pathways Language Model (PaLM)

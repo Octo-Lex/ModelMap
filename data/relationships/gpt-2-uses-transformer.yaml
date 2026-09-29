@@ -1,0 +1,7 @@
+id: relationship:gpt-2-uses-transformer
+type: relationship
+subject: release:gpt-2
+predicate: uses_technique
+object: technique:transformer
+claim_refs:
+  - claim:gpt-2-uses-transformer

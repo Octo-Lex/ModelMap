@@ -1,0 +1,7 @@
+id: relationship:gpt-3-published-by-openai
+type: relationship
+subject: release:gpt-3
+predicate: published_by
+object: org:openai
+claim_refs:
+  - claim:gpt-3-published-by-openai

@@ -1,0 +1,5 @@
+id: release:gpt-1
+type: model_release
+name: GPT-1
+description: Retrospective name for OpenAI's 2018 generative pre-training Transformer model, referred to as GPT by the 2019 GPT-2 announcement.
+status: canonical

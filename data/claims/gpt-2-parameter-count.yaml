@@ -1,0 +1,9 @@
+id: claim:gpt-2-parameter-count
+type: claim
+subject: release:gpt-2
+predicate: parameter_count
+value: 1500000000
+status: confirmed_primary
+evidence:
+  - source: source:gpt2-openai-announcement
+    locator: GPT-2 is described as a 1.5 billion parameter Transformer language model

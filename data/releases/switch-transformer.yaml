@@ -1,0 +1,4 @@
+id: release:switch-transformer
+type: model_release
+name: Switch Transformer
+status: canonical

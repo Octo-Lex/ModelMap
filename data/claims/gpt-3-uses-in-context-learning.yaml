@@ -1,0 +1,9 @@
+id: claim:gpt-3-uses-in-context-learning
+type: claim
+subject: release:gpt-3
+predicate: uses_technique
+object: technique:in-context-learning
+status: confirmed_primary
+evidence:
+  - source: source:gpt3-paper
+    locator: zero-shot, one-shot, and few-shot task demonstrations in model context without gradient updates

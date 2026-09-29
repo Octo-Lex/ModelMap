@@ -1,0 +1,9 @@
+id: claim:chinchilla-published-by-deepmind
+type: claim
+subject: release:chinchilla
+predicate: published_by
+object: org:deepmind
+status: confirmed_primary
+evidence:
+  - source: source:chinchilla-paper
+    locator: DeepMind authors and publication

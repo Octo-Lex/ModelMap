@@ -1,0 +1,8 @@
+id: source:palm-paper
+type: source
+title: 'PaLM: Scaling Language Modeling with Pathways'
+source_type: paper
+url: https://arxiv.org/abs/2204.02311
+publisher: Google
+published_at: '2022-04-05'
+version: v1

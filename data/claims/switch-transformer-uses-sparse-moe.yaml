@@ -1,0 +1,9 @@
+id: claim:switch-transformer-uses-sparse-moe
+type: claim
+subject: release:switch-transformer
+predicate: uses_technique
+object: technique:sparse-mixture-of-experts
+status: confirmed_primary
+evidence:
+  - source: source:switch-transformer-paper
+    locator: sparse expert routing and sparsely activated model description

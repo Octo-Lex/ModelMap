@@ -1,0 +1,7 @@
+id: relationship:bert-published-by-google
+type: relationship
+subject: release:bert
+predicate: published_by
+object: org:google
+claim_refs:
+  - claim:bert-published-by-google

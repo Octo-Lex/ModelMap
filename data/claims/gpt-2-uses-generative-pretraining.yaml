@@ -1,0 +1,9 @@
+id: claim:gpt-2-uses-generative-pretraining
+type: claim
+subject: release:gpt-2
+predicate: uses_technique
+object: technique:generative-pretraining
+status: confirmed_primary
+evidence:
+  - source: source:gpt2-openai-announcement
+    locator: trained to predict the next word from previous text without task-specific training

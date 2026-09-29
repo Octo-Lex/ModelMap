@@ -1,0 +1,9 @@
+id: claim:chinchilla-parameter-count
+type: claim
+subject: release:chinchilla
+predicate: parameter_count
+value: 70000000000
+status: confirmed_primary
+evidence:
+  - source: source:chinchilla-paper
+    locator: abstract — Chinchilla is a 70B parameter model

@@ -1,0 +1,8 @@
+id: event:2022-01-28-chain-of-thought-paper
+type: event
+name: Chain-of-thought prompting paper published
+event_type: paper_published
+subject: technique:chain-of-thought-prompting
+occurred_at: '2022-01-28'
+evidence:
+  - source:cot-paper
