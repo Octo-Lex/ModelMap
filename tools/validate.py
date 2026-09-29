@@ -8,8 +8,9 @@ import sys
 from pathlib import Path
 from typing import Any
 
-import yaml
 from jsonschema import Draft202012Validator, FormatChecker
+
+from records import iter_records
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
@@ -24,34 +25,15 @@ SCHEMA_BY_TYPE = {
 }
 
 
-def load_document(path: Path) -> Any:
-    with path.open("r", encoding="utf-8") as fh:
-        if path.suffix == ".json":
-            return json.load(fh)
-        return yaml.safe_load(fh)
-
-
 def load_schema(name: str) -> dict[str, Any]:
     with (SCHEMAS / name).open("r", encoding="utf-8") as fh:
         return json.load(fh)
 
 
-def iter_records() -> list[tuple[Path, dict[str, Any]]]:
-    records: list[tuple[Path, dict[str, Any]]] = []
-    for path in sorted(DATA.rglob("*")):
-        if path.suffix not in {".yaml", ".yml", ".json"}:
-            continue
-        doc = load_document(path)
-        if not isinstance(doc, dict):
-            raise ValueError(f"{path.relative_to(ROOT)} must contain one mapping/object")
-        records.append((path, doc))
-    return records
-
-
 def main() -> int:
     errors: list[str] = []
     try:
-        records = iter_records()
+        records = list(iter_records(DATA))
     except Exception as exc:
         print(f"ERROR: failed to load corpus: {exc}")
         return 1

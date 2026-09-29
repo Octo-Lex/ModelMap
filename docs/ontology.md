@@ -78,6 +78,34 @@ paper:arxiv-2412-19437
 benchmark:mmlu
 ```
 
+Namespaces are bound to entity types. The v0.1 mapping is:
+
+| Entity type | Namespace |
+|---|---|
+| model_family | `family:` |
+| model_release | `release:` |
+| model_variant | `variant:` |
+| architecture_spec | `arch:` |
+| technique | `technique:` |
+| training_run | `training:` |
+| implementation | `implementation:` |
+| paper | `paper:` |
+| source | `source:` |
+| claim | `claim:` |
+| relationship | `relationship:` |
+| event | `event:` |
+| dataset | `dataset:` |
+| dataset_version | `dataset-version:` |
+| benchmark | `benchmark:` |
+| benchmark_version | `benchmark-version:` |
+| evaluation_protocol | `eval-protocol:` |
+| evaluation_run | `eval-run:` |
+| organization | `org:` |
+| person | `person:` |
+| license | `license:` |
+| hardware_system | `hardware:` |
+| product_system | `product:` |
+
 Display names and aliases are mutable metadata, not primary keys.
 
 ## 3. Claim model
@@ -86,16 +114,17 @@ A claim is the smallest independently supportable assertion.
 
 ```yaml
 id: claim:example-model-uses-gqa
+type: claim
 subject: release:example-model
 predicate: uses_technique
 object: technique:grouped-query-attention
 status: confirmed_primary
 evidence:
-  - source:example-technical-report
-valid_from: 2025-01-01
+  - source: source:example-technical-report
+valid_from: '2025-01-01'
 ```
 
-Claims may point to entities (`object`) or literal values (`value`), but not both simultaneously.
+Claims may point to entities (`object`) or literal values (`value`), but not both simultaneously. Claim and relationship endpoints must use canonical IDs, never display names.
 
 ## 4. Evidence states
 
@@ -183,6 +212,8 @@ The UI should warn when two displayed results use materially different protocols
 ## 9. Temporal model
 
 `occurred_at` belongs to an Event. `published_at` belongs to a Source. `retrieved_at` records when ModelMap observed a source. These dates are intentionally separate.
+
+Quote dates in hand-authored YAML for readability and portability. The validator also normalizes YAML date/timestamp scalars to ISO strings before applying JSON Schema.
 
 ## 10. Source hierarchy
 

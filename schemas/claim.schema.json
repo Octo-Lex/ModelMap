@@ -3,13 +3,19 @@
   "$id": "https://modelmap.dev/schemas/claim.schema.json",
   "title": "ModelMap Claim",
   "type": "object",
+  "$defs": {
+    "canonicalId": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_-]*:[a-z0-9][a-z0-9._-]*$"
+    }
+  },
   "required": ["id", "type", "subject", "predicate", "status", "evidence"],
   "properties": {
     "id": {"type": "string", "pattern": "^claim:[a-z0-9][a-z0-9._-]*$"},
     "type": {"const": "claim"},
-    "subject": {"type": "string", "minLength": 3},
+    "subject": {"$ref": "#/$defs/canonicalId"},
     "predicate": {"type": "string", "pattern": "^[a-z][a-z0-9_]*$"},
-    "object": {"type": "string", "minLength": 3},
+    "object": {"$ref": "#/$defs/canonicalId"},
     "value": {},
     "status": {
       "type": "string",

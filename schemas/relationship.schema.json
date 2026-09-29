@@ -3,11 +3,17 @@
   "$id": "https://modelmap.dev/schemas/relationship.schema.json",
   "title": "ModelMap Relationship",
   "type": "object",
+  "$defs": {
+    "canonicalId": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_-]*:[a-z0-9][a-z0-9._-]*$"
+    }
+  },
   "required": ["id", "type", "subject", "predicate", "object"],
   "properties": {
     "id": {"type": "string", "pattern": "^relationship:[a-z0-9][a-z0-9._-]*$"},
     "type": {"const": "relationship"},
-    "subject": {"type": "string", "minLength": 3},
+    "subject": {"$ref": "#/$defs/canonicalId"},
     "predicate": {
       "type": "string",
       "enum": [
@@ -32,7 +38,7 @@
         "replaces"
       ]
     },
-    "object": {"type": "string", "minLength": 3},
+    "object": {"$ref": "#/$defs/canonicalId"},
     "claim_refs": {
       "type": "array",
       "items": {"type": "string", "pattern": "^claim:[a-z0-9][a-z0-9._-]*$"},

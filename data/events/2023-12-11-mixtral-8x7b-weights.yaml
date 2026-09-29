@@ -1,8 +1,0 @@
-id: event:2023-12-11-mixtral-8x7b-weights
-type: event
-name: Mixtral 8x7B open weights released
-event_type: weights_released
-subject: release:mixtral-8x7b
-occurred_at: '2023-12-11'
-evidence:
-  - source:mixtral-8x7b-announcement

@@ -3,6 +3,12 @@
   "$id": "https://modelmap.dev/schemas/event.schema.json",
   "title": "ModelMap Event",
   "type": "object",
+  "$defs": {
+    "canonicalId": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_-]*:[a-z0-9][a-z0-9._-]*$"
+    }
+  },
   "required": ["id", "type", "name", "event_type", "subject", "occurred_at", "evidence"],
   "properties": {
     "id": {"type": "string", "pattern": "^event:[a-z0-9][a-z0-9._-]*$"},
@@ -28,7 +34,7 @@
         "organization_founded"
       ]
     },
-    "subject": {"type": "string", "minLength": 3},
+    "subject": {"$ref": "#/$defs/canonicalId"},
     "occurred_at": {"type": "string", "format": "date"},
     "evidence": {
       "type": "array",
