@@ -75,6 +75,34 @@ Do not overload values:
 
 Evidence references should identify a source plus the smallest useful locator available: section, table, page, config key, file/line range, release-note heading, or commit.
 
+## Architecture manifests
+
+An `ArchitectureSpec` targets exactly one canonical model release or model variant through `target`. Every populated architecture fact must be covered by at least one field-level evidence entry. Evidence entries identify a canonical `source`, a narrow `locator`, and the exact fact paths supported by that locator.
+
+```yaml
+id: arch:example-model
+type: architecture_spec
+name: Example model architecture
+target: variant:example-model
+status: reviewed
+topology:
+  type: decoder_only
+attention:
+  query_heads: 32
+evidence:
+  - source: source:example-model-report
+    locator: '§2 Model Architecture, Table 1'
+    fields:
+      - topology.type
+      - attention.query_heads
+```
+
+The validator rejects evidence paths that point to absent or `null` values and rejects populated architecture facts that lack evidence. `notes` are editorial context and are not treated as architecture facts requiring field evidence.
+
+Layer-plan ranges in `blocks` are zero-based and inclusive. Ranges must be ordered internally, must not overlap, and must remain within `dimensions.layers` when the layer count is present.
+
+Architecture fields whose values are unestablished or vary by checkpoint packaging within the manifest's target should be omitted rather than guessed, averaged, or selected from one package and presented as intrinsic architecture. Use `null` only when preserving an explicit reviewed-but-unestablished slot is itself useful to the record.
+
 ## Dates and timestamps
 
 Quote ISO dates and timestamps in hand-authored YAML when practical. The shared record loader normalizes YAML-native `date` and `datetime` scalars to ISO strings before schema validation and generation, so equivalent unquoted YAML remains valid.
