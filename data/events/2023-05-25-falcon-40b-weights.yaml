@@ -1,0 +1,8 @@
+id: event:2023-05-25-falcon-40b-weights
+type: event
+name: Falcon 40B open weights released
+event_type: weights_released
+subject: release:falcon-40b
+occurred_at: '2023-05-25'
+evidence:
+  - source:falcon-40b-announcement

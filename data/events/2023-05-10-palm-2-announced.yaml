@@ -1,0 +1,8 @@
+id: event:2023-05-10-palm-2-announced
+type: event
+name: PaLM 2 announced
+event_type: model_announced
+subject: release:palm-2
+occurred_at: '2023-05-10'
+evidence:
+  - source:palm-2-announcement

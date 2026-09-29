@@ -1,0 +1,12 @@
+id: claim:gemini-1.0-size-variants
+type: claim
+subject: release:gemini-1.0
+predicate: size_variants
+value:
+  - Ultra
+  - Pro
+  - Nano
+status: confirmed_primary
+evidence:
+  - source: source:gemini-1-announcement
+    locator: optimized for three sizes

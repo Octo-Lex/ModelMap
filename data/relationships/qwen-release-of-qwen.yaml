@@ -1,0 +1,7 @@
+id: relationship:qwen-release-of-qwen
+type: relationship
+subject: release:qwen
+predicate: release_of
+object: family:qwen
+claim_refs:
+  - claim:qwen-release-of-qwen

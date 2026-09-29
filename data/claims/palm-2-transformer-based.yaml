@@ -1,0 +1,9 @@
+id: claim:palm-2-transformer-based
+type: claim
+subject: release:palm-2
+predicate: transformer_based
+value: true
+status: confirmed_primary
+evidence:
+  - source: source:palm-2-report
+    locator: abstract

@@ -1,0 +1,7 @@
+id: relationship:mixtral-8x7b-published-by-mistral-ai
+type: relationship
+subject: release:mixtral-8x7b
+predicate: published_by
+object: org:mistral-ai
+claim_refs:
+  - claim:mixtral-8x7b-published-by-mistral-ai

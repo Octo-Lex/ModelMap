@@ -1,0 +1,9 @@
+id: claim:gemini-1.0-published-by-google-deepmind
+type: claim
+subject: release:gemini-1.0
+predicate: published_by
+object: org:google-deepmind
+status: confirmed_primary
+evidence:
+  - source: source:gemini-1-announcement
+    locator: announcement authorship and Gemini team attribution

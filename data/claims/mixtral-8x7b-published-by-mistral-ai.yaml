@@ -1,0 +1,9 @@
+id: claim:mixtral-8x7b-published-by-mistral-ai
+type: claim
+subject: release:mixtral-8x7b
+predicate: published_by
+object: org:mistral-ai
+status: confirmed_primary
+evidence:
+  - source: source:mixtral-8x7b-announcement
+    locator: Mistral AI team announcement

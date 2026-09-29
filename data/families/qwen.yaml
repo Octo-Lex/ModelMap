@@ -1,0 +1,4 @@
+id: family:qwen
+type: model_family
+name: Qwen
+status: canonical

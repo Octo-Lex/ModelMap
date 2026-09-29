@@ -1,0 +1,11 @@
+id: claim:gpt-4-input-modalities
+type: claim
+subject: release:gpt-4
+predicate: input_modalities
+value:
+  - text
+  - image
+status: confirmed_primary
+evidence:
+  - source: source:gpt-4-technical-report
+    locator: abstract

@@ -1,0 +1,9 @@
+id: claim:falcon-40b-published-by-tii
+type: claim
+subject: release:falcon-40b
+predicate: published_by
+object: org:tii
+status: confirmed_primary
+evidence:
+  - source: source:falcon-40b-announcement
+    locator: Technology Innovation Institute announcement

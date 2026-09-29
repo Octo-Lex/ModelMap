@@ -1,0 +1,8 @@
+id: source:qwen-report
+type: source
+title: Qwen Technical Report
+source_type: technical_report
+url: https://arxiv.org/abs/2309.16609
+publisher: arXiv
+published_at: '2023-09-28'
+retrieved_at: '2026-09-29T06:55:00Z'

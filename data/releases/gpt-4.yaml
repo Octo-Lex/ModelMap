@@ -1,0 +1,4 @@
+id: release:gpt-4
+type: model_release
+name: GPT-4
+status: canonical

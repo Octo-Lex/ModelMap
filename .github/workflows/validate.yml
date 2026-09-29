@@ -24,3 +24,5 @@ jobs:
         run: python tools/validate.py
       - name: Build chronological timeline
         run: python tools/build_timeline.py --format json > /tmp/modelmap-timeline.json
+      - name: Build 2023 year view
+        run: python tools/build_year.py 2023 --format markdown > /tmp/modelmap-2023.md

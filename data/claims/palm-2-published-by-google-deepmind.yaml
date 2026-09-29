@@ -1,0 +1,9 @@
+id: claim:palm-2-published-by-google-deepmind
+type: claim
+subject: release:palm-2
+predicate: published_by
+object: org:google-deepmind
+status: confirmed_primary
+evidence:
+  - source: source:palm-2-announcement
+    locator: author affiliation and announcement page

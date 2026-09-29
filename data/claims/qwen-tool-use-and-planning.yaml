@@ -1,0 +1,11 @@
+id: claim:qwen-tool-use-and-planning
+type: claim
+subject: release:qwen
+predicate: capabilities_reported
+value:
+  - tool use
+  - planning
+status: reported_primary
+evidence:
+  - source: source:qwen-report
+    locator: abstract

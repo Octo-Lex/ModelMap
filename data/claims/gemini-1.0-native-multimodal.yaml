@@ -1,0 +1,9 @@
+id: claim:gemini-1.0-native-multimodal
+type: claim
+subject: release:gemini-1.0
+predicate: built_from_ground_up_multimodal
+value: true
+status: confirmed_primary
+evidence:
+  - source: source:gemini-1-announcement
+    locator: Introducing Gemini section

@@ -1,0 +1,8 @@
+id: event:2023-07-11-claude-2-announced
+type: event
+name: Claude 2 announced
+event_type: model_announced
+subject: release:claude-2
+occurred_at: '2023-07-11'
+evidence:
+  - source:claude-2-announcement

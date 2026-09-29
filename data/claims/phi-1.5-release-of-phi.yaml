@@ -1,0 +1,9 @@
+id: claim:phi-1.5-release-of-phi
+type: claim
+subject: release:phi-1.5
+predicate: release_of
+object: family:phi
+status: confirmed_primary
+evidence:
+  - source: source:phi-1.5-report
+    locator: abstract

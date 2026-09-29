@@ -1,0 +1,9 @@
+id: claim:phi-1.5-textbook-quality-data
+type: claim
+subject: release:phi-1.5
+predicate: training_data_strategy
+value: textbook-quality synthetic data
+status: confirmed_primary
+evidence:
+  - source: source:phi-1.5-report
+    locator: abstract
