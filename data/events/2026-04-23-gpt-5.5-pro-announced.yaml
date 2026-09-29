@@ -1,0 +1,8 @@
+id: event:2026-04-23-gpt-5.5-pro-announced
+type: event
+name: GPT-5.5 Pro introduced
+event_type: model_announced
+subject: variant:gpt-5.5-pro
+occurred_at: '2026-04-23'
+evidence:
+  - source:gpt-5.5-announcement

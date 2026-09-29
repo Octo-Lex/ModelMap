@@ -1,0 +1,7 @@
+id: relationship:gemini-3.8-flash-variant-of-release
+type: relationship
+subject: variant:gemini-3.8-flash
+predicate: variant_of
+object: release:gemini-3.8
+claim_refs:
+  - claim:gemini-3.8-flash-variant-of-release

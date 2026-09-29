@@ -1,0 +1,9 @@
+id: source:gpt-5.5-system-card
+type: source
+title: GPT-5.5 System Card
+source_type: model_card
+url: https://openai.com/index/gpt-5-5-system-card/
+publisher: OpenAI
+published_at: '2026-04-23'
+retrieved_at: '2026-09-29T11:27:00Z'
+notes: Updated by OpenAI on 2026-04-24 with additional API-deployment safeguards.

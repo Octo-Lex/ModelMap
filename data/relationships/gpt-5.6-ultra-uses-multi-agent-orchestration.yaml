@@ -1,0 +1,7 @@
+id: relationship:gpt-5.6-ultra-uses-multi-agent-orchestration
+type: relationship
+subject: product:gpt-5.6-ultra
+predicate: uses_technique
+object: technique:multi-agent-orchestration
+claim_refs:
+  - claim:gpt-5.6-ultra-uses-multi-agent-orchestration

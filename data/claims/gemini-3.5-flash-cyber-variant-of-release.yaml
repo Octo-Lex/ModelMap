@@ -1,0 +1,9 @@
+id: claim:gemini-3.5-flash-cyber-variant-of-release
+type: claim
+subject: variant:gemini-3.5-flash-cyber
+predicate: variant_of
+object: release:gemini-3.5-flash
+status: confirmed_primary
+evidence:
+  - source: source:gemini-flash-july-2026-announcement
+    locator: 3.5 Flash Cyber is built on top of 3.5 Flash

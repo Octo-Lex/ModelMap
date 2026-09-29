@@ -1,0 +1,9 @@
+id: claim:gemini-3.8-published-by-google-deepmind
+type: claim
+subject: release:gemini-3.8
+predicate: published_by
+object: org:google-deepmind
+status: confirmed_primary
+evidence:
+  - source: source:gemini-3.8-announcement
+    locator: Google DeepMind announcement

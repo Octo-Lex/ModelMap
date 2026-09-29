@@ -1,0 +1,9 @@
+id: claim:gpt-5.6-luna-variant-of-release
+type: claim
+subject: variant:gpt-5.6-luna
+predicate: variant_of
+object: release:gpt-5.6
+status: confirmed_primary
+evidence:
+  - source: source:gpt-5.6-announcement
+    locator: Availability and pricing — GPT-5.6 spans Sol, Terra, and Luna tiers

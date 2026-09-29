@@ -1,0 +1,8 @@
+id: event:2026-07-21-gemini-3.5-flash-lite-announced
+type: event
+name: Gemini 3.5 Flash-Lite introduced
+event_type: model_announced
+subject: release:gemini-3.5-flash-lite
+occurred_at: '2026-07-21'
+evidence:
+  - source:gemini-flash-july-2026-announcement

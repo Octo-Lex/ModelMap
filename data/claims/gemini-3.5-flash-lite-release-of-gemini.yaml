@@ -1,0 +1,9 @@
+id: claim:gemini-3.5-flash-lite-release-of-gemini
+type: claim
+subject: release:gemini-3.5-flash-lite
+predicate: release_of
+object: family:gemini
+status: confirmed_primary
+evidence:
+  - source: source:gemini-flash-july-2026-announcement
+    locator: introducing Gemini 3.5 Flash-Lite

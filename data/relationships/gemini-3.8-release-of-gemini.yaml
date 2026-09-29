@@ -1,0 +1,7 @@
+id: relationship:gemini-3.8-release-of-gemini
+type: relationship
+subject: release:gemini-3.8
+predicate: release_of
+object: family:gemini
+claim_refs:
+  - claim:gemini-3.8-release-of-gemini

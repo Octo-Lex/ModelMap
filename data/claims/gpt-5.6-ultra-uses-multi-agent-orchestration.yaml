@@ -1,0 +1,9 @@
+id: claim:gpt-5.6-ultra-uses-multi-agent-orchestration
+type: claim
+subject: product:gpt-5.6-ultra
+predicate: uses_technique
+object: technique:multi-agent-orchestration
+status: confirmed_primary
+evidence:
+  - source: source:gpt-5.6-announcement
+    locator: Efficient by default, maximum performance on demand — ultra coordinates four agents in parallel by default

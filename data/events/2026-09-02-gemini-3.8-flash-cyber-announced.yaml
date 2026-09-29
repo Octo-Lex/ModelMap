@@ -1,0 +1,9 @@
+id: event:2026-09-02-gemini-3.8-flash-cyber-announced
+type: event
+name: Gemini 3.8 Flash Cyber introduced for trusted defenders
+event_type: model_announced
+subject: variant:gemini-3.8-flash-cyber
+occurred_at: '2026-09-02'
+evidence:
+  - source:gemini-3.8-announcement
+notes: Access was scoped to trusted defenders through Google's Fairwind Program rather than broad public availability.

@@ -1,0 +1,4 @@
+id: variant:gemma-4-31b-dense
+type: model_variant
+name: Gemma 4 31B Dense
+status: canonical

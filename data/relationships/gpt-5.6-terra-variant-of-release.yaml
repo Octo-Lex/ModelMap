@@ -1,0 +1,7 @@
+id: relationship:gpt-5.6-terra-variant-of-release
+type: relationship
+subject: variant:gpt-5.6-terra
+predicate: variant_of
+object: release:gpt-5.6
+claim_refs:
+  - claim:gpt-5.6-terra-variant-of-release

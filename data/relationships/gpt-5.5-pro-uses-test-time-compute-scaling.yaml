@@ -1,0 +1,7 @@
+id: relationship:gpt-5.5-pro-uses-test-time-compute-scaling
+type: relationship
+subject: variant:gpt-5.5-pro
+predicate: uses_technique
+object: technique:test-time-compute-scaling
+claim_refs:
+  - claim:gpt-5.5-pro-uses-test-time-compute-scaling

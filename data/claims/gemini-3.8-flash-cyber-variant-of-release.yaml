@@ -1,0 +1,9 @@
+id: claim:gemini-3.8-flash-cyber-variant-of-release
+type: claim
+subject: variant:gemini-3.8-flash-cyber
+predicate: variant_of
+object: release:gemini-3.8
+status: confirmed_primary
+evidence:
+  - source: source:gemini-3.8-announcement
+    locator: Gemini 3.8 introduces two variants powered by the same foundational intelligence

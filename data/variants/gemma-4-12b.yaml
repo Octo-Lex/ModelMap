@@ -1,0 +1,5 @@
+id: variant:gemma-4-12b
+type: model_variant
+name: Gemma 4 12B
+description: Mid-sized encoder-free multimodal Gemma 4 model with native audio input and MTP drafters.
+status: canonical

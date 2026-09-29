@@ -1,0 +1,5 @@
+id: release:gemini-3.8
+type: model_release
+name: Gemini 3.8
+description: Shared Gemini 3.8 foundational release with Flash and Flash Cyber variants.
+status: canonical

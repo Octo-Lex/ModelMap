@@ -1,0 +1,4 @@
+id: variant:gemma-4-26b-moe
+type: model_variant
+name: Gemma 4 26B MoE
+status: canonical

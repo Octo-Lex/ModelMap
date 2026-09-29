@@ -1,0 +1,5 @@
+id: variant:gpt-5.5-pro
+type: model_variant
+name: GPT-5.5 Pro
+description: Higher-compute GPT-5.5 configuration using parallel test-time compute.
+status: canonical
