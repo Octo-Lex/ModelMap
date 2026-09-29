@@ -1,0 +1,4 @@
+id: variant:qwen3-32b
+type: model_variant
+name: Qwen3-32B
+status: canonical

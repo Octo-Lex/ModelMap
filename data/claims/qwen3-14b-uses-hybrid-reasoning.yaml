@@ -1,6 +1,6 @@
-id: claim:qwen3-uses-hybrid-reasoning
+id: claim:qwen3-14b-uses-hybrid-reasoning
 type: claim
-subject: variant:qwen3-post-trained
+subject: variant:qwen3-14b
 predicate: uses_technique
 object: technique:hybrid-reasoning
 status: confirmed_primary

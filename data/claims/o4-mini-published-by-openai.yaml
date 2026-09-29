@@ -1,0 +1,9 @@
+id: claim:o4-mini-published-by-openai
+type: claim
+subject: release:o4-mini
+predicate: published_by
+object: org:openai
+status: confirmed_primary
+evidence:
+  - source: source:o3-o4-mini-announcement
+    locator: OpenAI announcement

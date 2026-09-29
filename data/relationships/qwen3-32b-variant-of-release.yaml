@@ -1,0 +1,7 @@
+id: relationship:qwen3-32b-variant-of-release
+type: relationship
+subject: variant:qwen3-32b
+predicate: variant_of
+object: release:qwen3
+claim_refs:
+  - claim:qwen3-32b-variant-of-release

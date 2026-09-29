@@ -1,0 +1,7 @@
+id: relationship:o4-mini-published-by-openai
+type: relationship
+subject: release:o4-mini
+predicate: published_by
+object: org:openai
+claim_refs:
+  - claim:o4-mini-published-by-openai

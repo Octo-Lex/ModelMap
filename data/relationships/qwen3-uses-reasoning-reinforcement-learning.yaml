@@ -1,7 +1,0 @@
-id: relationship:qwen3-uses-reasoning-reinforcement-learning
-type: relationship
-subject: variant:qwen3-post-trained
-predicate: uses_technique
-object: technique:reasoning-reinforcement-learning
-claim_refs:
-  - claim:qwen3-uses-reasoning-reinforcement-learning

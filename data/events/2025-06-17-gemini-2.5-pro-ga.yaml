@@ -1,0 +1,8 @@
+id: event:2025-06-17-gemini-2.5-pro-ga
+type: event
+name: Gemini 2.5 Pro generally available
+event_type: api_released
+subject: release:gemini-2.5-pro
+occurred_at: '2025-06-17'
+evidence:
+  - source:gemini-2.5-ga

@@ -1,0 +1,9 @@
+id: claim:qwen3-published-by-alibaba-cloud
+type: claim
+subject: release:qwen3
+predicate: published_by
+object: org:alibaba-cloud
+status: confirmed_primary
+evidence:
+  - source: source:qwen3-announcement
+    locator: Qwen Team official announcement

@@ -1,0 +1,9 @@
+id: claim:qwen3-1.7b-uses-reasoning-reinforcement-learning
+type: claim
+subject: variant:qwen3-1.7b
+predicate: uses_technique
+object: technique:reasoning-reinforcement-learning
+status: confirmed_primary
+evidence:
+  - source: source:qwen3-announcement
+    locator: 'Post-training: four-stage pipeline with reasoning-based RL and general RL'

@@ -1,0 +1,7 @@
+id: relationship:gpt-oss-published-by-openai
+type: relationship
+subject: release:gpt-oss
+predicate: published_by
+object: org:openai
+claim_refs:
+  - claim:gpt-oss-published-by-openai

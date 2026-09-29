@@ -1,0 +1,4 @@
+id: variant:qwen3-0.6b
+type: model_variant
+name: Qwen3-0.6B
+status: canonical

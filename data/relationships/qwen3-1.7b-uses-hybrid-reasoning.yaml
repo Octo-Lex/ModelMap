@@ -1,0 +1,7 @@
+id: relationship:qwen3-1.7b-uses-hybrid-reasoning
+type: relationship
+subject: variant:qwen3-1.7b
+predicate: uses_technique
+object: technique:hybrid-reasoning
+claim_refs:
+  - claim:qwen3-1.7b-uses-hybrid-reasoning

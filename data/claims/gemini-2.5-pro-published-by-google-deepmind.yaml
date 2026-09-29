@@ -1,0 +1,9 @@
+id: claim:gemini-2.5-pro-published-by-google-deepmind
+type: claim
+subject: release:gemini-2.5-pro
+predicate: published_by
+object: org:google-deepmind
+status: confirmed_primary
+evidence:
+  - source: source:gemini-2.5-announcement
+    locator: Gemini model announcement by Google DeepMind

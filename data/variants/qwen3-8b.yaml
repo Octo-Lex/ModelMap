@@ -1,0 +1,4 @@
+id: variant:qwen3-8b
+type: model_variant
+name: Qwen3-8B
+status: canonical

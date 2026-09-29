@@ -1,9 +1,0 @@
-id: claim:qwen3-uses-reasoning-reinforcement-learning
-type: claim
-subject: variant:qwen3-post-trained
-predicate: uses_technique
-object: technique:reasoning-reinforcement-learning
-status: confirmed_primary
-evidence:
-  - source: source:qwen3-announcement
-    locator: 'Key Features: four-stage training pipeline'

@@ -1,0 +1,9 @@
+id: claim:gpt-5-published-by-openai
+type: claim
+subject: release:gpt-5
+predicate: published_by
+object: org:openai
+status: confirmed_primary
+evidence:
+  - source: source:gpt-5-announcement
+    locator: OpenAI announcement

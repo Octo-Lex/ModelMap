@@ -1,7 +1,0 @@
-id: relationship:qwen3-uses-hybrid-reasoning
-type: relationship
-subject: variant:qwen3-post-trained
-predicate: uses_technique
-object: technique:hybrid-reasoning
-claim_refs:
-  - claim:qwen3-uses-hybrid-reasoning
