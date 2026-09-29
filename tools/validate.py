@@ -24,6 +24,12 @@ SCHEMA_BY_TYPE = {
     "event": "event.schema.json",
 }
 
+CONCEPTUAL_PREDECESSOR_CLAIM_PREDICATES = {
+    "variant_of_technique",
+    "generalizes",
+    "extends",
+}
+
 
 def load_schema(name: str) -> dict[str, Any]:
     with (SCHEMAS / name).open("r", encoding="utf-8") as fh:
@@ -31,19 +37,30 @@ def load_schema(name: str) -> dict[str, Any]:
 
 
 def claim_supports_relationship(relationship: dict[str, Any], claim: dict[str, Any]) -> bool:
-    """Return whether a cited claim supports the relationship's materialized endpoints.
+    """Return whether a cited claim supports the relationship's predicate and endpoints.
 
-    Conceptual predecessor relationships are intentionally oriented predecessor -> successor,
-    while their source claims are written from the successor's perspective (for example,
-    MQA variant_of MHA). All other relationship types require identical endpoint order.
+    Most materialized relationships require the supporting claim to use the same
+    subject, predicate, and object. Conceptual-predecessor relationships are the
+    deliberate exception: the edge is oriented predecessor -> successor while the
+    source claim is written from the successor's perspective using a small explicit
+    vocabulary such as `variant_of_technique`, `generalizes`, or `extends`.
     """
     relationship_subject = relationship.get("subject")
     relationship_object = relationship.get("object")
-    if relationship.get("predicate") == "conceptual_predecessor_of":
-        expected_subject, expected_object = relationship_object, relationship_subject
-    else:
-        expected_subject, expected_object = relationship_subject, relationship_object
-    return claim.get("subject") == expected_subject and claim.get("object") == expected_object
+    relationship_predicate = relationship.get("predicate")
+
+    if relationship_predicate == "conceptual_predecessor_of":
+        return (
+            claim.get("subject") == relationship_object
+            and claim.get("object") == relationship_subject
+            and claim.get("predicate") in CONCEPTUAL_PREDECESSOR_CLAIM_PREDICATES
+        )
+
+    return (
+        claim.get("subject") == relationship_subject
+        and claim.get("object") == relationship_object
+        and claim.get("predicate") == relationship_predicate
+    )
 
 
 def main() -> int:
@@ -114,7 +131,8 @@ def main() -> int:
                     rel = path.relative_to(ROOT)
                     errors.append(
                         f"{rel}: claim_ref {claim_ref!r} does not support relationship "
-                        f"endpoints {record.get('subject')!r} -> {record.get('object')!r}"
+                        f"predicate/endpoints {record.get('subject')!r} "
+                        f"-{record.get('predicate')}-> {record.get('object')!r}"
                     )
         elif record_type == "event":
             require_id(path, record.get("subject"))

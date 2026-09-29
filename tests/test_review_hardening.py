@@ -122,7 +122,7 @@ class ReviewHardeningTests(unittest.TestCase):
             build_year.build_payload(2023, [invalid_event]),
         )
 
-    def test_relationship_claim_endpoints_must_match(self) -> None:
+    def test_relationship_claim_predicate_and_endpoints_must_match(self) -> None:
         relationship = {
             "subject": "release:example",
             "predicate": "uses_technique",
@@ -130,10 +130,17 @@ class ReviewHardeningTests(unittest.TestCase):
         }
         matching_claim = {
             "subject": "release:example",
+            "predicate": "uses_technique",
             "object": "technique:gqa",
         }
         unrelated_claim = {
             "subject": "release:other",
+            "predicate": "uses_technique",
+            "object": "technique:gqa",
+        }
+        contradictory_claim = {
+            "subject": "release:example",
+            "predicate": "does_not_use_technique",
             "object": "technique:gqa",
         }
         self.assertTrue(
@@ -142,8 +149,11 @@ class ReviewHardeningTests(unittest.TestCase):
         self.assertFalse(
             corpus_validate.claim_supports_relationship(relationship, unrelated_claim)
         )
+        self.assertFalse(
+            corpus_validate.claim_supports_relationship(relationship, contradictory_claim)
+        )
 
-    def test_conceptual_predecessor_claim_uses_reverse_endpoint_order(self) -> None:
+    def test_conceptual_predecessor_claim_requires_reverse_order_and_mapped_predicate(self) -> None:
         relationship = {
             "subject": "technique:multi-head-attention",
             "predicate": "conceptual_predecessor_of",
@@ -151,12 +161,21 @@ class ReviewHardeningTests(unittest.TestCase):
         }
         successor_perspective_claim = {
             "subject": "technique:multi-query-attention",
+            "predicate": "variant_of_technique",
+            "object": "technique:multi-head-attention",
+        }
+        wrong_predicate_claim = {
+            "subject": "technique:multi-query-attention",
+            "predicate": "unrelated",
             "object": "technique:multi-head-attention",
         }
         self.assertTrue(
             corpus_validate.claim_supports_relationship(
                 relationship, successor_perspective_claim
             )
+        )
+        self.assertFalse(
+            corpus_validate.claim_supports_relationship(relationship, wrong_predicate_claim)
         )
 
     def test_canonical_file_contains_one_record(self) -> None:
