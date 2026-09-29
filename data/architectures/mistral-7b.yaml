@@ -1,0 +1,41 @@
+id: arch:mistral-7b
+type: architecture_spec
+name: Mistral 7B architecture
+target: release:mistral-7b
+status: reviewed
+topology:
+  type: decoder_only
+dimensions:
+  layers: 32
+  d_model: 4096
+  head_dim: 128
+tokenization:
+  vocab_size: 32000
+context:
+  pretrained_length: 8192
+components:
+  attention: grouped_query_attention_with_sliding_window
+attention:
+  query_heads: 32
+  kv_heads: 8
+  sliding_window: 4096
+feed_forward:
+  intermediate_dim: 14336
+evidence:
+  - source: source:mistral-7b-paper
+    locator: '§2 Architectural details, Table 1'
+    fields:
+      - dimensions.layers
+      - dimensions.d_model
+      - dimensions.head_dim
+      - tokenization.vocab_size
+      - context.pretrained_length
+      - attention.query_heads
+      - attention.kv_heads
+      - attention.sliding_window
+      - feed_forward.intermediate_dim
+  - source: source:mistral-7b-paper
+    locator: 'Abstract and §2 Architectural details (GQA/SWA; Figure 3 causal mask)'
+    fields:
+      - topology.type
+      - components.attention
