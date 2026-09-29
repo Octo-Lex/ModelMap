@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://modelmap.dev/schemas/catalog-view.schema.json",
+  "title": "ModelMap Generated Catalog View",
+  "type": "object",
+  "required": ["generated_from", "filter_type", "counts", "records"],
+  "properties": {
+    "generated_from": {"const": "canonical-records"},
+    "filter_type": {"type": ["string", "null"]},
+    "counts": {"type": "object", "additionalProperties": {"type": "integer", "minimum": 0}},
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "type", "record_path"],
+        "properties": {
+          "id": {"type": "string"},
+          "type": {"type": "string"},
+          "record_path": {"type": "string"}
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": false
+}

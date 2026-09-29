@@ -20,7 +20,7 @@ jobs:
           cache-dependency-path: requirements-dev.txt
       - name: Install validation dependencies
         run: python -m pip install -r requirements-dev.txt
-      - name: Run review-hardening regression tests
+      - name: Run regression and generated-view tests
         run: python -m unittest discover -s tests -v
       - name: Validate schemas, records, and references
         run: python tools/validate.py
@@ -46,3 +46,11 @@ jobs:
         run: python tools/build_year.py 2025 --format json > /tmp/modelmap-2025.json
       - name: Build 2026 year view
         run: python tools/build_year.py 2026 --format json > /tmp/modelmap-2026.json
+      - name: Build browse catalog
+        run: python tools/build_catalog.py > /tmp/modelmap-catalog.json
+      - name: Build core knowledge graph
+        run: python tools/build_graph.py --scope core > /tmp/modelmap-graph-core.json
+      - name: Build full knowledge graph
+        run: python tools/build_graph.py --scope all > /tmp/modelmap-graph-all.json
+      - name: Build representative model entity view
+        run: python tools/build_entity.py release:gpt-5.6 > /tmp/modelmap-gpt-5.6.json
