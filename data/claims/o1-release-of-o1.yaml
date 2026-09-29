@@ -1,0 +1,9 @@
+id: claim:o1-release-of-o1
+type: claim
+subject: release:o1
+predicate: release_of
+object: family:o1
+status: confirmed_primary
+evidence:
+  - source: source:o1-system-card
+    locator: Introduction and o1-dec5-release checkpoint

@@ -1,0 +1,4 @@
+id: release:o1
+type: model_release
+name: OpenAI o1
+status: canonical
