@@ -58,6 +58,20 @@ class ReviewHardeningTests(unittest.TestCase):
             },
         )
 
+    def test_claim_endpoint_rejects_unsupported_namespace(self) -> None:
+        self.assert_invalid(
+            "claim.schema.json",
+            {
+                "id": "claim:unsupported-namespace",
+                "type": "claim",
+                "subject": "unsupported:anything",
+                "predicate": "uses_technique",
+                "object": "technique:gqa",
+                "status": "inferred",
+                "evidence": [],
+            },
+        )
+
     def test_relationship_endpoint_requires_canonical_id(self) -> None:
         self.assert_invalid(
             "relationship.schema.json",
