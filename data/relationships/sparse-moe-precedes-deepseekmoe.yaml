@@ -1,0 +1,7 @@
+id: relationship:sparse-moe-precedes-deepseekmoe
+type: relationship
+subject: technique:sparse-mixture-of-experts
+predicate: conceptual_predecessor_of
+object: technique:deepseek-moe
+claim_refs:
+  - claim:deepseekmoe-extends-sparse-moe

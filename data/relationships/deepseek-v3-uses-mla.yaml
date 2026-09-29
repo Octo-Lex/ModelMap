@@ -1,0 +1,7 @@
+id: relationship:deepseek-v3-uses-mla
+type: relationship
+subject: release:deepseek-v3
+predicate: uses_technique
+object: technique:multi-head-latent-attention
+claim_refs:
+  - claim:deepseek-v3-uses-mla

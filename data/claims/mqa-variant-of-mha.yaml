@@ -1,0 +1,9 @@
+id: claim:mqa-variant-of-mha
+type: claim
+subject: technique:multi-query-attention
+predicate: variant_of_technique
+object: technique:multi-head-attention
+status: confirmed_primary
+evidence:
+  - source: source:multi-query-attention
+    locator: Abstract

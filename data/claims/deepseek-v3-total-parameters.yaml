@@ -1,0 +1,9 @@
+id: claim:deepseek-v3-total-parameters
+type: claim
+subject: release:deepseek-v3
+predicate: total_parameters
+value: 671000000000
+status: confirmed_primary
+evidence:
+  - source: source:deepseek-v3-report
+    locator: Abstract

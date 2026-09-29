@@ -1,0 +1,6 @@
+id: technique:multi-head-attention
+type: technique
+name: Multi-Head Attention
+aliases:
+  - MHA
+status: draft
