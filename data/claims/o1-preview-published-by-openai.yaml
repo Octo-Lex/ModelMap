@@ -1,0 +1,9 @@
+id: claim:o1-preview-published-by-openai
+type: claim
+subject: release:o1-preview
+predicate: published_by
+object: org:openai
+status: confirmed_primary
+evidence:
+  - source: source:o1-reasoning-release
+    locator: OpenAI release

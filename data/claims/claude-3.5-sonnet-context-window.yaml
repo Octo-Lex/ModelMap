@@ -1,0 +1,9 @@
+id: claim:claude-3.5-sonnet-context-window
+type: claim
+subject: release:claude-3.5-sonnet
+predicate: context_window_tokens
+value: 200000
+status: confirmed_primary
+evidence:
+  - source: source:claude-3.5-sonnet-announcement
+    locator: availability and pricing section

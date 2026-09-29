@@ -1,0 +1,7 @@
+id: relationship:o1-preview-uses-test-time-compute-scaling
+type: relationship
+subject: release:o1-preview
+predicate: uses_technique
+object: technique:test-time-compute-scaling
+claim_refs:
+  - claim:o1-preview-uses-test-time-compute-scaling

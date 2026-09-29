@@ -1,0 +1,7 @@
+id: relationship:claude-3-published-by-anthropic
+type: relationship
+subject: release:claude-3
+predicate: published_by
+object: org:anthropic
+claim_refs:
+  - claim:claude-3-published-by-anthropic

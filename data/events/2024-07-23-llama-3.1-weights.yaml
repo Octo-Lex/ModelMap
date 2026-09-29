@@ -1,0 +1,8 @@
+id: event:2024-07-23-llama-3.1-weights
+type: event
+name: Llama 3.1 weights released
+event_type: weights_released
+subject: release:llama-3.1
+occurred_at: '2024-07-23'
+evidence:
+  - source:llama-3.1-announcement

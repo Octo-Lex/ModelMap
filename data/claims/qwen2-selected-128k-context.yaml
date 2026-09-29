@@ -1,0 +1,9 @@
+id: claim:qwen2-selected-128k-context
+type: claim
+subject: release:qwen2
+predicate: selected_instruct_context_tokens
+value: 128000
+status: confirmed_primary
+evidence:
+  - source: source:qwen2-announcement
+    locator: Introduction

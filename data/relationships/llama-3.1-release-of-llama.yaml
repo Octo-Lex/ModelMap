@@ -1,0 +1,7 @@
+id: relationship:llama-3.1-release-of-llama
+type: relationship
+subject: release:llama-3.1
+predicate: release_of
+object: family:llama
+claim_refs:
+  - claim:llama-3.1-release-of-llama

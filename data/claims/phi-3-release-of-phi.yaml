@@ -1,0 +1,9 @@
+id: claim:phi-3-release-of-phi
+type: claim
+subject: release:phi-3
+predicate: release_of
+object: family:phi
+status: confirmed_primary
+evidence:
+  - source: source:phi-3-report
+    locator: abstract

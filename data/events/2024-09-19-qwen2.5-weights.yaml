@@ -1,0 +1,8 @@
+id: event:2024-09-19-qwen2.5-weights
+type: event
+name: Qwen2.5 open-weight family released
+event_type: weights_released
+subject: release:qwen2.5
+occurred_at: '2024-09-19'
+evidence:
+  - source:qwen2.5-announcement

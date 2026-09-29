@@ -1,0 +1,8 @@
+id: source:gemma-1-report
+type: source
+title: 'Gemma: Open Models Based on Gemini Research and Technology'
+source_type: technical_report
+url: https://storage.googleapis.com/deepmind-media/gemma/gemma-report.pdf
+publisher: Google DeepMind
+published_at: '2024-02-21'
+retrieved_at: '2026-09-29T08:05:00Z'

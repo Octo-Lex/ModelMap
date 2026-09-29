@@ -1,0 +1,9 @@
+id: claim:o1-preview-uses-test-time-compute-scaling
+type: claim
+subject: release:o1-preview
+predicate: uses_technique
+object: technique:test-time-compute-scaling
+status: reported_primary
+evidence:
+  - source: source:o1-reasoning-release
+    locator: train-time and test-time compute scaling description

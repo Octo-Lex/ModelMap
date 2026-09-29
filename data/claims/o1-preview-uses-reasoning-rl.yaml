@@ -1,0 +1,9 @@
+id: claim:o1-preview-uses-reasoning-rl
+type: claim
+subject: release:o1-preview
+predicate: uses_technique
+object: technique:reasoning-reinforcement-learning
+status: reported_primary
+evidence:
+  - source: source:o1-reasoning-release
+    locator: large-scale reinforcement learning description

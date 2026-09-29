@@ -1,0 +1,9 @@
+id: claim:gemma-2-uses-knowledge-distillation
+type: claim
+subject: release:gemma-2
+predicate: uses_technique
+object: technique:knowledge-distillation
+status: confirmed_primary
+evidence:
+  - source: source:gemma-2-report
+    locator: abstract and introduction; applies to 2B and 9B models

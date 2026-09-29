@@ -1,0 +1,4 @@
+id: release:claude-3.5-sonnet
+type: model_release
+name: Claude 3.5 Sonnet
+status: canonical

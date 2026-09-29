@@ -1,0 +1,7 @@
+id: relationship:gemini-2.0-flash-release-of-gemini
+type: relationship
+subject: release:gemini-2.0-flash
+predicate: release_of
+object: family:gemini
+claim_refs:
+  - claim:gemini-2.0-flash-release-of-gemini

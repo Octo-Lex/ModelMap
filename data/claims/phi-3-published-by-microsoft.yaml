@@ -1,0 +1,9 @@
+id: claim:phi-3-published-by-microsoft
+type: claim
+subject: release:phi-3
+predicate: published_by
+object: org:microsoft
+status: confirmed_primary
+evidence:
+  - source: source:phi-3-report
+    locator: author affiliations and report context

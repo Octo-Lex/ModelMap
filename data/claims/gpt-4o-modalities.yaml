@@ -1,0 +1,18 @@
+id: claim:gpt-4o-modalities
+type: claim
+subject: release:gpt-4o
+predicate: modalities
+value:
+  input:
+    - text
+    - audio
+    - image
+    - video
+  output:
+    - text
+    - audio
+    - image
+status: confirmed_primary
+evidence:
+  - source: source:gpt-4o-announcement
+    locator: announcement opening

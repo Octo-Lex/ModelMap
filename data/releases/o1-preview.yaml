@@ -1,0 +1,4 @@
+id: release:o1-preview
+type: model_release
+name: OpenAI o1-preview
+status: canonical

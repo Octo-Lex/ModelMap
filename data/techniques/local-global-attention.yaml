@@ -1,0 +1,5 @@
+id: technique:local-global-attention
+type: technique
+name: Interleaved Local-Global Attention
+status: canonical
+description: An attention pattern that alternates or combines local-window attention with global attention layers to trade off efficiency and long-range interaction.

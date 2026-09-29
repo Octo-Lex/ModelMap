@@ -1,0 +1,9 @@
+id: claim:phi-3-mini-training-tokens
+type: claim
+subject: release:phi-3
+predicate: phi_3_mini_training_tokens
+value: 3300000000000
+status: confirmed_primary
+evidence:
+  - source: source:phi-3-report
+    locator: abstract

@@ -1,0 +1,9 @@
+id: claim:gemma-1-published-by-google-deepmind
+type: claim
+subject: release:gemma-1
+predicate: published_by
+object: org:google-deepmind
+status: confirmed_primary
+evidence:
+  - source: source:gemma-1-report
+    locator: title page and introduction

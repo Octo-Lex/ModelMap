@@ -1,0 +1,9 @@
+id: claim:phi-3-mini-parameter-count
+type: claim
+subject: release:phi-3
+predicate: phi_3_mini_parameter_count
+value: 3800000000
+status: confirmed_primary
+evidence:
+  - source: source:phi-3-report
+    locator: abstract

@@ -1,0 +1,9 @@
+id: claim:claude-3.5-sonnet-release-of-claude
+type: claim
+subject: release:claude-3.5-sonnet
+predicate: release_of
+object: family:claude
+status: confirmed_primary
+evidence:
+  - source: source:claude-3.5-sonnet-announcement
+    locator: announcement opening

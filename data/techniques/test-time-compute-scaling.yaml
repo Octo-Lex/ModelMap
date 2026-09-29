@@ -1,0 +1,7 @@
+id: technique:test-time-compute-scaling
+type: technique
+name: Test-Time Compute Scaling
+aliases:
+  - Inference-time compute scaling
+status: canonical
+description: Increasing computation at inference, such as allowing more internal reasoning time or sampling/selection, to improve task performance without changing base parameters.

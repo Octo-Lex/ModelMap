@@ -1,0 +1,4 @@
+id: release:gemma-1
+type: model_release
+name: Gemma
+status: canonical

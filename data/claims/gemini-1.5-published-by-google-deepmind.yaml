@@ -1,0 +1,9 @@
+id: claim:gemini-1.5-published-by-google-deepmind
+type: claim
+subject: release:gemini-1.5
+predicate: published_by
+object: org:google-deepmind
+status: confirmed_primary
+evidence:
+  - source: source:gemini-1.5-announcement
+    locator: Gemini team attribution

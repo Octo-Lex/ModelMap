@@ -1,0 +1,9 @@
+id: claim:gemma-2-uses-gqa
+type: claim
+subject: release:gemma-2
+predicate: uses_technique
+object: technique:grouped-query-attention
+status: confirmed_primary
+evidence:
+  - source: source:gemma-2-report
+    locator: abstract and introduction

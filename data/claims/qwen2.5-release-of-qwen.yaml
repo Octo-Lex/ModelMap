@@ -1,0 +1,9 @@
+id: claim:qwen2.5-release-of-qwen
+type: claim
+subject: release:qwen2.5
+predicate: release_of
+object: family:qwen
+status: confirmed_primary
+evidence:
+  - source: source:qwen2.5-announcement
+    locator: Introduction

@@ -1,0 +1,9 @@
+id: claim:gemini-1.5-release-of-gemini
+type: claim
+subject: release:gemini-1.5
+predicate: release_of
+object: family:gemini
+status: confirmed_primary
+evidence:
+  - source: source:gemini-1.5-announcement
+    locator: Introducing Gemini 1.5
