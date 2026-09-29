@@ -30,6 +30,17 @@ CONCEPTUAL_PREDECESSOR_CLAIM_PREDICATES = {
     "extends",
 }
 
+ARCHITECTURE_FACT_SECTIONS = (
+    "topology",
+    "dimensions",
+    "tokenization",
+    "context",
+    "components",
+    "attention",
+    "feed_forward",
+    "modalities",
+)
+
 
 def load_schema(name: str) -> dict[str, Any]:
     with (SCHEMAS / name).open("r", encoding="utf-8") as fh:
@@ -63,6 +74,118 @@ def claim_supports_relationship(relationship: dict[str, Any], claim: dict[str, A
     )
 
 
+def architecture_fact_paths(record: dict[str, Any]) -> set[str]:
+    """Return populated architecture fact paths that require field-level evidence."""
+    fields: set[str] = set()
+    for section in ARCHITECTURE_FACT_SECTIONS:
+        value = record.get(section)
+        if not isinstance(value, dict):
+            continue
+        for key, field_value in value.items():
+            if field_value is not None:
+                fields.add(f"{section}.{key}")
+
+    # A heterogeneous layer plan is evidenced as one atomic fact. Per-block notes
+    # and properties remain covered by the evidence attached to the full plan.
+    if record.get("blocks") is not None:
+        fields.add("blocks")
+    return fields
+
+
+def architecture_record_errors(
+    record: dict[str, Any],
+    by_id: dict[str, tuple[Path, dict[str, Any]]],
+) -> list[str]:
+    """Validate architecture targets, field evidence, and block-plan invariants."""
+    messages: list[str] = []
+
+    target_ref = record.get("target")
+    target = by_id.get(target_ref) if isinstance(target_ref, str) else None
+    if target is None:
+        messages.append(f"unresolved architecture target {target_ref!r}")
+    elif target[1].get("type") not in {"model_release", "model_variant"}:
+        messages.append(
+            f"architecture target {target_ref!r} must reference a model_release "
+            f"or model_variant, found {target[1].get('type')!r}"
+        )
+
+    fact_paths = architecture_fact_paths(record)
+    covered_fields: set[str] = set()
+    for evidence in record.get("evidence", []):
+        if not isinstance(evidence, dict):
+            continue
+
+        source_ref = evidence.get("source")
+        source = by_id.get(source_ref) if isinstance(source_ref, str) else None
+        source_is_valid = source is not None and source[1].get("type") == "source"
+        if source is None:
+            messages.append(f"unresolved architecture evidence source {source_ref!r}")
+        elif not source_is_valid:
+            messages.append(
+                f"architecture evidence {source_ref!r} must reference type 'source', "
+                f"found {source[1].get('type')!r}"
+            )
+
+        fields = evidence.get("fields", [])
+        if not isinstance(fields, list):
+            continue
+        for field in fields:
+            if not isinstance(field, str):
+                continue
+            if field not in fact_paths:
+                messages.append(
+                    f"architecture evidence field {field!r} does not name a populated "
+                    "architecture fact"
+                )
+            elif source_is_valid:
+                covered_fields.add(field)
+
+    for field in sorted(fact_paths - covered_fields):
+        messages.append(f"architecture field {field!r} is missing evidence")
+
+    blocks = record.get("blocks")
+    dimensions = record.get("dimensions")
+    layer_count = None
+    if isinstance(dimensions, dict) and type(dimensions.get("layers")) is int:
+        layer_count = dimensions["layers"]
+
+    valid_ranges: list[tuple[int, int, int]] = []
+    if isinstance(blocks, list):
+        for index, block in enumerate(blocks):
+            if not isinstance(block, dict):
+                continue
+            block_range = block.get("range")
+            if not (
+                isinstance(block_range, list)
+                and len(block_range) == 2
+                and all(type(value) is int for value in block_range)
+            ):
+                continue
+
+            start, end = block_range
+            if start > end:
+                messages.append(
+                    f"blocks[{index}].range start {start} exceeds end {end}"
+                )
+                continue
+            if layer_count is not None and end >= layer_count:
+                messages.append(
+                    f"blocks[{index}].range end {end} is outside "
+                    f"dimensions.layers={layer_count}"
+                )
+
+            for previous_index, previous_start, previous_end in valid_ranges:
+                if start <= previous_end and previous_start <= end:
+                    messages.append(
+                        f"blocks[{index}].range [{start}, {end}] overlaps "
+                        f"blocks[{previous_index}].range "
+                        f"[{previous_start}, {previous_end}]"
+                    )
+            valid_ranges.append((index, start, end))
+
+    return messages
+
+
 def main() -> int:
     errors: list[str] = []
     try:
@@ -80,7 +203,9 @@ def main() -> int:
     for path, record in records:
         rel = path.relative_to(ROOT)
         schema_name = SCHEMA_BY_TYPE.get(record.get("type"), "entity.schema.json")
-        validator = Draft202012Validator(schema_cache[schema_name], format_checker=FormatChecker())
+        validator = Draft202012Validator(
+            schema_cache[schema_name], format_checker=FormatChecker()
+        )
         for err in sorted(validator.iter_errors(record), key=lambda e: list(e.path)):
             location = ".".join(str(part) for part in err.path) or "<root>"
             errors.append(f"{rel}: {location}: {err.message}")
@@ -134,6 +259,10 @@ def main() -> int:
                         f"predicate/endpoints {record.get('subject')!r} "
                         f"-{record.get('predicate')}-> {record.get('object')!r}"
                     )
+        elif record_type == "architecture_spec":
+            rel = path.relative_to(ROOT)
+            for message in architecture_record_errors(record, by_id):
+                errors.append(f"{rel}: {message}")
         elif record_type == "event":
             require_id(path, record.get("subject"))
             for source_ref in record.get("evidence", []):
