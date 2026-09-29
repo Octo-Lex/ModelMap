@@ -1,0 +1,9 @@
+id: event:2024-12-20-o3-mini-previewed
+type: event
+name: OpenAI o3-mini previewed
+event_type: model_announced
+subject: release:o3-mini
+occurred_at: '2024-12-20'
+evidence:
+  - source:o3-preview-day12
+  - source:o3-mini-early-access

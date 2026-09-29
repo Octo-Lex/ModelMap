@@ -1,0 +1,7 @@
+id: relationship:o3-mini-release-of-o-series
+type: relationship
+subject: release:o3-mini
+predicate: release_of
+object: family:o-series
+claim_refs:
+  - claim:o3-mini-release-of-family

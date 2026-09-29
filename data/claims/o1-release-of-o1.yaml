@@ -2,7 +2,7 @@ id: claim:o1-release-of-o1
 type: claim
 subject: release:o1
 predicate: release_of
-object: family:o1
+object: family:o-series
 status: confirmed_primary
 evidence:
   - source: source:o1-system-card

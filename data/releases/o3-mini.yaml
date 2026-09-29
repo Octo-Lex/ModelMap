@@ -1,0 +1,4 @@
+id: release:o3-mini
+type: model_release
+name: OpenAI o3-mini
+status: canonical
