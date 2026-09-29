@@ -32,3 +32,5 @@ jobs:
         run: python tools/build_year.py 2024 --format json > /tmp/modelmap-2024.json
       - name: Build 2025 year view
         run: python tools/build_year.py 2025 --format json > /tmp/modelmap-2025.json
+      - name: Build 2026 year view
+        run: python tools/build_year.py 2026 --format json > /tmp/modelmap-2026.json

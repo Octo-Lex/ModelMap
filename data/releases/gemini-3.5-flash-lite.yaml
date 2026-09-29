@@ -1,0 +1,4 @@
+id: release:gemini-3.5-flash-lite
+type: model_release
+name: Gemini 3.5 Flash-Lite
+status: canonical

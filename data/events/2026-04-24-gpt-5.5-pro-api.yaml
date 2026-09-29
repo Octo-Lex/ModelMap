@@ -1,0 +1,9 @@
+id: event:2026-04-24-gpt-5.5-pro-api
+type: event
+name: GPT-5.5 Pro API released
+event_type: api_released
+subject: variant:gpt-5.5-pro
+occurred_at: '2026-04-24'
+evidence:
+  - source:gpt-5.5-announcement
+  - source:gpt-5.5-system-card

@@ -1,0 +1,5 @@
+id: variant:qwen3-max-thinking
+type: model_variant
+name: Qwen3-Max-Thinking
+description: Reasoning-focused Qwen3-Max configuration released after Qwen3-Max-Instruct.
+status: canonical

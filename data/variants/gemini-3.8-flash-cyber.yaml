@@ -1,0 +1,5 @@
+id: variant:gemini-3.8-flash-cyber
+type: model_variant
+name: Gemini 3.8 Flash Cyber
+description: Trusted-defender cybersecurity variant of the shared Gemini 3.8 foundational intelligence.
+status: canonical

@@ -1,0 +1,9 @@
+id: event:2026-06-12-claude-fable-5-access-suspended
+type: event
+name: Claude Fable 5 access suspended
+event_type: access_suspended
+subject: product:claude-fable-5-global-access
+occurred_at: '2026-06-12'
+evidence:
+  - source:claude-fable-mythos-5-suspension
+notes: Anthropic disabled Fable 5 access for all users to comply with the directive.

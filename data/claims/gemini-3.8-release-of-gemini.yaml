@@ -1,0 +1,9 @@
+id: claim:gemini-3.8-release-of-gemini
+type: claim
+subject: release:gemini-3.8
+predicate: release_of
+object: family:gemini
+status: confirmed_primary
+evidence:
+  - source: source:gemini-3.8-announcement
+    locator: Gemini 3.8 introduces two variants

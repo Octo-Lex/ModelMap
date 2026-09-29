@@ -1,0 +1,8 @@
+id: event:2026-04-24-deepseek-v4-pro-api
+type: event
+name: DeepSeek-V4-Pro API released
+event_type: api_released
+subject: variant:deepseek-v4-pro
+occurred_at: '2026-04-24'
+evidence:
+  - source:deepseek-v4-changelog

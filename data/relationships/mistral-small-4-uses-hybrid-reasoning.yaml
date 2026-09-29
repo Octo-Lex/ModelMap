@@ -1,0 +1,7 @@
+id: relationship:mistral-small-4-uses-hybrid-reasoning
+type: relationship
+subject: release:mistral-small-4
+predicate: uses_technique
+object: technique:hybrid-reasoning
+claim_refs:
+  - claim:mistral-small-4-uses-hybrid-reasoning

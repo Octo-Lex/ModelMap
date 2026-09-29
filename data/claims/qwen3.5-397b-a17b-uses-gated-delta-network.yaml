@@ -1,0 +1,9 @@
+id: claim:qwen3.5-397b-a17b-uses-gated-delta-network
+type: claim
+subject: variant:qwen3.5-397b-a17b
+predicate: uses_technique
+object: technique:gated-delta-network
+status: confirmed_primary
+evidence:
+  - source: source:qwen3.5-announcement
+    locator: hybrid Gated DeltaNet and Gated Attention architecture

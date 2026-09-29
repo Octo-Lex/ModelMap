@@ -1,0 +1,9 @@
+id: claim:qwen3.6-35b-a3b-variant-of-release
+type: claim
+subject: variant:qwen3.6-35b-a3b
+predicate: variant_of
+object: release:qwen3.6
+status: confirmed_primary
+evidence:
+  - source: source:qwen3.6-27b-announcement
+    locator: opening and summary — Qwen3.6-35B-A3B in the Qwen3.6 roster

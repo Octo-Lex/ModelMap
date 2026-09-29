@@ -1,0 +1,5 @@
+id: technique:multi-agent-orchestration
+type: technique
+name: Multi-agent orchestration
+description: Coordinate multiple agents or subagents, often in parallel, and synthesize their work into a single task-level result.
+status: canonical

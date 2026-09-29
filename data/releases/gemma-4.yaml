@@ -1,0 +1,5 @@
+id: release:gemma-4
+type: model_release
+name: Gemma 4
+description: Open multimodal model generation designed for advanced reasoning and agentic workflows across edge and workstation scales.
+status: canonical

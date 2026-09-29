@@ -1,0 +1,4 @@
+id: release:gemini-3.7-flash
+type: model_release
+name: Gemini 3.7 Flash
+status: canonical

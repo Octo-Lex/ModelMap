@@ -1,0 +1,8 @@
+id: event:2026-09-02-gemini-3.8-flash-announced
+type: event
+name: Gemini 3.8 Flash introduced
+event_type: model_announced
+subject: variant:gemini-3.8-flash
+occurred_at: '2026-09-02'
+evidence:
+  - source:gemini-3.8-announcement

@@ -1,0 +1,8 @@
+id: event:2026-07-21-gemini-3.5-flash-lite-api
+type: event
+name: Gemini 3.5 Flash-Lite API released
+event_type: api_released
+subject: release:gemini-3.5-flash-lite
+occurred_at: '2026-07-21'
+evidence:
+  - source:gemini-flash-july-2026-announcement

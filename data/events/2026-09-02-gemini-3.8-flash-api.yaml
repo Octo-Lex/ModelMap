@@ -1,0 +1,8 @@
+id: event:2026-09-02-gemini-3.8-flash-api
+type: event
+name: Gemini 3.8 Flash API released
+event_type: api_released
+subject: variant:gemini-3.8-flash
+occurred_at: '2026-09-02'
+evidence:
+  - source:gemini-3.8-announcement

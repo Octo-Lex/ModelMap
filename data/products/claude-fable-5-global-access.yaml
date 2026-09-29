@@ -1,0 +1,10 @@
+id: product:claude-fable-5-global-access
+type: product_system
+name: Claude Fable 5 global access
+description: Deployment/access channel for the Fable 5 safeguard configuration.
+status: canonical
+metadata:
+  model_variant: variant:claude-fable-5
+  access_scope:
+    geography: global
+    audience: all_users

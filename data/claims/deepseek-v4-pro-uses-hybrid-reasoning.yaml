@@ -1,0 +1,9 @@
+id: claim:deepseek-v4-pro-uses-hybrid-reasoning
+type: claim
+subject: variant:deepseek-v4-pro
+predicate: uses_technique
+object: technique:hybrid-reasoning
+status: confirmed_primary
+evidence:
+  - source: source:deepseek-v4-preview-announcement
+    locator: API availability — both V4-Pro and V4-Flash support Thinking and Non-Thinking modes

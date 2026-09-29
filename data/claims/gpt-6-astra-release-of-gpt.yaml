@@ -1,0 +1,9 @@
+id: claim:gpt-6-astra-release-of-gpt
+type: claim
+subject: release:gpt-6-astra
+predicate: release_of
+object: family:gpt
+status: confirmed_primary
+evidence:
+  - source: source:gpt-6-astra-safety-overview
+    locator: release introduction

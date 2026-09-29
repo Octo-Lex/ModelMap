@@ -1,0 +1,9 @@
+id: claim:gemini-omni-flash-published-by-google-deepmind
+type: claim
+subject: release:gemini-omni-flash
+predicate: published_by
+object: org:google-deepmind
+status: confirmed_primary
+evidence:
+  - source: source:gemini-omni-announcement
+    locator: Google DeepMind announcement

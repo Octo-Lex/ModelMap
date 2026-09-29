@@ -1,0 +1,7 @@
+id: relationship:qwen3-max-thinking-uses-test-time-compute-scaling
+type: relationship
+subject: variant:qwen3-max-thinking
+predicate: uses_technique
+object: technique:test-time-compute-scaling
+claim_refs:
+  - claim:qwen3-max-thinking-uses-test-time-compute-scaling

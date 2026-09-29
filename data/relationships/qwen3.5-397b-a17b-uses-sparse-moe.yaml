@@ -1,0 +1,7 @@
+id: relationship:qwen3.5-397b-a17b-uses-sparse-moe
+type: relationship
+subject: variant:qwen3.5-397b-a17b
+predicate: uses_technique
+object: technique:sparse-mixture-of-experts
+claim_refs:
+  - claim:qwen3.5-397b-a17b-uses-sparse-moe

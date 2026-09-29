@@ -1,0 +1,9 @@
+id: claim:gemini-3.7-flash-uses-agentic-tool-use
+type: claim
+subject: release:gemini-3.7-flash
+predicate: uses_technique
+object: technique:agentic-tool-use
+status: confirmed_primary
+evidence:
+  - source: source:gemini-3.7-flash-announcement
+    locator: multi-step planning and tool calls; improved tool use for Google Workspace apps

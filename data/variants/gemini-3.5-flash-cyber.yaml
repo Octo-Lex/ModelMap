@@ -1,0 +1,5 @@
+id: variant:gemini-3.5-flash-cyber
+type: model_variant
+name: Gemini 3.5 Flash Cyber
+description: Cybersecurity-focused model built on and fine-tuned from Gemini 3.5 Flash for vulnerability finding and fixing.
+status: canonical

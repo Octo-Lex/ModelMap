@@ -1,0 +1,4 @@
+id: variant:gemma-4-e2b
+type: model_variant
+name: Gemma 4 E2B
+status: canonical

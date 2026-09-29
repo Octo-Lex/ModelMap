@@ -1,0 +1,5 @@
+id: release:claude-fable-mythos-5
+type: model_release
+name: Claude Fable 5 / Mythos 5
+description: Shared underlying Claude model released in Fable and Mythos safeguard configurations.
+status: canonical

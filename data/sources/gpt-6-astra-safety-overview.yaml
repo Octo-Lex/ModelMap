@@ -1,0 +1,7 @@
+id: source:gpt-6-astra-safety-overview
+type: source
+title: 'Safety overview: GPT-6 Astra'
+source_type: model_card
+url: https://openai.com/index/safety-overview-gpt-6-astra/
+publisher: OpenAI
+published_at: '2026-09-03'

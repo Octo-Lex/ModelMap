@@ -1,0 +1,9 @@
+id: event:2026-09-10-deepseek-v4-flash-retired
+type: event
+name: DeepSeek-V4-Flash retired as a served model
+event_type: model_deprecated
+subject: variant:deepseek-v4-flash
+occurred_at: '2026-09-10'
+evidence:
+  - source:deepseek-v4.1-flash-announcement
+notes: The legacy deepseek-v4-flash model name remained accepted temporarily but routed to DeepSeek-V4.1-Flash.

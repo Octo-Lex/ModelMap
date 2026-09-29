@@ -1,0 +1,11 @@
+id: claim:qwen3-max-thinking-variant-of-release
+type: claim
+subject: variant:qwen3-max-thinking
+predicate: variant_of
+object: release:qwen3-max
+status: confirmed_primary
+evidence:
+  - source: source:qwen3-max-announcement
+    locator: Introduction — Qwen3-Max-Instruct released while Qwen3-Max-Thinking remained under training
+  - source: source:qwen3-max-thinking
+    locator: Introduction — Qwen3-Max-Thinking release

@@ -1,0 +1,9 @@
+id: claim:claude-fable-mythos-5.1-release-of-claude
+type: claim
+subject: release:claude-fable-mythos-5.1
+predicate: release_of
+object: family:claude
+status: confirmed_primary
+evidence:
+  - source: source:claude-fable-mythos-5.1-announcement
+    locator: Fable 5.1 and Mythos 5.1 introduction

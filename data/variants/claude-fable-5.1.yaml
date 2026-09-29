@@ -1,0 +1,5 @@
+id: variant:claude-fable-5.1
+type: model_variant
+name: Claude Fable 5.1
+description: Generally available safeguard configuration of the shared Fable/Mythos 5.1 model.
+status: canonical

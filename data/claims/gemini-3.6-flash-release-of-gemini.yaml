@@ -1,0 +1,9 @@
+id: claim:gemini-3.6-flash-release-of-gemini
+type: claim
+subject: release:gemini-3.6-flash
+predicate: release_of
+object: family:gemini
+status: confirmed_primary
+evidence:
+  - source: source:gemini-flash-july-2026-announcement
+    locator: introducing Gemini 3.6 Flash

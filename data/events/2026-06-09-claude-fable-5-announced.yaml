@@ -1,0 +1,9 @@
+id: event:2026-06-09-claude-fable-5-announced
+type: event
+name: Claude Fable 5 launched
+event_type: model_announced
+subject: variant:claude-fable-5
+occurred_at: '2026-06-09'
+evidence:
+  - source:claude-fable-mythos-5-announcement
+notes: Fable 5 is the general-use safeguard configuration of the shared Fable/Mythos 5 underlying model.

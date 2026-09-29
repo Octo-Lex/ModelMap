@@ -1,0 +1,8 @@
+id: event:2026-09-10-deepseek-v4.1-flash-announced
+type: event
+name: DeepSeek-V4.1-Flash released
+event_type: model_announced
+subject: release:deepseek-v4.1-flash
+occurred_at: '2026-09-10'
+evidence:
+  - source:deepseek-v4.1-flash-announcement

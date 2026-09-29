@@ -1,0 +1,9 @@
+id: event:2026-09-03-gpt-6-astra-announced
+type: event
+name: GPT-6 Astra released to limited organizational access
+event_type: model_announced
+subject: release:gpt-6-astra
+occurred_at: '2026-09-03'
+evidence:
+  - source:gpt-6-astra-safety-overview
+notes: Initial rollout was limited rather than general API availability.

@@ -1,0 +1,8 @@
+id: event:2026-05-19-gemini-3.5-flash-api
+type: event
+name: Gemini 3.5 Flash generally available via Gemini API
+event_type: api_released
+subject: release:gemini-3.5-flash
+occurred_at: '2026-05-19'
+evidence:
+  - source:gemini-3.5-announcement

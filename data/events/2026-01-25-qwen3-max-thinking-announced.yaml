@@ -1,0 +1,8 @@
+id: event:2026-01-25-qwen3-max-thinking-announced
+type: event
+name: Qwen3-Max-Thinking released
+event_type: model_announced
+subject: variant:qwen3-max-thinking
+occurred_at: '2026-01-25'
+evidence:
+  - source:qwen3-max-thinking

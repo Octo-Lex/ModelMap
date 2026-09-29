@@ -1,0 +1,8 @@
+id: event:2026-02-15-qwen3.5-announced
+type: event
+name: Qwen3.5 released
+event_type: model_announced
+subject: release:qwen3.5
+occurred_at: '2026-02-15'
+evidence:
+  - source:qwen3.5-announcement

@@ -1,0 +1,9 @@
+id: claim:qwen3.5-397b-a17b-uses-mtp
+type: claim
+subject: variant:qwen3.5-397b-a17b
+predicate: uses_technique
+object: technique:multi-token-prediction
+status: confirmed_primary
+evidence:
+  - source: source:qwen3.5-announcement
+    locator: pretraining architecture includes multi-token prediction

@@ -1,0 +1,11 @@
+id: product:claude-mythos-5-us-approved-access
+type: product_system
+name: Claude Mythos 5 approved US organization access
+description: Scoped Mythos 5 deployment restored to a set of US organizations after government approval.
+status: canonical
+metadata:
+  model_variant: variant:claude-mythos-5
+  access_scope:
+    geography: United States
+    audience: approved_organizations
+    government_approval_date: '2026-06-26'

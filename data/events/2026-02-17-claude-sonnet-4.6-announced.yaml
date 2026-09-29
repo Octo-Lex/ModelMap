@@ -1,0 +1,8 @@
+id: event:2026-02-17-claude-sonnet-4.6-announced
+type: event
+name: Claude Sonnet 4.6 released
+event_type: model_announced
+subject: release:claude-sonnet-4.6
+occurred_at: '2026-02-17'
+evidence:
+  - source:claude-sonnet-4.6-announcement

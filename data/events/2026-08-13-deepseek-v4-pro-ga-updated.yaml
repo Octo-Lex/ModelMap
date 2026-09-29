@@ -1,0 +1,9 @@
+id: event:2026-08-13-deepseek-v4-pro-ga-updated
+type: event
+name: DeepSeek-V4-Pro GA checkpoint rolled out
+event_type: checkpoint_updated
+subject: variant:deepseek-v4-pro
+occurred_at: '2026-08-13'
+evidence:
+  - source:deepseek-v4-pro-ga
+notes: GA rolled out across app, web, and API with stronger agent capabilities, Responses API support, and low/high/max thinking-effort controls.

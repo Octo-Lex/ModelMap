@@ -1,0 +1,7 @@
+id: relationship:gemini-3.8-flash-uses-agentic-tool-use
+type: relationship
+subject: variant:gemini-3.8-flash
+predicate: uses_technique
+object: technique:agentic-tool-use
+claim_refs:
+  - claim:gemini-3.8-flash-uses-agentic-tool-use

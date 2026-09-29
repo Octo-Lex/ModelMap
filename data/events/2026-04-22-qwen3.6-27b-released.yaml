@@ -1,0 +1,9 @@
+id: event:2026-04-22-qwen3.6-27b-released
+type: event
+name: Qwen3.6-27B open weights released
+event_type: weights_released
+subject: variant:qwen3.6-27b
+occurred_at: '2026-04-22'
+evidence:
+  - source:qwen3.6-27b-announcement
+notes: The official announcement states the model was live on Qwen Studio, available through API, and released as open weights.

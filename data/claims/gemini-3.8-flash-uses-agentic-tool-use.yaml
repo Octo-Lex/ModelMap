@@ -1,0 +1,9 @@
+id: claim:gemini-3.8-flash-uses-agentic-tool-use
+type: claim
+subject: variant:gemini-3.8-flash
+predicate: uses_technique
+object: technique:agentic-tool-use
+status: confirmed_primary
+evidence:
+  - source: source:gemini-3.8-announcement
+    locator: long-horizon coding and autonomous agents — extra reasoning steps and iterative tool calls

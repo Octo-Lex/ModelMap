@@ -1,0 +1,9 @@
+id: event:2026-09-01-claude-mythos-5.1-announced
+type: event
+name: Claude Mythos 5.1 introduced
+event_type: model_announced
+subject: variant:claude-mythos-5.1
+occurred_at: '2026-09-01'
+evidence:
+  - source:claude-fable-mythos-5.1-announcement
+notes: Mythos 5.1 is the trusted-access safeguard configuration of the shared Fable/Mythos 5.1 model.

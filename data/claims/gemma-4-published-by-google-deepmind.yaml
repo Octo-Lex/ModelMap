@@ -1,0 +1,9 @@
+id: claim:gemma-4-published-by-google-deepmind
+type: claim
+subject: release:gemma-4
+predicate: published_by
+object: org:google-deepmind
+status: confirmed_primary
+evidence:
+  - source: source:gemma-4-announcement
+    locator: Google DeepMind authors and Gemma 4 launch

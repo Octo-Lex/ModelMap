@@ -1,0 +1,9 @@
+id: claim:deepseek-v4-flash-variant-of-release
+type: claim
+subject: variant:deepseek-v4-flash
+predicate: variant_of
+object: release:deepseek-v4
+status: confirmed_primary
+evidence:
+  - source: source:deepseek-v4-changelog
+    locator: Date 2026-04-24 — model parameter deepseek-v4-flash

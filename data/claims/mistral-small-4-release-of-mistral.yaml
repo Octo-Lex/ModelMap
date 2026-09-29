@@ -1,0 +1,9 @@
+id: claim:mistral-small-4-release-of-mistral
+type: claim
+subject: release:mistral-small-4
+predicate: release_of
+object: family:mistral
+status: confirmed_primary
+evidence:
+  - source: source:mistral-small-4-announcement
+    locator: announcement introduction

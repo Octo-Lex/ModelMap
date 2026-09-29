@@ -1,0 +1,9 @@
+id: event:2026-07-21-gemini-3.5-flash-cyber-announced
+type: event
+name: Gemini 3.5 Flash Cyber announced
+event_type: model_announced
+subject: variant:gemini-3.5-flash-cyber
+occurred_at: '2026-07-21'
+evidence:
+  - source:gemini-flash-july-2026-announcement
+notes: The announcement described an upcoming limited-access CodeMender pilot for governments and trusted partners rather than broad availability.

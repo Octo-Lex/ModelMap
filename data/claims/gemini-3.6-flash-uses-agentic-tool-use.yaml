@@ -1,0 +1,9 @@
+id: claim:gemini-3.6-flash-uses-agentic-tool-use
+type: claim
+subject: release:gemini-3.6-flash
+predicate: uses_technique
+object: technique:agentic-tool-use
+status: confirmed_primary
+evidence:
+  - source: source:gemini-flash-july-2026-announcement
+    locator: 3.6 Flash reduces reasoning steps and tool calls in multi-step workflows; computer use is a built-in client-side tool

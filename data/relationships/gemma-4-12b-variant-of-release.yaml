@@ -1,0 +1,7 @@
+id: relationship:gemma-4-12b-variant-of-release
+type: relationship
+subject: variant:gemma-4-12b
+predicate: variant_of
+object: release:gemma-4
+claim_refs:
+  - claim:gemma-4-12b-variant-of-release

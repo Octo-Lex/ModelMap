@@ -1,0 +1,9 @@
+id: claim:gpt-5.5-pro-variant-of-release
+type: claim
+subject: variant:gpt-5.5-pro
+predicate: variant_of
+object: release:gpt-5.5
+status: confirmed_primary
+evidence:
+  - source: source:gpt-5.5-system-card
+    locator: Introduction — GPT-5.5 Pro is the same underlying model as GPT-5.5 using a parallel test-time-compute setting

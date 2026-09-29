@@ -1,0 +1,9 @@
+id: event:2026-06-09-claude-mythos-5-announced
+type: event
+name: Claude Mythos 5 launched
+event_type: model_announced
+subject: variant:claude-mythos-5
+occurred_at: '2026-06-09'
+evidence:
+  - source:claude-fable-mythos-5-announcement
+notes: Mythos 5 is the trusted-access safeguard configuration of the shared Fable/Mythos 5 underlying model.

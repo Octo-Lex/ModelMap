@@ -1,0 +1,9 @@
+id: claim:gemma-4-26b-moe-uses-sparse-mixture-of-experts
+type: claim
+subject: variant:gemma-4-26b-moe
+predicate: uses_technique
+object: technique:sparse-mixture-of-experts
+status: confirmed_primary
+evidence:
+  - source: source:gemma-4-announcement
+    locator: 26B Mixture of Experts activates 3.8B parameters during inference

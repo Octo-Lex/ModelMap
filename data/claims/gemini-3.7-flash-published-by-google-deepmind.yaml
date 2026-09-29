@@ -1,0 +1,9 @@
+id: claim:gemini-3.7-flash-published-by-google-deepmind
+type: claim
+subject: release:gemini-3.7-flash
+predicate: published_by
+object: org:google-deepmind
+status: confirmed_primary
+evidence:
+  - source: source:gemini-3.7-flash-announcement
+    locator: Gemini team announcement

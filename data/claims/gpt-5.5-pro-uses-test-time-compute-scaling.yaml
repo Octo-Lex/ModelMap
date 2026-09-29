@@ -1,0 +1,9 @@
+id: claim:gpt-5.5-pro-uses-test-time-compute-scaling
+type: claim
+subject: variant:gpt-5.5-pro
+predicate: uses_technique
+object: technique:test-time-compute-scaling
+status: confirmed_primary
+evidence:
+  - source: source:gpt-5.5-system-card
+    locator: Introduction — parallel test-time compute

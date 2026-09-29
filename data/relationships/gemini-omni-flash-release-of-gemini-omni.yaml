@@ -1,0 +1,7 @@
+id: relationship:gemini-omni-flash-release-of-gemini-omni
+type: relationship
+subject: release:gemini-omni-flash
+predicate: release_of
+object: family:gemini-omni
+claim_refs:
+  - claim:gemini-omni-flash-release-of-gemini-omni

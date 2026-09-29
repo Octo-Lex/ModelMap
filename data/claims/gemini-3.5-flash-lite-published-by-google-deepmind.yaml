@@ -1,0 +1,9 @@
+id: claim:gemini-3.5-flash-lite-published-by-google-deepmind
+type: claim
+subject: release:gemini-3.5-flash-lite
+predicate: published_by
+object: org:google-deepmind
+status: confirmed_primary
+evidence:
+  - source: source:gemini-flash-july-2026-announcement
+    locator: Gemini team announcement

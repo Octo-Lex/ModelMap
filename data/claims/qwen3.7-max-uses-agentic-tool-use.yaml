@@ -1,0 +1,9 @@
+id: claim:qwen3.7-max-uses-agentic-tool-use
+type: claim
+subject: release:qwen3.7-max
+predicate: uses_technique
+object: technique:agentic-tool-use
+status: confirmed_primary
+evidence:
+  - source: source:qwen3.7-max-announcement
+    locator: MCP, multi-agent orchestration, and long-horizon execution with more than 1000 tool calls

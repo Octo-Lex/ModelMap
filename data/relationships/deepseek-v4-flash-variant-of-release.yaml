@@ -1,0 +1,7 @@
+id: relationship:deepseek-v4-flash-variant-of-release
+type: relationship
+subject: variant:deepseek-v4-flash
+predicate: variant_of
+object: release:deepseek-v4
+claim_refs:
+  - claim:deepseek-v4-flash-variant-of-release

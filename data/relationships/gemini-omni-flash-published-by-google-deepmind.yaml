@@ -1,0 +1,7 @@
+id: relationship:gemini-omni-flash-published-by-google-deepmind
+type: relationship
+subject: release:gemini-omni-flash
+predicate: published_by
+object: org:google-deepmind
+claim_refs:
+  - claim:gemini-omni-flash-published-by-google-deepmind

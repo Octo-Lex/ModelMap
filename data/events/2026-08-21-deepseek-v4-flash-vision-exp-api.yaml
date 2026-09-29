@@ -1,0 +1,8 @@
+id: event:2026-08-21-deepseek-v4-flash-vision-exp-api
+type: event
+name: DeepSeek-V4-Flash-Vision-Exp API released
+event_type: api_released
+subject: variant:deepseek-v4-flash-vision-exp
+occurred_at: '2026-08-21'
+evidence:
+  - source:deepseek-v4-flash-vision-exp-announcement

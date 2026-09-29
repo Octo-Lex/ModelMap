@@ -1,0 +1,9 @@
+id: claim:qwen3.5-397b-a17b-uses-sparse-moe
+type: claim
+subject: variant:qwen3.5-397b-a17b
+predicate: uses_technique
+object: technique:sparse-mixture-of-experts
+status: confirmed_primary
+evidence:
+  - source: source:qwen3.5-announcement
+    locator: higher-sparsity mixture-of-experts architecture

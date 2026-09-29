@@ -1,0 +1,7 @@
+id: relationship:claude-opus-4.6-release-of-claude
+type: relationship
+subject: release:claude-opus-4.6
+predicate: release_of
+object: family:claude
+claim_refs:
+  - claim:claude-opus-4.6-release-of-claude

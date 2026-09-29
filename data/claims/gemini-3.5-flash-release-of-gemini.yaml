@@ -1,0 +1,9 @@
+id: claim:gemini-3.5-flash-release-of-gemini
+type: claim
+subject: release:gemini-3.5-flash
+predicate: release_of
+object: family:gemini
+status: confirmed_primary
+evidence:
+  - source: source:gemini-3.5-announcement
+    locator: latest family of models; releasing 3.5 Flash

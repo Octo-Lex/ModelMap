@@ -1,0 +1,9 @@
+id: claim:gemini-3.7-flash-release-of-gemini
+type: claim
+subject: release:gemini-3.7-flash
+predicate: release_of
+object: family:gemini
+status: confirmed_primary
+evidence:
+  - source: source:gemini-3.7-flash-announcement
+    locator: introduction of Gemini 3.7 Flash

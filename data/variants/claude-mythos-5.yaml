@@ -1,0 +1,5 @@
+id: variant:claude-mythos-5
+type: model_variant
+name: Claude Mythos 5
+description: Trusted-access configuration of the shared Fable/Mythos 5 model with safeguards lifted in selected areas.
+status: canonical

@@ -1,0 +1,5 @@
+id: release:qwen3.6
+type: model_release
+name: Qwen3.6
+description: Qwen generation spanning hosted proprietary and open-weight dense/MoE multimodal models.
+status: canonical

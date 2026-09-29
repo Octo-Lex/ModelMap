@@ -1,0 +1,7 @@
+id: relationship:qwen3.7-max-uses-agentic-tool-use
+type: relationship
+subject: release:qwen3.7-max
+predicate: uses_technique
+object: technique:agentic-tool-use
+claim_refs:
+  - claim:qwen3.7-max-uses-agentic-tool-use
