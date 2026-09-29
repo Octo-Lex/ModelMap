@@ -1,0 +1,9 @@
+id: claim:qwen3-post-trained-variant-of-release
+type: claim
+subject: variant:qwen3-post-trained
+predicate: variant_of
+object: release:qwen3
+status: confirmed_primary
+evidence:
+  - source: source:qwen3-announcement
+    locator: open-weight Base and post-trained model lineup

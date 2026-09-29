@@ -1,6 +1,6 @@
 id: claim:qwen3-uses-reasoning-reinforcement-learning
 type: claim
-subject: release:qwen3
+subject: variant:qwen3-post-trained
 predicate: uses_technique
 object: technique:reasoning-reinforcement-learning
 status: confirmed_primary
