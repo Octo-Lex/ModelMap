@@ -6,4 +6,4 @@ object: family:deepseek
 status: confirmed_primary
 evidence:
   - source: source:deepseek-r1-release
-    locator: announcement introduction
+    locator: README.md §1 Introduction
