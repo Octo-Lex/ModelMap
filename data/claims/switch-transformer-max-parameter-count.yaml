@@ -1,0 +1,9 @@
+id: claim:switch-transformer-max-parameter-count
+type: claim
+subject: release:switch-transformer
+predicate: maximum_reported_parameter_count
+value: 1000000000000
+status: reported_primary
+evidence:
+  - source: source:switch-transformer-paper
+    locator: abstract — pre-training up to trillion-parameter models
