@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://modelmap.dev/schemas/relationship.schema.json",
+  "title": "ModelMap Relationship",
+  "type": "object",
+  "required": ["id", "type", "subject", "predicate", "object"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^relationship:[a-z0-9][a-z0-9._-]*$"},
+    "type": {"const": "relationship"},
+    "subject": {"type": "string", "minLength": 3},
+    "predicate": {
+      "type": "string",
+      "enum": [
+        "release_of",
+        "variant_of",
+        "succeeds",
+        "checkpoint_derived_from",
+        "fine_tuned_from",
+        "distilled_from",
+        "uses_architecture",
+        "uses_technique",
+        "introduces_technique",
+        "implements",
+        "trained_on",
+        "evaluated_on",
+        "published_by",
+        "authored_by",
+        "supports_modality",
+        "supports_claim",
+        "contradicts_claim",
+        "replaces"
+      ]
+    },
+    "object": {"type": "string", "minLength": 3},
+    "claim_refs": {
+      "type": "array",
+      "items": {"type": "string", "pattern": "^claim:[a-z0-9][a-z0-9._-]*$"},
+      "uniqueItems": true,
+      "default": []
+    },
+    "valid_from": {"type": ["string", "null"], "format": "date"},
+    "valid_to": {"type": ["string", "null"], "format": "date"},
+    "notes": {"type": ["string", "null"]}
+  },
+  "additionalProperties": false
+}

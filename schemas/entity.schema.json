@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://modelmap.dev/schemas/entity.schema.json",
+  "title": "ModelMap Entity",
+  "type": "object",
+  "required": ["id", "type", "name"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_-]*:[a-z0-9][a-z0-9._-]*$"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "model_family",
+        "model_release",
+        "model_variant",
+        "architecture_spec",
+        "technique",
+        "training_run",
+        "implementation",
+        "paper",
+        "source",
+        "claim",
+        "relationship",
+        "event",
+        "dataset",
+        "dataset_version",
+        "benchmark",
+        "benchmark_version",
+        "evaluation_protocol",
+        "evaluation_run",
+        "organization",
+        "person",
+        "license",
+        "hardware_system",
+        "product_system"
+      ]
+    },
+    "name": {"type": "string", "minLength": 1},
+    "aliases": {
+      "type": "array",
+      "items": {"type": "string", "minLength": 1},
+      "uniqueItems": true,
+      "default": []
+    },
+    "description": {"type": ["string", "null"]},
+    "status": {
+      "type": "string",
+      "enum": ["draft", "reviewed", "canonical", "deprecated"],
+      "default": "draft"
+    },
+    "created_at": {"type": ["string", "null"], "format": "date-time"},
+    "updated_at": {"type": ["string", "null"], "format": "date-time"},
+    "metadata": {"type": "object", "additionalProperties": true}
+  },
+  "additionalProperties": false
+}
