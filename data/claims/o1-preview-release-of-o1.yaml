@@ -2,7 +2,7 @@ id: claim:o1-preview-release-of-o1
 type: claim
 subject: release:o1-preview
 predicate: release_of
-object: family:o1
+object: family:o-series
 status: confirmed_primary
 evidence:
   - source: source:o1-reasoning-release

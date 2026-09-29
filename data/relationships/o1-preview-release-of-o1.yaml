@@ -2,6 +2,6 @@ id: relationship:o1-preview-release-of-o1
 type: relationship
 subject: release:o1-preview
 predicate: release_of
-object: family:o1
+object: family:o-series
 claim_refs:
   - claim:o1-preview-release-of-o1
