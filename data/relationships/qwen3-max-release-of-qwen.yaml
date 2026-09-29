@@ -1,0 +1,7 @@
+id: relationship:qwen3-max-release-of-qwen
+type: relationship
+subject: release:qwen3-max
+predicate: release_of
+object: family:qwen
+claim_refs:
+  - claim:qwen3-max-release-of-family

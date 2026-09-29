@@ -1,0 +1,4 @@
+id: variant:gpt-5.2-codex
+type: model_variant
+name: GPT-5.2-Codex
+status: canonical

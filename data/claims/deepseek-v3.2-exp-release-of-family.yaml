@@ -1,0 +1,9 @@
+id: claim:deepseek-v3.2-exp-release-of-family
+type: claim
+subject: release:deepseek-v3.2-exp
+predicate: release_of
+object: family:deepseek
+status: confirmed_primary
+evidence:
+  - source: source:deepseek-v3.2-exp-announcement
+    locator: release introduction

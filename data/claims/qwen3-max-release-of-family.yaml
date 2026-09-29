@@ -1,0 +1,9 @@
+id: claim:qwen3-max-release-of-family
+type: claim
+subject: release:qwen3-max
+predicate: release_of
+object: family:qwen
+status: confirmed_primary
+evidence:
+  - source: source:qwen3-max-announcement
+    locator: Introduction

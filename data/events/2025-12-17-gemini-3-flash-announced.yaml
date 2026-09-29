@@ -1,0 +1,8 @@
+id: event:2025-12-17-gemini-3-flash-announced
+type: event
+name: Gemini 3 Flash released
+event_type: model_announced
+subject: release:gemini-3-flash
+occurred_at: '2025-12-17'
+evidence:
+  - source:gemini-3-flash-announcement

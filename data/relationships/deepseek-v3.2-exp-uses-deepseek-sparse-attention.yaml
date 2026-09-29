@@ -1,0 +1,7 @@
+id: relationship:deepseek-v3.2-exp-uses-deepseek-sparse-attention
+type: relationship
+subject: release:deepseek-v3.2-exp
+predicate: uses_technique
+object: technique:deepseek-sparse-attention
+claim_refs:
+  - claim:deepseek-v3.2-exp-uses-deepseek-sparse-attention

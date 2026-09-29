@@ -1,0 +1,8 @@
+id: event:2025-09-29-deepseek-v3.2-exp-announced
+type: event
+name: DeepSeek-V3.2-Exp released
+event_type: model_announced
+subject: release:deepseek-v3.2-exp
+occurred_at: '2025-09-29'
+evidence:
+  - source:deepseek-v3.2-exp-announcement

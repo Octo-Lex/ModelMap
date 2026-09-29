@@ -1,0 +1,4 @@
+id: release:deepseek-v3.2-exp
+type: model_release
+name: DeepSeek-V3.2-Exp
+status: canonical

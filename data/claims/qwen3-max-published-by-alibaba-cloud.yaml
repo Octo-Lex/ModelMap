@@ -1,0 +1,9 @@
+id: claim:qwen3-max-published-by-alibaba-cloud
+type: claim
+subject: release:qwen3-max
+predicate: published_by
+object: org:alibaba-cloud
+status: confirmed_primary
+evidence:
+  - source: source:qwen3-max-announcement
+    locator: Qwen Team publication context and Alibaba Cloud API availability

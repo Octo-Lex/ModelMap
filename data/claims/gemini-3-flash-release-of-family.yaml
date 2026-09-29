@@ -1,0 +1,9 @@
+id: claim:gemini-3-flash-release-of-family
+type: claim
+subject: release:gemini-3-flash
+predicate: release_of
+object: family:gemini
+status: confirmed_primary
+evidence:
+  - source: source:gemini-3-flash-announcement
+    locator: expanding the Gemini 3 model family

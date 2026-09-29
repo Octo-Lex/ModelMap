@@ -1,0 +1,8 @@
+id: event:2025-12-18-gpt-5.2-codex-announced
+type: event
+name: GPT-5.2-Codex released
+event_type: model_announced
+subject: variant:gpt-5.2-codex
+occurred_at: '2025-12-18'
+evidence:
+  - source:gpt-5.2-codex-announcement

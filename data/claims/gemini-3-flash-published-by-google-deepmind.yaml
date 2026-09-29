@@ -1,0 +1,9 @@
+id: claim:gemini-3-flash-published-by-google-deepmind
+type: claim
+subject: release:gemini-3-flash
+predicate: published_by
+object: org:google-deepmind
+status: confirmed_primary
+evidence:
+  - source: source:gemini-3-flash-announcement
+    locator: Gemini team attribution and Google DeepMind developer availability

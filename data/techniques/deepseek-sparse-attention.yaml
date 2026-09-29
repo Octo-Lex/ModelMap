@@ -1,0 +1,5 @@
+id: technique:deepseek-sparse-attention
+type: technique
+name: DeepSeek Sparse Attention
+status: canonical
+description: A fine-grained sparse attention mechanism introduced in DeepSeek-V3.2-Exp to improve long-context training and inference efficiency with minimal impact on output quality.

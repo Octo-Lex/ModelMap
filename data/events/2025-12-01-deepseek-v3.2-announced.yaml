@@ -1,0 +1,8 @@
+id: event:2025-12-01-deepseek-v3.2-announced
+type: event
+name: DeepSeek-V3.2 released
+event_type: model_announced
+subject: release:deepseek-v3.2
+occurred_at: '2025-12-01'
+evidence:
+  - source:deepseek-v3.2-announcement
