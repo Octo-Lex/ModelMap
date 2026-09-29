@@ -1,0 +1,7 @@
+id: relationship:deepseek-v4-flash-uses-hybrid-reasoning
+type: relationship
+subject: variant:deepseek-v4-flash
+predicate: uses_technique
+object: technique:hybrid-reasoning
+claim_refs:
+  - claim:deepseek-v4-flash-uses-hybrid-reasoning

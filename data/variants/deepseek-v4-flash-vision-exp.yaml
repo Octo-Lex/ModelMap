@@ -1,0 +1,5 @@
+id: variant:deepseek-v4-flash-vision-exp
+type: model_variant
+name: DeepSeek-V4-Flash-Vision-Exp
+description: Experimental multimodal visual-understanding variant in the DeepSeek V4 generation.
+status: canonical

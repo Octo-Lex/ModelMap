@@ -1,0 +1,9 @@
+id: claim:qwen3.6-published-by-alibaba-cloud
+type: claim
+subject: release:qwen3.6
+predicate: published_by
+object: org:alibaba-cloud
+status: confirmed_primary
+evidence:
+  - source: source:qwen3.6-27b-announcement
+    locator: Qwen Team announcement and Alibaba Cloud Model Studio availability

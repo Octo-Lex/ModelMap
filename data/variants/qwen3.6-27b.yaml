@@ -1,0 +1,5 @@
+id: variant:qwen3.6-27b
+type: model_variant
+name: Qwen3.6-27B
+description: Open-weight dense 27B multimodal model with thinking and non-thinking modes.
+status: canonical

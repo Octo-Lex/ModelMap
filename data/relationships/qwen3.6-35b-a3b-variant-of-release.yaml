@@ -1,0 +1,7 @@
+id: relationship:qwen3.6-35b-a3b-variant-of-release
+type: relationship
+subject: variant:qwen3.6-35b-a3b
+predicate: variant_of
+object: release:qwen3.6
+claim_refs:
+  - claim:qwen3.6-35b-a3b-variant-of-release

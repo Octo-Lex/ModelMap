@@ -1,0 +1,8 @@
+id: event:2026-04-18-qwen3.6-max-preview-announced
+type: event
+name: Qwen3.6-Max-Preview announced
+event_type: model_announced
+subject: variant:qwen3.6-max-preview
+occurred_at: '2026-04-18'
+evidence:
+  - source:qwen3.6-max-preview-announcement

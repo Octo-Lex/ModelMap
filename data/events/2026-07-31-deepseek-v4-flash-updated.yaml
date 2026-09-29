@@ -1,0 +1,9 @@
+id: event:2026-07-31-deepseek-v4-flash-updated
+type: event
+name: DeepSeek-V4-Flash official public-beta checkpoint update
+event_type: checkpoint_updated
+subject: variant:deepseek-v4-flash
+occurred_at: '2026-07-31'
+evidence:
+  - source:deepseek-v4-flash-0731-update
+notes: The official update kept the same architecture and size as the preview and changed post-training; the API model name remained deepseek-v4-flash.

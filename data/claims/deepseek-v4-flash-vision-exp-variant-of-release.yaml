@@ -1,0 +1,9 @@
+id: claim:deepseek-v4-flash-vision-exp-variant-of-release
+type: claim
+subject: variant:deepseek-v4-flash-vision-exp
+predicate: variant_of
+object: release:deepseek-v4
+status: confirmed_primary
+evidence:
+  - source: source:deepseek-v4-flash-vision-exp-announcement
+    locator: release title and comparison to DeepSeek-V4-Flash

@@ -1,0 +1,7 @@
+id: relationship:deepseek-v4-uses-deepseek-sparse-attention
+type: relationship
+subject: release:deepseek-v4
+predicate: uses_technique
+object: technique:deepseek-sparse-attention
+claim_refs:
+  - claim:deepseek-v4-uses-deepseek-sparse-attention

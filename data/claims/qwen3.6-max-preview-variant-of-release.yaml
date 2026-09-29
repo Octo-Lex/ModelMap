@@ -1,0 +1,9 @@
+id: claim:qwen3.6-max-preview-variant-of-release
+type: claim
+subject: variant:qwen3.6-max-preview
+predicate: variant_of
+object: release:qwen3.6
+status: confirmed_primary
+evidence:
+  - source: source:qwen3.6-max-preview-announcement
+    locator: title and summary — preview in the Qwen3.6 generation

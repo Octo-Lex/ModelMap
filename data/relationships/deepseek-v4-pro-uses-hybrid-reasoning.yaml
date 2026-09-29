@@ -1,0 +1,7 @@
+id: relationship:deepseek-v4-pro-uses-hybrid-reasoning
+type: relationship
+subject: variant:deepseek-v4-pro
+predicate: uses_technique
+object: technique:hybrid-reasoning
+claim_refs:
+  - claim:deepseek-v4-pro-uses-hybrid-reasoning

@@ -1,0 +1,4 @@
+id: variant:qwen3.6-35b-a3b
+type: model_variant
+name: Qwen3.6-35B-A3B
+status: canonical

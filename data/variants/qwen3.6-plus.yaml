@@ -1,0 +1,4 @@
+id: variant:qwen3.6-plus
+type: model_variant
+name: Qwen3.6-Plus
+status: canonical

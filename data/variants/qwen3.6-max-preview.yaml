@@ -1,0 +1,5 @@
+id: variant:qwen3.6-max-preview
+type: model_variant
+name: Qwen3.6-Max-Preview
+description: Hosted proprietary preview model in the Qwen3.6 generation.
+status: canonical
