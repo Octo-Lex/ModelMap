@@ -15,6 +15,7 @@ if str(TOOLS) not in sys.path:
 
 import build_year  # noqa: E402
 import records  # noqa: E402
+import validate as corpus_validate  # noqa: E402
 
 
 class ReviewHardeningTests(unittest.TestCase):
@@ -105,6 +106,58 @@ class ReviewHardeningTests(unittest.TestCase):
             self.load_schema("year-view.schema.json"), format_checker=FormatChecker()
         )
         self.assertEqual(list(validator.iter_errors(payload)), [])
+
+    def test_year_view_rejects_noncanonical_embedded_event(self) -> None:
+        invalid_event = {
+            "id": "event:example",
+            "type": "event",
+            "name": "Example event",
+            "event_type": "typo",
+            "subject": "unsupported:anything",
+            "occurred_at": "2023-01-01",
+            "evidence": ["source:example"],
+        }
+        self.assert_invalid(
+            "year-view.schema.json",
+            build_year.build_payload(2023, [invalid_event]),
+        )
+
+    def test_relationship_claim_endpoints_must_match(self) -> None:
+        relationship = {
+            "subject": "release:example",
+            "predicate": "uses_technique",
+            "object": "technique:gqa",
+        }
+        matching_claim = {
+            "subject": "release:example",
+            "object": "technique:gqa",
+        }
+        unrelated_claim = {
+            "subject": "release:other",
+            "object": "technique:gqa",
+        }
+        self.assertTrue(
+            corpus_validate.claim_supports_relationship(relationship, matching_claim)
+        )
+        self.assertFalse(
+            corpus_validate.claim_supports_relationship(relationship, unrelated_claim)
+        )
+
+    def test_conceptual_predecessor_claim_uses_reverse_endpoint_order(self) -> None:
+        relationship = {
+            "subject": "technique:multi-head-attention",
+            "predicate": "conceptual_predecessor_of",
+            "object": "technique:multi-query-attention",
+        }
+        successor_perspective_claim = {
+            "subject": "technique:multi-query-attention",
+            "object": "technique:multi-head-attention",
+        }
+        self.assertTrue(
+            corpus_validate.claim_supports_relationship(
+                relationship, successor_perspective_claim
+            )
+        )
 
     def test_canonical_file_contains_one_record(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:

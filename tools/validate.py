@@ -30,6 +30,22 @@ def load_schema(name: str) -> dict[str, Any]:
         return json.load(fh)
 
 
+def claim_supports_relationship(relationship: dict[str, Any], claim: dict[str, Any]) -> bool:
+    """Return whether a cited claim supports the relationship's materialized endpoints.
+
+    Conceptual predecessor relationships are intentionally oriented predecessor -> successor,
+    while their source claims are written from the successor's perspective (for example,
+    MQA variant_of MHA). All other relationship types require identical endpoint order.
+    """
+    relationship_subject = relationship.get("subject")
+    relationship_object = relationship.get("object")
+    if relationship.get("predicate") == "conceptual_predecessor_of":
+        expected_subject, expected_object = relationship_object, relationship_subject
+    else:
+        expected_subject, expected_object = relationship_subject, relationship_object
+    return claim.get("subject") == expected_subject and claim.get("object") == expected_object
+
+
 def main() -> int:
     errors: list[str] = []
     try:
@@ -59,20 +75,24 @@ def main() -> int:
             else:
                 by_id[record_id] = (path, record)
 
-    def require_id(owner: Path, ref: Any, expected_type: str | None = None) -> None:
+    def require_id(
+        owner: Path, ref: Any, expected_type: str | None = None
+    ) -> tuple[Path, dict[str, Any]] | None:
         rel = owner.relative_to(ROOT)
         if not isinstance(ref, str):
             errors.append(f"{rel}: reference must be a string, got {type(ref).__name__}")
-            return
+            return None
         target = by_id.get(ref)
         if target is None:
             errors.append(f"{rel}: unresolved reference {ref!r}")
-            return
+            return None
         if expected_type is not None and target[1].get("type") != expected_type:
             errors.append(
                 f"{rel}: {ref!r} must reference type {expected_type!r}, "
                 f"found {target[1].get('type')!r}"
             )
+            return None
+        return target
 
     for path, record in records:
         record_type = record.get("type")
@@ -86,7 +106,16 @@ def main() -> int:
             require_id(path, record.get("subject"))
             require_id(path, record.get("object"))
             for claim_ref in record.get("claim_refs", []):
-                require_id(path, claim_ref, "claim")
+                claim_target = require_id(path, claim_ref, "claim")
+                if claim_target is None:
+                    continue
+                claim = claim_target[1]
+                if not claim_supports_relationship(record, claim):
+                    rel = path.relative_to(ROOT)
+                    errors.append(
+                        f"{rel}: claim_ref {claim_ref!r} does not support relationship "
+                        f"endpoints {record.get('subject')!r} -> {record.get('object')!r}"
+                    )
         elif record_type == "event":
             require_id(path, record.get("subject"))
             for source_ref in record.get("evidence", []):
