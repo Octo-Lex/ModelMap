@@ -1,0 +1,9 @@
+id: claim:o4-mini-release-of-family
+type: claim
+subject: release:o4-mini
+predicate: release_of
+object: family:o-series
+status: confirmed_primary
+evidence:
+  - source: source:o3-o4-mini-announcement
+    locator: announcement introduction

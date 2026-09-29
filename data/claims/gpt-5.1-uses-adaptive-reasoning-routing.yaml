@@ -1,0 +1,9 @@
+id: claim:gpt-5.1-uses-adaptive-reasoning-routing
+type: claim
+subject: release:gpt-5.1
+predicate: uses_technique
+object: technique:adaptive-reasoning-routing
+status: confirmed_primary
+evidence:
+  - source: source:gpt-5.1-system-card
+    locator: Introduction

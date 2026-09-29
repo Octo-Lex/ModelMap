@@ -1,0 +1,8 @@
+id: event:2025-02-24-claude-3.7-sonnet-announced
+type: event
+name: Claude 3.7 Sonnet released
+event_type: model_announced
+subject: release:claude-3.7-sonnet
+occurred_at: '2025-02-24'
+evidence:
+  - source:claude-3.7-announcement

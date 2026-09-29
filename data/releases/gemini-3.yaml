@@ -1,0 +1,4 @@
+id: release:gemini-3
+type: model_release
+name: Gemini 3
+status: canonical

@@ -1,0 +1,8 @@
+id: event:2025-04-16-o4-mini-announced
+type: event
+name: OpenAI o4-mini released
+event_type: model_announced
+subject: release:o4-mini
+occurred_at: '2025-04-16'
+evidence:
+  - source:o3-o4-mini-announcement

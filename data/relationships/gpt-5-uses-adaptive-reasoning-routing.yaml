@@ -1,0 +1,7 @@
+id: relationship:gpt-5-uses-adaptive-reasoning-routing
+type: relationship
+subject: release:gpt-5
+predicate: uses_technique
+object: technique:adaptive-reasoning-routing
+claim_refs:
+  - claim:gpt-5-uses-adaptive-reasoning-routing

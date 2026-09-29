@@ -1,0 +1,8 @@
+id: event:2025-01-31-o3-mini-announced
+type: event
+name: OpenAI o3-mini released
+event_type: model_announced
+subject: release:o3-mini
+occurred_at: '2025-01-31'
+evidence:
+  - source:o3-mini-announcement

@@ -1,0 +1,4 @@
+id: family:o-series
+type: model_family
+name: OpenAI o-series
+status: canonical

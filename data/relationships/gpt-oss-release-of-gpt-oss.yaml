@@ -1,0 +1,7 @@
+id: relationship:gpt-oss-release-of-gpt-oss
+type: relationship
+subject: release:gpt-oss
+predicate: release_of
+object: family:gpt-oss
+claim_refs:
+  - claim:gpt-oss-release-of-family

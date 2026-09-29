@@ -1,0 +1,7 @@
+id: relationship:gemini-2.5-pro-uses-hybrid-reasoning
+type: relationship
+subject: release:gemini-2.5-pro
+predicate: uses_technique
+object: technique:hybrid-reasoning
+claim_refs:
+  - claim:gemini-2.5-pro-uses-hybrid-reasoning

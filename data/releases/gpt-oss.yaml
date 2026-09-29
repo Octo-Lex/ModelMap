@@ -1,0 +1,4 @@
+id: release:gpt-oss
+type: model_release
+name: gpt-oss
+status: canonical

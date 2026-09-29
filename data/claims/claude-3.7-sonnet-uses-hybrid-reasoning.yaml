@@ -1,0 +1,9 @@
+id: claim:claude-3.7-sonnet-uses-hybrid-reasoning
+type: claim
+subject: release:claude-3.7-sonnet
+predicate: uses_technique
+object: technique:hybrid-reasoning
+status: confirmed_primary
+evidence:
+  - source: source:claude-3.7-announcement
+    locator: announcement opening

@@ -1,0 +1,7 @@
+id: relationship:o4-mini-uses-agentic-tool-use
+type: relationship
+subject: release:o4-mini
+predicate: uses_technique
+object: technique:agentic-tool-use
+claim_refs:
+  - claim:o4-mini-uses-agentic-tool-use

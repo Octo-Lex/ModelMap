@@ -1,0 +1,8 @@
+id: event:2025-11-12-gpt-5.1-announced
+type: event
+name: GPT-5.1 Instant and Thinking introduced
+event_type: model_announced
+subject: release:gpt-5.1
+occurred_at: '2025-11-12'
+evidence:
+  - source:gpt-5.1-system-card

@@ -1,0 +1,4 @@
+id: release:deepseek-r1
+type: model_release
+name: DeepSeek-R1
+status: canonical

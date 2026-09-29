@@ -1,0 +1,7 @@
+id: relationship:gpt-oss-uses-agentic-tool-use
+type: relationship
+subject: release:gpt-oss
+predicate: uses_technique
+object: technique:agentic-tool-use
+claim_refs:
+  - claim:gpt-oss-uses-agentic-tool-use
