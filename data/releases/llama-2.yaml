@@ -1,0 +1,4 @@
+id: release:llama-2
+type: model_release
+name: Llama 2
+status: draft

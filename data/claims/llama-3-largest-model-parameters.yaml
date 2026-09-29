@@ -1,0 +1,9 @@
+id: claim:llama-3-largest-model-parameters
+type: claim
+subject: release:llama-3
+predicate: largest_model_parameters
+value: 405000000000
+status: confirmed_primary
+evidence:
+  - source: source:llama-3-paper
+    locator: Abstract
