@@ -1,0 +1,9 @@
+id: event:2024-06-20-claude-3.5-sonnet-release
+type: event
+name: Claude 3.5 Sonnet release recorded in model-card addendum
+event_type: model_announced
+subject: release:claude-3.5-sonnet
+occurred_at: '2024-06-20'
+evidence:
+  - source:claude-3.5-sonnet-model-card-addendum
+notes: Anthropic's current standalone announcement page displays June 21; the official model card dates the 3.5 Sonnet addendum June 20.
