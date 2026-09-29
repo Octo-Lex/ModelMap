@@ -1,0 +1,4 @@
+id: release:phi-3
+type: model_release
+name: Phi-3
+status: canonical

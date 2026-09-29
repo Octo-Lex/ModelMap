@@ -1,0 +1,8 @@
+id: event:2024-12-11-gemini-2.0-flash-announced
+type: event
+name: Gemini 2.0 Flash experimental announced
+event_type: model_announced
+subject: release:gemini-2.0-flash
+occurred_at: '2024-12-11'
+evidence:
+  - source:gemini-2.0-announcement

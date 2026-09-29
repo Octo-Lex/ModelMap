@@ -1,0 +1,11 @@
+id: claim:gemini-1.5-context-windows
+type: claim
+subject: release:gemini-1.5
+predicate: context_windows
+value:
+  standard_tokens: 128000
+  private_preview_tokens: 1000000
+status: confirmed_primary
+evidence:
+  - source: source:gemini-1.5-announcement
+    locator: Long context window

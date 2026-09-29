@@ -1,0 +1,9 @@
+id: claim:llama-3.1-release-of-llama
+type: claim
+subject: release:llama-3.1
+predicate: release_of
+object: family:llama
+status: confirmed_primary
+evidence:
+  - source: source:llama-3.1-announcement
+    locator: announcement opening

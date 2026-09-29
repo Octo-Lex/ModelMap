@@ -1,0 +1,9 @@
+id: claim:gemini-2.0-flash-release-of-gemini
+type: claim
+subject: release:gemini-2.0-flash
+predicate: release_of
+object: family:gemini
+status: confirmed_primary
+evidence:
+  - source: source:gemini-2.0-announcement
+    locator: Gemini 2.0 Flash

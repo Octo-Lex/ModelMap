@@ -1,0 +1,9 @@
+id: claim:o3-mini-release-of-family
+type: claim
+subject: release:o3-mini
+predicate: release_of
+object: family:o-series
+status: confirmed_primary
+evidence:
+  - source: source:o3-mini-early-access
+    locator: forthcoming frontier models including o3-mini

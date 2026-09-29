@@ -1,0 +1,9 @@
+id: source:claude-3.5-sonnet-model-card-addendum
+type: source
+title: 'The Claude 3 Model Family: Opus, Sonnet, Haiku — Claude 3.5 Sonnet addendum'
+source_type: model_card
+url: https://www-cdn.anthropic.com/c6a80a657af445f40e31afac050f3bf76d3b1404.pdf
+publisher: Anthropic
+published_at: '2024-06-20'
+retrieved_at: '2026-09-29T08:28:00Z'
+notes: The model card records an update dated June 20, 2024 adding the Claude 3.5 Sonnet addendum; Anthropic's current announcement page displays June 21.

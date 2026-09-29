@@ -1,0 +1,9 @@
+id: claim:llama-3.1-largest-parameter-count
+type: claim
+subject: release:llama-3.1
+predicate: largest_parameter_count
+value: 405000000000
+status: confirmed_primary
+evidence:
+  - source: source:llama-3.1-announcement
+    locator: Takeaways

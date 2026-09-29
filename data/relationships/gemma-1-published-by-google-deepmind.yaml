@@ -1,0 +1,7 @@
+id: relationship:gemma-1-published-by-google-deepmind
+type: relationship
+subject: release:gemma-1
+predicate: published_by
+object: org:google-deepmind
+claim_refs:
+  - claim:gemma-1-published-by-google-deepmind

@@ -1,0 +1,16 @@
+id: claim:qwen2.5-open-weight-sizes
+type: claim
+subject: release:qwen2.5
+predicate: open_weight_parameter_sizes
+value:
+  - 500000000
+  - 1500000000
+  - 3000000000
+  - 7000000000
+  - 14000000000
+  - 32000000000
+  - 72000000000
+status: confirmed_primary
+evidence:
+  - source: source:qwen2.5-announcement
+    locator: Introduction

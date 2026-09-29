@@ -1,0 +1,7 @@
+id: relationship:claude-3.5-sonnet-published-by-anthropic
+type: relationship
+subject: release:claude-3.5-sonnet
+predicate: published_by
+object: org:anthropic
+claim_refs:
+  - claim:claude-3.5-sonnet-published-by-anthropic

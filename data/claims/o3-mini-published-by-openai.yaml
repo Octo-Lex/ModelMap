@@ -1,0 +1,9 @@
+id: claim:o3-mini-published-by-openai
+type: claim
+subject: release:o3-mini
+predicate: published_by
+object: org:openai
+status: confirmed_primary
+evidence:
+  - source: source:o3-mini-early-access
+    locator: OpenAI Early Access Services for forthcoming models including o3-mini

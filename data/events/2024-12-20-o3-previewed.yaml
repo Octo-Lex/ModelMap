@@ -1,0 +1,8 @@
+id: event:2024-12-20-o3-previewed
+type: event
+name: OpenAI o3 previewed
+event_type: model_announced
+subject: release:o3
+occurred_at: '2024-12-20'
+evidence:
+  - source:o3-preview-day12

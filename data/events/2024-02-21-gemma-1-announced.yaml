@@ -1,0 +1,8 @@
+id: event:2024-02-21-gemma-1-announced
+type: event
+name: Gemma open models introduced
+event_type: model_announced
+subject: release:gemma-1
+occurred_at: '2024-02-21'
+evidence:
+  - source:gemma-1-announcement

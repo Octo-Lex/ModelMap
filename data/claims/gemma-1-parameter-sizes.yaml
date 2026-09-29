@@ -1,0 +1,11 @@
+id: claim:gemma-1-parameter-sizes
+type: claim
+subject: release:gemma-1
+predicate: parameter_sizes
+value:
+  - 2000000000
+  - 7000000000
+status: confirmed_primary
+evidence:
+  - source: source:gemma-1-report
+    locator: abstract and introduction

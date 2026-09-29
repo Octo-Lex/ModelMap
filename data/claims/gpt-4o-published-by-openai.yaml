@@ -1,0 +1,9 @@
+id: claim:gpt-4o-published-by-openai
+type: claim
+subject: release:gpt-4o
+predicate: published_by
+object: org:openai
+status: confirmed_primary
+evidence:
+  - source: source:gpt-4o-announcement
+    locator: OpenAI announcement

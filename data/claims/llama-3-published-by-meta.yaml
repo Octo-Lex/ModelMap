@@ -1,0 +1,9 @@
+id: claim:llama-3-published-by-meta
+type: claim
+subject: release:llama-3
+predicate: published_by
+object: org:meta
+status: confirmed_primary
+evidence:
+  - source: source:llama-3-announcement
+    locator: announcement opening

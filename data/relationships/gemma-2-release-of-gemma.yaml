@@ -1,0 +1,7 @@
+id: relationship:gemma-2-release-of-gemma
+type: relationship
+subject: release:gemma-2
+predicate: release_of
+object: family:gemma
+claim_refs:
+  - claim:gemma-2-release-of-gemma

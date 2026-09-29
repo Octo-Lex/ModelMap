@@ -1,0 +1,5 @@
+id: technique:reasoning-reinforcement-learning
+type: technique
+name: Reasoning-oriented Reinforcement Learning
+status: canonical
+description: Reinforcement-learning post-training intended to improve a model's multi-step reasoning behavior and learned thinking process.

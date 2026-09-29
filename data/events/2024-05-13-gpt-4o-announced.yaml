@@ -1,0 +1,8 @@
+id: event:2024-05-13-gpt-4o-announced
+type: event
+name: GPT-4o announced
+event_type: model_announced
+subject: release:gpt-4o
+occurred_at: '2024-05-13'
+evidence:
+  - source:gpt-4o-announcement

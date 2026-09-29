@@ -1,0 +1,12 @@
+id: claim:claude-3-variants
+type: claim
+subject: release:claude-3
+predicate: model_variants
+value:
+  - Claude 3 Haiku
+  - Claude 3 Sonnet
+  - Claude 3 Opus
+status: confirmed_primary
+evidence:
+  - source: source:claude-3-announcement
+    locator: Claude 3 model family

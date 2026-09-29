@@ -1,0 +1,8 @@
+id: event:2024-12-05-o1-released
+type: event
+name: OpenAI o1 released
+event_type: model_announced
+subject: release:o1
+occurred_at: '2024-12-05'
+evidence:
+  - source:o1-system-card

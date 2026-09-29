@@ -1,0 +1,9 @@
+id: claim:claude-3.5-sonnet-published-by-anthropic
+type: claim
+subject: release:claude-3.5-sonnet
+predicate: published_by
+object: org:anthropic
+status: confirmed_primary
+evidence:
+  - source: source:claude-3.5-sonnet-announcement
+    locator: Anthropic announcement

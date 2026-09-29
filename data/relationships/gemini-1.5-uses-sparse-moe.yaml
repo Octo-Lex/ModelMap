@@ -1,0 +1,7 @@
+id: relationship:gemini-1.5-uses-sparse-moe
+type: relationship
+subject: release:gemini-1.5
+predicate: uses_technique
+object: technique:sparse-mixture-of-experts
+claim_refs:
+  - claim:gemini-1.5-uses-sparse-moe

@@ -1,0 +1,9 @@
+id: claim:gemma-1-release-of-gemma
+type: claim
+subject: release:gemma-1
+predicate: release_of
+object: family:gemma
+status: confirmed_primary
+evidence:
+  - source: source:gemma-1-announcement
+    locator: Gemma open models

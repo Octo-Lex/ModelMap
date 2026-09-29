@@ -1,0 +1,7 @@
+id: relationship:o3-published-by-openai
+type: relationship
+subject: release:o3
+predicate: published_by
+object: org:openai
+claim_refs:
+  - claim:o3-published-by-openai

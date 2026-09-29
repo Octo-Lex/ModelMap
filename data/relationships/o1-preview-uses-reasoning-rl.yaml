@@ -1,0 +1,7 @@
+id: relationship:o1-preview-uses-reasoning-rl
+type: relationship
+subject: release:o1-preview
+predicate: uses_technique
+object: technique:reasoning-reinforcement-learning
+claim_refs:
+  - claim:o1-preview-uses-reasoning-rl

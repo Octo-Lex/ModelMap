@@ -1,0 +1,7 @@
+id: relationship:gemini-2.0-flash-published-by-google-deepmind
+type: relationship
+subject: release:gemini-2.0-flash
+predicate: published_by
+object: org:google-deepmind
+claim_refs:
+  - claim:gemini-2.0-flash-published-by-google-deepmind

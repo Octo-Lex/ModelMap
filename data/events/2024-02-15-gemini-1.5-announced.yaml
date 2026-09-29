@@ -1,0 +1,8 @@
+id: event:2024-02-15-gemini-1.5-announced
+type: event
+name: Gemini 1.5 announced
+event_type: model_announced
+subject: release:gemini-1.5
+occurred_at: '2024-02-15'
+evidence:
+  - source:gemini-1.5-announcement

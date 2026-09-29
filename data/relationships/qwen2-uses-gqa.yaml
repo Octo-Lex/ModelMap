@@ -1,0 +1,7 @@
+id: relationship:qwen2-uses-gqa
+type: relationship
+subject: release:qwen2
+predicate: uses_technique
+object: technique:grouped-query-attention
+claim_refs:
+  - claim:qwen2-uses-gqa

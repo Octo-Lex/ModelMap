@@ -1,0 +1,4 @@
+id: variant:gemma-2-9b
+type: model_variant
+name: Gemma 2 9B
+status: canonical

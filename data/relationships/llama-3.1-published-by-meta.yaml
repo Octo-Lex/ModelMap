@@ -1,0 +1,7 @@
+id: relationship:llama-3.1-published-by-meta
+type: relationship
+subject: release:llama-3.1
+predicate: published_by
+object: org:meta
+claim_refs:
+  - claim:llama-3.1-published-by-meta

@@ -1,0 +1,9 @@
+id: claim:qwen2-uses-gqa
+type: claim
+subject: release:qwen2
+predicate: uses_technique
+object: technique:grouped-query-attention
+status: confirmed_primary
+evidence:
+  - source: source:qwen2-announcement
+    locator: Model Information; GQA applies to all model sizes

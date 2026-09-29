@@ -1,0 +1,7 @@
+id: relationship:gemini-1.5-published-by-google-deepmind
+type: relationship
+subject: release:gemini-1.5
+predicate: published_by
+object: org:google-deepmind
+claim_refs:
+  - claim:gemini-1.5-published-by-google-deepmind

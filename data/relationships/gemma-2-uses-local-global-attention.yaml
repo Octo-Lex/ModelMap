@@ -1,0 +1,7 @@
+id: relationship:gemma-2-uses-local-global-attention
+type: relationship
+subject: release:gemma-2
+predicate: uses_technique
+object: technique:local-global-attention
+claim_refs:
+  - claim:gemma-2-uses-local-global-attention

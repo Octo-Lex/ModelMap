@@ -1,0 +1,9 @@
+id: claim:o3-published-by-openai
+type: claim
+subject: release:o3
+predicate: published_by
+object: org:openai
+status: confirmed_primary
+evidence:
+  - source: source:o3-preview-day12
+    locator: 12 Days of OpenAI — Day 12

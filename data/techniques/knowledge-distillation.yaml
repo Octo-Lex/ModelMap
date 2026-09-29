@@ -1,0 +1,7 @@
+id: technique:knowledge-distillation
+type: technique
+name: Knowledge Distillation
+aliases:
+  - Distillation
+status: canonical
+description: Training a student model using richer target distributions or supervision produced by a teacher model.

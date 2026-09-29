@@ -1,0 +1,12 @@
+id: claim:gemini-2.0-flash-native-multimodal-output
+type: claim
+subject: release:gemini-2.0-flash
+predicate: native_multimodal_output
+value:
+  - text
+  - image
+  - audio
+status: confirmed_primary
+evidence:
+  - source: source:gemini-2.0-announcement
+    locator: Gemini 2.0 Flash capabilities

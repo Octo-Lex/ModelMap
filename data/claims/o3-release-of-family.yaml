@@ -1,0 +1,9 @@
+id: claim:o3-release-of-family
+type: claim
+subject: release:o3
+predicate: release_of
+object: family:o-series
+status: confirmed_primary
+evidence:
+  - source: source:o3-preview-day12
+    locator: Day 12 — o3 preview

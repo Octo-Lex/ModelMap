@@ -1,0 +1,8 @@
+id: event:2024-06-07-qwen2-weights
+type: event
+name: Qwen2 open weights released
+event_type: weights_released
+subject: release:qwen2
+occurred_at: '2024-06-07'
+evidence:
+  - source:qwen2-announcement
