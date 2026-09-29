@@ -1,9 +1,0 @@
-id: claim:gemini-2.5-pro-uses-hybrid-reasoning
-type: claim
-subject: release:gemini-2.5-pro
-predicate: uses_technique
-object: technique:hybrid-reasoning
-status: confirmed_primary
-evidence:
-  - source: source:gemini-2.5-ga
-    locator: opening summary

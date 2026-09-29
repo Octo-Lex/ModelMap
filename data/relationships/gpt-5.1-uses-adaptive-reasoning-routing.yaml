@@ -1,6 +1,6 @@
 id: relationship:gpt-5.1-uses-adaptive-reasoning-routing
 type: relationship
-subject: release:gpt-5.1
+subject: variant:gpt-5.1-instant
 predicate: uses_technique
 object: technique:adaptive-reasoning-routing
 claim_refs:
