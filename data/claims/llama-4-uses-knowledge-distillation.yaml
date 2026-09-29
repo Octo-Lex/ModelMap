@@ -1,9 +1,0 @@
-id: claim:llama-4-uses-knowledge-distillation
-type: claim
-subject: release:llama-4
-predicate: uses_technique
-object: technique:knowledge-distillation
-status: confirmed_primary
-evidence:
-  - source: source:llama-4-announcement
-    locator: takeaways and Pre-training
