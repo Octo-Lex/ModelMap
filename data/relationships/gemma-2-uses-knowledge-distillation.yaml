@@ -1,7 +1,0 @@
-id: relationship:gemma-2-uses-knowledge-distillation
-type: relationship
-subject: release:gemma-2
-predicate: uses_technique
-object: technique:knowledge-distillation
-claim_refs:
-  - claim:gemma-2-uses-knowledge-distillation
