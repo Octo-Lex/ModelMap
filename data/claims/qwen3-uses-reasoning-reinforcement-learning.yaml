@@ -6,4 +6,4 @@ object: technique:reasoning-reinforcement-learning
 status: confirmed_primary
 evidence:
   - source: source:qwen3-announcement
-    locator: Key Features: four-stage training pipeline
+    locator: 'Key Features: four-stage training pipeline'

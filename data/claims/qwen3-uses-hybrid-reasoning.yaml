@@ -6,4 +6,4 @@ object: technique:hybrid-reasoning
 status: confirmed_primary
 evidence:
   - source: source:qwen3-announcement
-    locator: Key Features: Hybrid Thinking Modes
+    locator: 'Key Features: Hybrid Thinking Modes'
