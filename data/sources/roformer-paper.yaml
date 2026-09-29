@@ -1,0 +1,8 @@
+id: source:roformer-paper
+type: source
+title: "RoFormer: Enhanced Transformer with Rotary Position Embedding"
+source_type: paper
+url: https://arxiv.org/abs/2104.09864
+publisher: arXiv
+published_at: '2021-04-20'
+version: v1

@@ -1,0 +1,9 @@
+id: claim:mistral-7b-uses-gqa
+type: claim
+subject: release:mistral-7b
+predicate: uses_technique
+object: technique:grouped-query-attention
+status: confirmed_primary
+evidence:
+  - source: source:mistral-7b-paper
+    locator: Abstract

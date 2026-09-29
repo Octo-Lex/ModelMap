@@ -1,0 +1,7 @@
+id: relationship:mixtral-8x7b-uses-sparse-moe
+type: relationship
+subject: release:mixtral-8x7b
+predicate: uses_technique
+object: technique:sparse-mixture-of-experts
+claim_refs:
+  - claim:mixtral-8x7b-uses-sparse-moe

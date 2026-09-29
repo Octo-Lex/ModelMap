@@ -1,0 +1,9 @@
+id: technique:sliding-window-attention
+type: technique
+name: Sliding Window Attention
+aliases:
+  - SWA
+description: Attention restricted to a moving local window to reduce inference cost and bound attention span per layer.
+status: reviewed
+metadata:
+  domain: attention

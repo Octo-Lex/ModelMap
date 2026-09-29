@@ -1,0 +1,8 @@
+id: event:2021-04-20-rope-introduced
+type: event
+name: Rotary Position Embedding introduced
+event_type: technique_introduced
+subject: technique:rotary-position-embedding
+occurred_at: '2021-04-20'
+evidence:
+  - source:roformer-paper

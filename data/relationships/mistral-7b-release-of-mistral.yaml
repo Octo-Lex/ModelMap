@@ -1,0 +1,5 @@
+id: relationship:mistral-7b-release-of-mistral
+type: relationship
+subject: release:mistral-7b
+predicate: release_of
+object: family:mistral

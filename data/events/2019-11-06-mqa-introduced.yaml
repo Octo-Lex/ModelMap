@@ -1,0 +1,8 @@
+id: event:2019-11-06-mqa-introduced
+type: event
+name: Multi-query attention introduced
+event_type: technique_introduced
+subject: technique:multi-query-attention
+occurred_at: '2019-11-06'
+evidence:
+  - source:multi-query-attention

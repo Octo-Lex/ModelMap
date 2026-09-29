@@ -1,0 +1,9 @@
+id: release:mistral-7b
+type: model_release
+name: Mistral 7B
+aliases:
+  - Mistral 7B v0.1
+status: reviewed
+metadata:
+  family: family:mistral
+  first_publication: '2023-10-10'

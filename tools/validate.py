@@ -20,6 +20,7 @@ SCHEMA_BY_TYPE = {
     "claim": "claim.schema.json",
     "relationship": "relationship.schema.json",
     "architecture_spec": "architecture.schema.json",
+    "event": "event.schema.json",
 }
 
 
@@ -86,20 +87,28 @@ def main() -> int:
             errors.append(f"{rel}: unresolved reference {ref!r}")
             return
         if expected_type is not None and target[1].get("type") != expected_type:
-            errors.append(f"{rel}: {ref!r} must reference type {expected_type!r}, found {target[1].get('type')!r}")
+            errors.append(
+                f"{rel}: {ref!r} must reference type {expected_type!r}, "
+                f"found {target[1].get('type')!r}"
+            )
 
     for path, record in records:
-        if record.get("type") == "claim":
+        record_type = record.get("type")
+        if record_type == "claim":
             require_id(path, record.get("subject"))
             if "object" in record:
                 require_id(path, record.get("object"))
             for evidence in record.get("evidence", []):
                 require_id(path, evidence.get("source"), "source")
-        elif record.get("type") == "relationship":
+        elif record_type == "relationship":
             require_id(path, record.get("subject"))
             require_id(path, record.get("object"))
             for claim_ref in record.get("claim_refs", []):
                 require_id(path, claim_ref, "claim")
+        elif record_type == "event":
+            require_id(path, record.get("subject"))
+            for source_ref in record.get("evidence", []):
+                require_id(path, source_ref, "source")
 
     if errors:
         print(f"ModelMap validation failed with {len(errors)} error(s):")

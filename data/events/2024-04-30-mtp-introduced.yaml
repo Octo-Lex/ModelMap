@@ -1,0 +1,8 @@
+id: event:2024-04-30-mtp-introduced
+type: event
+name: Multi-token prediction proposed for large language models
+event_type: technique_introduced
+subject: technique:multi-token-prediction
+occurred_at: '2024-04-30'
+evidence:
+  - source:mtp-paper

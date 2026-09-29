@@ -1,0 +1,8 @@
+id: event:2024-05-07-deepseek-v2-paper
+type: event
+name: DeepSeek-V2 paper published
+event_type: paper_published
+subject: release:deepseek-v2
+occurred_at: '2024-05-07'
+evidence:
+  - source:deepseek-v2-paper

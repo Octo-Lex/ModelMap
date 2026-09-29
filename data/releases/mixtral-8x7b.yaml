@@ -1,0 +1,7 @@
+id: release:mixtral-8x7b
+type: model_release
+name: Mixtral 8x7B
+status: reviewed
+metadata:
+  family: family:mistral
+  first_publication: '2024-01-08'
