@@ -1,0 +1,7 @@
+id: relationship:phi-1.5-published-by-microsoft
+type: relationship
+subject: release:phi-1.5
+predicate: published_by
+object: org:microsoft
+claim_refs:
+  - claim:phi-1.5-published-by-microsoft

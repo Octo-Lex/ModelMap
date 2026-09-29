@@ -1,0 +1,9 @@
+id: claim:llama-2-published-by-meta
+type: claim
+subject: release:llama-2
+predicate: published_by
+object: org:meta
+status: confirmed_primary
+evidence:
+  - source: source:llama-2-paper
+    locator: author affiliations and report context

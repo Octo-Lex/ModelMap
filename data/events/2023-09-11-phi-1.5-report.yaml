@@ -1,0 +1,8 @@
+id: event:2023-09-11-phi-1.5-report
+type: event
+name: phi-1.5 technical report published
+event_type: report_published
+subject: release:phi-1.5
+occurred_at: '2023-09-11'
+evidence:
+  - source:phi-1.5-report

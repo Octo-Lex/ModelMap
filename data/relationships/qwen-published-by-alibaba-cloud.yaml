@@ -1,0 +1,7 @@
+id: relationship:qwen-published-by-alibaba-cloud
+type: relationship
+subject: release:qwen
+predicate: published_by
+object: org:alibaba-cloud
+claim_refs:
+  - claim:qwen-published-by-alibaba-cloud

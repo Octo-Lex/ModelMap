@@ -1,0 +1,8 @@
+id: event:2023-03-15-gpt-4-report
+type: event
+name: GPT-4 Technical Report published
+event_type: report_published
+subject: release:gpt-4
+occurred_at: '2023-03-15'
+evidence:
+  - source:gpt-4-technical-report

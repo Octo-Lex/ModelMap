@@ -1,0 +1,9 @@
+id: claim:claude-2-published-by-anthropic
+type: claim
+subject: release:claude-2
+predicate: published_by
+object: org:anthropic
+status: confirmed_primary
+evidence:
+  - source: source:claude-2-announcement
+    locator: Anthropic announcement

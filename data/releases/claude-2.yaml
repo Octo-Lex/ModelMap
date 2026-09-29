@@ -1,0 +1,4 @@
+id: release:claude-2
+type: model_release
+name: Claude 2
+status: canonical

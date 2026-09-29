@@ -1,0 +1,7 @@
+id: relationship:falcon-40b-release-of-falcon
+type: relationship
+subject: release:falcon-40b
+predicate: release_of
+object: family:falcon
+claim_refs:
+  - claim:falcon-40b-release-of-falcon

@@ -1,0 +1,7 @@
+id: relationship:phi-1.5-release-of-phi
+type: relationship
+subject: release:phi-1.5
+predicate: release_of
+object: family:phi
+claim_refs:
+  - claim:phi-1.5-release-of-phi

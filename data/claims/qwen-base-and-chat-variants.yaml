@@ -1,0 +1,11 @@
+id: claim:qwen-base-and-chat-variants
+type: claim
+subject: release:qwen
+predicate: model_variants
+value:
+  - Qwen base pretrained models
+  - Qwen-Chat aligned chat models
+status: confirmed_primary
+evidence:
+  - source: source:qwen-report
+    locator: abstract

@@ -1,0 +1,9 @@
+id: claim:gpt-4-release-of-gpt
+type: claim
+subject: release:gpt-4
+predicate: release_of
+object: family:gpt
+status: confirmed_primary
+evidence:
+  - source: source:gpt-4-announcement
+    locator: announcement title and release page

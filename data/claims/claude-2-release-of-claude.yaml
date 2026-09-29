@@ -1,0 +1,9 @@
+id: claim:claude-2-release-of-claude
+type: claim
+subject: release:claude-2
+predicate: release_of
+object: family:claude
+status: confirmed_primary
+evidence:
+  - source: source:claude-2-announcement
+    locator: announcement title and body

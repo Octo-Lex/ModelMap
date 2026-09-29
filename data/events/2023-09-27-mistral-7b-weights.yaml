@@ -1,0 +1,8 @@
+id: event:2023-09-27-mistral-7b-weights
+type: event
+name: Mistral 7B open weights released
+event_type: weights_released
+subject: release:mistral-7b
+occurred_at: '2023-09-27'
+evidence:
+  - source:mistral-7b-announcement

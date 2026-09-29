@@ -1,0 +1,7 @@
+id: relationship:falcon-40b-published-by-tii
+type: relationship
+subject: release:falcon-40b
+predicate: published_by
+object: org:tii
+claim_refs:
+  - claim:falcon-40b-published-by-tii

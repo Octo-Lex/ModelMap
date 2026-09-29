@@ -1,0 +1,10 @@
+id: claim:gpt-4-output-modality
+type: claim
+subject: release:gpt-4
+predicate: output_modalities
+value:
+  - text
+status: confirmed_primary
+evidence:
+  - source: source:gpt-4-technical-report
+    locator: abstract

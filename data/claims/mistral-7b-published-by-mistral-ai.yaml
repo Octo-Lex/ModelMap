@@ -1,0 +1,9 @@
+id: claim:mistral-7b-published-by-mistral-ai
+type: claim
+subject: release:mistral-7b
+predicate: published_by
+object: org:mistral-ai
+status: confirmed_primary
+evidence:
+  - source: source:mistral-7b-announcement
+    locator: Mistral AI team announcement

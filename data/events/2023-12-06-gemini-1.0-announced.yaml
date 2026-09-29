@@ -1,0 +1,8 @@
+id: event:2023-12-06-gemini-1.0-announced
+type: event
+name: Gemini 1.0 announced
+event_type: model_announced
+subject: release:gemini-1.0
+occurred_at: '2023-12-06'
+evidence:
+  - source:gemini-1-announcement

@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://modelmap.dev/schemas/year-view.schema.json",
+  "title": "ModelMap Year View",
+  "type": "object",
+  "required": ["year", "generated_from", "sections"],
+  "properties": {
+    "year": {"type": "integer", "minimum": 2017},
+    "generated_from": {"const": "canonical-events"},
+    "sections": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "event_types"],
+        "properties": {
+          "name": {"type": "string", "minLength": 1},
+          "event_types": {"type": "array", "items": {"type": "string"}, "uniqueItems": true}
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

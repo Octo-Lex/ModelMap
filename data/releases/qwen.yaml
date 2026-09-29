@@ -1,0 +1,4 @@
+id: release:qwen
+type: model_release
+name: Qwen
+status: canonical

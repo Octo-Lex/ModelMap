@@ -1,0 +1,8 @@
+id: event:2023-11-28-falcon-report
+type: event
+name: Falcon series technical report published
+event_type: report_published
+subject: release:falcon-40b
+occurred_at: '2023-11-28'
+evidence:
+  - source:falcon-report

@@ -1,0 +1,9 @@
+id: claim:qwen-chat-uses-rlhf
+type: claim
+subject: release:qwen
+predicate: chat_alignment_method
+value: reinforcement learning from human feedback
+status: confirmed_primary
+evidence:
+  - source: source:qwen-report
+    locator: abstract

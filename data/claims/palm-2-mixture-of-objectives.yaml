@@ -1,0 +1,9 @@
+id: claim:palm-2-mixture-of-objectives
+type: claim
+subject: release:palm-2
+predicate: training_objectives
+value: mixture of objectives
+status: confirmed_primary
+evidence:
+  - source: source:palm-2-report
+    locator: abstract

@@ -1,0 +1,7 @@
+id: relationship:palm-2-published-by-google-deepmind
+type: relationship
+subject: release:palm-2
+predicate: published_by
+object: org:google-deepmind
+claim_refs:
+  - claim:palm-2-published-by-google-deepmind

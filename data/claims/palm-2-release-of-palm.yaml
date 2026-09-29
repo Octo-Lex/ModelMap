@@ -1,0 +1,9 @@
+id: claim:palm-2-release-of-palm
+type: claim
+subject: release:palm-2
+predicate: release_of
+object: family:palm
+status: confirmed_primary
+evidence:
+  - source: source:palm-2-announcement
+    locator: Introducing PaLM 2

@@ -1,0 +1,14 @@
+id: claim:gemini-1.0-input-modalities
+type: claim
+subject: release:gemini-1.0
+predicate: input_modalities
+value:
+  - text
+  - code
+  - audio
+  - image
+  - video
+status: confirmed_primary
+evidence:
+  - source: source:gemini-1-announcement
+    locator: Introducing Gemini section

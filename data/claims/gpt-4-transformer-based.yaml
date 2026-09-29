@@ -1,0 +1,9 @@
+id: claim:gpt-4-transformer-based
+type: claim
+subject: release:gpt-4
+predicate: transformer_based
+value: true
+status: confirmed_primary
+evidence:
+  - source: source:gpt-4-technical-report
+    locator: abstract

@@ -1,0 +1,4 @@
+id: family:gpt
+type: model_family
+name: GPT
+status: canonical
