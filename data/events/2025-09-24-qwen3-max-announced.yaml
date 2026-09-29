@@ -1,8 +1,8 @@
 id: event:2025-09-24-qwen3-max-announced
 type: event
-name: Qwen3-Max released
+name: Qwen3-Max-Instruct released
 event_type: model_announced
-subject: release:qwen3-max
+subject: variant:qwen3-max-instruct
 occurred_at: '2025-09-24'
 evidence:
   - source:qwen3-max-announcement

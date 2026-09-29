@@ -1,0 +1,4 @@
+id: variant:deepseek-v3.2-speciale
+type: model_variant
+name: DeepSeek-V3.2-Speciale
+status: canonical

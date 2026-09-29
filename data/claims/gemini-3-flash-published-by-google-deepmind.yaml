@@ -5,5 +5,5 @@ predicate: published_by
 object: org:google-deepmind
 status: confirmed_primary
 evidence:
-  - source: source:gemini-3-flash-announcement
-    locator: Gemini team attribution and Google DeepMind developer availability
+  - source: source:gemini-3-flash-developer-announcement
+    locator: author affiliation — Group Product Manager, Google DeepMind

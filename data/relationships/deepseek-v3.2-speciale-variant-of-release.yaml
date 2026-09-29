@@ -1,0 +1,7 @@
+id: relationship:deepseek-v3.2-speciale-variant-of-release
+type: relationship
+subject: variant:deepseek-v3.2-speciale
+predicate: variant_of
+object: release:deepseek-v3.2
+claim_refs:
+  - claim:deepseek-v3.2-speciale-variant-of-release
