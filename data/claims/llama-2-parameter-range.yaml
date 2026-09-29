@@ -1,0 +1,11 @@
+id: claim:llama-2-parameter-range
+type: claim
+subject: release:llama-2
+predicate: parameter_range
+value:
+  minimum: 7000000000
+  maximum: 70000000000
+status: confirmed_primary
+evidence:
+  - source: source:llama-2-paper
+    locator: Abstract

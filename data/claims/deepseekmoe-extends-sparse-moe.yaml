@@ -1,0 +1,9 @@
+id: claim:deepseekmoe-extends-sparse-moe
+type: claim
+subject: technique:deepseek-moe
+predicate: extends
+object: technique:sparse-mixture-of-experts
+status: confirmed_primary
+evidence:
+  - source: source:deepseekmoe-paper
+    locator: Abstract

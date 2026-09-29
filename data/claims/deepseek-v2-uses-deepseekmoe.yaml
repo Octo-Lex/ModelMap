@@ -1,0 +1,9 @@
+id: claim:deepseek-v2-uses-deepseekmoe
+type: claim
+subject: release:deepseek-v2
+predicate: uses_technique
+object: technique:deepseek-moe
+status: confirmed_primary
+evidence:
+  - source: source:deepseek-v2-paper
+    locator: Abstract

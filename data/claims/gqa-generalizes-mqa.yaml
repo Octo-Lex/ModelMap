@@ -1,0 +1,9 @@
+id: claim:gqa-generalizes-mqa
+type: claim
+subject: technique:grouped-query-attention
+predicate: generalizes
+object: technique:multi-query-attention
+status: confirmed_primary
+evidence:
+  - source: source:gqa-paper
+    locator: Abstract

@@ -1,0 +1,6 @@
+id: technique:multi-query-attention
+type: technique
+name: Multi-Query Attention
+aliases:
+  - MQA
+status: draft

@@ -1,0 +1,7 @@
+id: relationship:mha-precedes-mqa
+type: relationship
+subject: technique:multi-head-attention
+predicate: conceptual_predecessor_of
+object: technique:multi-query-attention
+claim_refs:
+  - claim:mqa-variant-of-mha

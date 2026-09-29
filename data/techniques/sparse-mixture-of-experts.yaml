@@ -1,0 +1,6 @@
+id: technique:sparse-mixture-of-experts
+type: technique
+name: Sparse Mixture-of-Experts
+aliases:
+  - Sparse MoE
+status: draft

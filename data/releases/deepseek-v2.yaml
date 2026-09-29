@@ -1,0 +1,4 @@
+id: release:deepseek-v2
+type: model_release
+name: DeepSeek-V2
+status: draft

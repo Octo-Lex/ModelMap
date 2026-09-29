@@ -17,6 +17,7 @@
         "checkpoint_derived_from",
         "fine_tuned_from",
         "distilled_from",
+        "conceptual_predecessor_of",
         "uses_architecture",
         "uses_technique",
         "introduces_technique",

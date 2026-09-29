@@ -1,0 +1,9 @@
+id: claim:llama-2-release-of-family
+type: claim
+subject: release:llama-2
+predicate: release_of
+object: family:llama
+status: confirmed_primary
+evidence:
+  - source: source:llama-2-paper
+    locator: Abstract

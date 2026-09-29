@@ -1,0 +1,7 @@
+id: relationship:deepseek-v2-uses-deepseekmoe
+type: relationship
+subject: release:deepseek-v2
+predicate: uses_technique
+object: technique:deepseek-moe
+claim_refs:
+  - claim:deepseek-v2-uses-deepseekmoe

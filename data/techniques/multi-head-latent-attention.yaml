@@ -1,0 +1,6 @@
+id: technique:multi-head-latent-attention
+type: technique
+name: Multi-Head Latent Attention
+aliases:
+  - MLA
+status: draft

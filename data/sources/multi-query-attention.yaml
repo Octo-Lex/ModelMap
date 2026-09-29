@@ -1,0 +1,8 @@
+id: source:multi-query-attention
+type: source
+title: "Fast Transformer Decoding: One Write-Head is All You Need"
+source_type: paper
+url: https://arxiv.org/abs/1911.02150
+publisher: arXiv
+published_at: '2019-11-06'
+retrieved_at: '2026-09-29T06:10:00Z'

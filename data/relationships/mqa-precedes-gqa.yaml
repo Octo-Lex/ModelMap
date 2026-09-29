@@ -1,0 +1,7 @@
+id: relationship:mqa-precedes-gqa
+type: relationship
+subject: technique:multi-query-attention
+predicate: conceptual_predecessor_of
+object: technique:grouped-query-attention
+claim_refs:
+  - claim:gqa-generalizes-mqa

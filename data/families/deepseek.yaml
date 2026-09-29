@@ -1,0 +1,4 @@
+id: family:deepseek
+type: model_family
+name: DeepSeek
+status: draft

@@ -1,0 +1,6 @@
+id: technique:grouped-query-attention
+type: technique
+name: Grouped-Query Attention
+aliases:
+  - GQA
+status: draft

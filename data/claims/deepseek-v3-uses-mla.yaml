@@ -1,0 +1,9 @@
+id: claim:deepseek-v3-uses-mla
+type: claim
+subject: release:deepseek-v3
+predicate: uses_technique
+object: technique:multi-head-latent-attention
+status: confirmed_primary
+evidence:
+  - source: source:deepseek-v3-report
+    locator: Abstract
