@@ -1,0 +1,53 @@
+id: arch:gemma-2-9b
+type: architecture_spec
+name: Gemma 2 9B architecture
+target: variant:gemma-2-9b
+status: reviewed
+topology:
+  type: decoder_only
+  pre_norm: true
+  post_norm: true
+dimensions:
+  layers: 42
+  d_model: 3584
+  head_dim: 256
+tokenization:
+  vocab_size: 256128
+context:
+  pretrained_length: 8192
+components:
+  normalization: rmsnorm
+  position: rope
+  attention: alternating_local_global_grouped_query_attention
+  ffn: geglu
+attention:
+  query_heads: 16
+  kv_heads: 8
+  sliding_window: 4096
+  global_span: 8192
+feed_forward:
+  intermediate_dim: 28672
+evidence:
+  - source: source:gemma-2-report
+    locator: 'Table 1, Overview of the main model parameters and design choices'
+    fields:
+      - topology.pre_norm
+      - topology.post_norm
+      - dimensions.layers
+      - dimensions.d_model
+      - dimensions.head_dim
+      - tokenization.vocab_size
+      - attention.query_heads
+      - attention.kv_heads
+      - attention.sliding_window
+      - attention.global_span
+      - feed_forward.intermediate_dim
+  - source: source:gemma-2-report
+    locator: '§2 Model Architecture'
+    fields:
+      - topology.type
+      - context.pretrained_length
+      - components.normalization
+      - components.position
+      - components.attention
+      - components.ffn
