@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://modelmap.dev/schemas/entity-view.schema.json",
+  "title": "ModelMap Generated Entity View",
+  "type": "object",
+  "required": ["generated_from", "entity", "outgoing_relationships", "incoming_relationships", "claims", "events", "variants", "related_products"],
+  "properties": {
+    "generated_from": {"const": "canonical-records"},
+    "entity": {"type": "object", "required": ["id", "type", "record_path"], "additionalProperties": true},
+    "outgoing_relationships": {"type": "array", "items": {"type": "object"}},
+    "incoming_relationships": {"type": "array", "items": {"type": "object"}},
+    "claims": {"type": "array", "items": {"type": "object"}},
+    "events": {"type": "array", "items": {"type": "object"}},
+    "variants": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["entity", "claims", "events"],
+        "properties": {
+          "entity": {"type": "object"},
+          "claims": {"type": "array"},
+          "events": {"type": "array"}
+        },
+        "additionalProperties": false
+      }
+    },
+    "related_products": {"type": "array", "items": {"type": "object"}}
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://modelmap.dev/schemas/graph-view.schema.json",
+  "title": "ModelMap Generated Graph View",
+  "type": "object",
+  "required": ["generated_from", "scope", "counts", "nodes", "edges"],
+  "properties": {
+    "generated_from": {"const": "canonical-records-and-relationships"},
+    "scope": {"enum": ["core", "all"]},
+    "counts": {
+      "type": "object",
+      "required": ["nodes", "edges", "omitted_edges"],
+      "properties": {
+        "nodes": {"type": "integer", "minimum": 0},
+        "edges": {"type": "integer", "minimum": 0},
+        "omitted_edges": {"type": "integer", "minimum": 0}
+      },
+      "additionalProperties": false
+    },
+    "nodes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "type", "label", "record_path"],
+        "properties": {
+          "id": {"type": "string"},
+          "type": {"type": "string"},
+          "label": {"type": "string"},
+          "record_path": {"type": "string"}
+        },
+        "additionalProperties": false
+      }
+    },
+    "edges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "subject", "predicate", "object", "claim_refs"],
+        "properties": {
+          "id": {"type": "string"},
+          "subject": {"type": "string"},
+          "predicate": {"type": "string"},
+          "object": {"type": "string"},
+          "claim_refs": {"type": "array", "items": {"type": "string"}}
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}
