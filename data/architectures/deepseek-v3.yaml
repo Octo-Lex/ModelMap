@@ -1,0 +1,56 @@
+id: arch:deepseek-v3
+type: architecture_spec
+name: DeepSeek-V3 architecture
+target: release:deepseek-v3
+status: reviewed
+topology:
+  type: decoder_only
+dimensions:
+  layers: 61
+  d_model: 7168
+  head_dim: 128
+components:
+  attention: multi_head_latent_attention
+  ffn: dense_then_deepseek_moe
+  routing: auxiliary_loss_free_load_balancing
+attention:
+  query_heads: 128
+  kv_compression_dim: 512
+  query_compression_dim: 1536
+feed_forward:
+  expert_intermediate_dim: 2048
+  shared_experts: 1
+  routed_experts: 256
+  active_routed_experts: 8
+blocks:
+  - range: [0, 2]
+    attention: multi_head_latent_attention
+    ffn: dense
+  - range: [3, 60]
+    attention: multi_head_latent_attention
+    ffn: deepseek_moe
+evidence:
+  - source: source:deepseek-v3-report
+    locator: '§2.1 Basic Architecture and §2.1.1 Multi-Head Latent Attention'
+    fields:
+      - topology.type
+      - components.attention
+  - source: source:deepseek-v3-report
+    locator: '§2.1.2 DeepSeekMoE with Auxiliary-Loss-Free Load Balancing'
+    fields:
+      - components.ffn
+      - components.routing
+  - source: source:deepseek-v3-report
+    locator: '§4.2 Hyper-Parameters > Model Hyper-Parameters'
+    fields:
+      - dimensions.layers
+      - dimensions.d_model
+      - dimensions.head_dim
+      - attention.query_heads
+      - attention.kv_compression_dim
+      - attention.query_compression_dim
+      - feed_forward.expert_intermediate_dim
+      - feed_forward.shared_experts
+      - feed_forward.routed_experts
+      - feed_forward.active_routed_experts
+      - blocks
