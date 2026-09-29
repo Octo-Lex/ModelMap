@@ -1,0 +1,4 @@
+id: variant:llama-3.1-405b
+type: model_variant
+name: Llama 3.1 405B
+status: reviewed
