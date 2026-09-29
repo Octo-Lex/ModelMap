@@ -1,0 +1,33 @@
+id: arch:llama-3.1-405b
+type: architecture_spec
+name: Llama 3.1 405B architecture
+target: variant:llama-3.1-405b
+status: reviewed
+topology:
+  type: decoder_only
+dimensions:
+  layers: 126
+  d_model: 16384
+tokenization:
+  vocab_size: 128256
+components:
+  position: scaled_rope
+  attention: grouped_query_attention
+attention:
+  query_heads: 128
+evidence:
+  - source: source:llama-3-paper
+    locator: '§3.2 Model Architecture, Table 3'
+    fields:
+      - topology.type
+      - components.attention
+  - source: source:llama-models-sku-list
+    locator: 'models/sku_list.py: LLAMA3_VOCAB_SIZE and llama3_1_base_models() 405B BF16 MP8/FP8/MP16 entries, commit 0e0b8c519242d5833d8c11bffc1232b77ad7f301'
+    fields:
+      - dimensions.layers
+      - dimensions.d_model
+      - tokenization.vocab_size
+      - components.position
+      - attention.query_heads
+    note: 'The same core model is packaged with n_kv_heads=8 for BF16 MP8/FP8 and n_kv_heads=16 for BF16 MP16.'
+notes: "attention.kv_heads is intentionally omitted at the model-variant level because Meta's first-party checkpoint SKUs expose packaging-dependent KV-head counts for the same 405B core model."

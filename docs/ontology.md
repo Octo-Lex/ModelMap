@@ -183,19 +183,39 @@ These use different edge types. Conceptual similarity must never imply checkpoin
 
 ## 7. Architecture representation
 
-Architecture records should support heterogeneous layer plans rather than assuming every block is identical.
+An `ArchitectureSpec` targets exactly one `ModelRelease` or `ModelVariant`. Architecture facts are stored as structured fields, and every populated fact must be mapped to evidence at field granularity. This keeps a compact manifest auditable without multiplying every architectural scalar into a separate claim record.
 
 ```yaml
+id: arch:example-model
+type: architecture_spec
+name: Example model architecture
+target: variant:example-model
+status: reviewed
+topology:
+  type: decoder_only
+dimensions:
+  layers: 61
 blocks:
   - range: [0, 2]
-    attention: component:mla
-    ffn: component:dense-swiglu
+    attention: multi_head_latent_attention
+    ffn: dense
   - range: [3, 60]
-    attention: component:mla
-    ffn: component:sparse-moe
+    attention: multi_head_latent_attention
+    ffn: sparse_moe
+evidence:
+  - source: source:example-technical-report
+    locator: '§4.2 Model Hyper-Parameters'
+    fields:
+      - topology.type
+      - dimensions.layers
+      - blocks
 ```
 
-Unknown values are represented as `null`; `null` does not mean zero or not applicable.
+`blocks.range` is zero-based and inclusive. Ranges must not overlap and must stay within the declared layer count when `dimensions.layers` is present. Heterogeneous plans may leave gaps when the source only establishes a subset of the layer plan.
+
+Evidence entries name the canonical source, the smallest useful locator, and the exact populated fact paths supported by that locator. Editorial `notes` are not treated as architecture facts. A populated field with no valid evidence is a validation error, as is evidence that points to an absent or `null` field.
+
+For architecture manifests, values that are not established at the target's granularity should normally be omitted. This is especially important when first-party checkpoint packaging exposes different values for what appears to be the same broader model variant; choosing one packaging value would overstate it as intrinsic architecture. `null` remains available when explicitly preserving a reviewed-but-unestablished slot is useful, and never means zero or not applicable.
 
 ## 8. Evaluation ontology
 
