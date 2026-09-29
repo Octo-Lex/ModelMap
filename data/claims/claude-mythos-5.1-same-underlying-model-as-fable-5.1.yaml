@@ -1,9 +1,0 @@
-id: claim:claude-mythos-5.1-same-underlying-model-as-fable-5.1
-type: claim
-subject: release:claude-mythos-5.1
-predicate: same_underlying_model_as
-object: release:claude-fable-5.1
-status: confirmed_primary
-evidence:
-  - source: source:claude-fable-mythos-5.1-announcement
-    locator: same underlying model with different safeguards

@@ -1,0 +1,9 @@
+id: claim:claude-fable-5.1-variant-of-release
+type: claim
+subject: variant:claude-fable-5.1
+predicate: variant_of
+object: release:claude-fable-mythos-5.1
+status: confirmed_primary
+evidence:
+  - source: source:claude-fable-mythos-5.1-announcement
+    locator: Fable 5.1 and Mythos 5.1 are the same model with different levels of safeguards

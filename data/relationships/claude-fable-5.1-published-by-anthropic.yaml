@@ -1,7 +1,0 @@
-id: relationship:claude-fable-5.1-published-by-anthropic
-type: relationship
-subject: release:claude-fable-5.1
-predicate: published_by
-object: org:anthropic
-claim_refs:
-  - claim:claude-fable-5.1-published-by-anthropic

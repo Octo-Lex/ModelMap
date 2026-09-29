@@ -1,9 +1,0 @@
-id: claim:claude-mythos-5-same-underlying-model-as-fable-5
-type: claim
-subject: release:claude-mythos-5
-predicate: same_underlying_model_as
-object: release:claude-fable-5
-status: confirmed_primary
-evidence:
-  - source: source:claude-fable-mythos-5-announcement
-    locator: Mythos 5 is the same underlying model as Fable 5, with safeguard differences

@@ -1,8 +1,9 @@
 id: event:2026-07-01-claude-fable-5-access-restored
 type: event
-name: Claude Fable 5 access restored
+name: Claude Fable 5 global access restored
 event_type: access_restored
-subject: release:claude-fable-5
+subject: product:claude-fable-5-global-access
 occurred_at: '2026-07-01'
 evidence:
   - source:claude-fable-5-redeployment
+notes: Fable 5 returned globally across Anthropic surfaces, with cloud re-enablement following as quickly as possible.

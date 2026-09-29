@@ -24,7 +24,6 @@
         "fine_tuned_from",
         "distilled_from",
         "conceptual_predecessor_of",
-        "same_underlying_model_as",
         "uses_architecture",
         "uses_technique",
         "introduces_technique",

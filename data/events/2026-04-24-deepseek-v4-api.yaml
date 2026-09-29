@@ -1,8 +1,0 @@
-id: event:2026-04-24-deepseek-v4-api
-type: event
-name: DeepSeek-V4 Pro and Flash API released
-event_type: api_released
-subject: release:deepseek-v4
-occurred_at: '2026-04-24'
-evidence:
-  - source:deepseek-v4-changelog

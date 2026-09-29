@@ -1,7 +1,0 @@
-id: relationship:qwen3-max-thinking-release-of-qwen
-type: relationship
-subject: release:qwen3-max-thinking
-predicate: release_of
-object: family:qwen
-claim_refs:
-  - claim:qwen3-max-thinking-release-of-qwen

@@ -1,7 +1,0 @@
-id: relationship:qwen3-max-thinking-published-by-alibaba-cloud
-type: relationship
-subject: release:qwen3-max-thinking
-predicate: published_by
-object: org:alibaba-cloud
-claim_refs:
-  - claim:qwen3-max-thinking-published-by-alibaba-cloud

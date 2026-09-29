@@ -1,0 +1,10 @@
+id: product:claude-mythos-5-trusted-access
+type: product_system
+name: Claude Mythos 5 trusted access
+description: Restricted deployment/access channel for the Mythos 5 safeguard configuration.
+status: canonical
+metadata:
+  model_variant: variant:claude-mythos-5
+  access_scope:
+    audience: trusted_access_program_participants
+    initial_program: Project Glasswing

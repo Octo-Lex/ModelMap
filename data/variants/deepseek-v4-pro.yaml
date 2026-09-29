@@ -1,0 +1,4 @@
+id: variant:deepseek-v4-pro
+type: model_variant
+name: DeepSeek-V4-Pro
+status: canonical

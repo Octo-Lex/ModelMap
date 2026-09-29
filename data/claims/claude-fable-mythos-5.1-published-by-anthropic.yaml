@@ -1,0 +1,9 @@
+id: claim:claude-fable-mythos-5.1-published-by-anthropic
+type: claim
+subject: release:claude-fable-mythos-5.1
+predicate: published_by
+object: org:anthropic
+status: confirmed_primary
+evidence:
+  - source: source:claude-fable-mythos-5.1-announcement
+    locator: Anthropic joint release

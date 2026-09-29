@@ -1,0 +1,7 @@
+id: relationship:qwen3-max-thinking-variant-of-release
+type: relationship
+subject: variant:qwen3-max-thinking
+predicate: variant_of
+object: release:qwen3-max
+claim_refs:
+  - claim:qwen3-max-thinking-variant-of-release

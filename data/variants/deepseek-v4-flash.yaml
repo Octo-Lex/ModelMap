@@ -1,0 +1,4 @@
+id: variant:deepseek-v4-flash
+type: model_variant
+name: DeepSeek-V4-Flash
+status: canonical

@@ -1,0 +1,5 @@
+id: variant:claude-fable-5
+type: model_variant
+name: Claude Fable 5
+description: General-use safeguard configuration of the shared Fable/Mythos 5 model.
+status: canonical

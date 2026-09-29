@@ -1,7 +1,0 @@
-id: relationship:claude-mythos-5-published-by-anthropic
-type: relationship
-subject: release:claude-mythos-5
-predicate: published_by
-object: org:anthropic
-claim_refs:
-  - claim:claude-mythos-5-published-by-anthropic

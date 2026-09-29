@@ -1,7 +1,0 @@
-id: relationship:claude-mythos-5-same-underlying-model-as-fable-5
-type: relationship
-subject: release:claude-mythos-5
-predicate: same_underlying_model_as
-object: release:claude-fable-5
-claim_refs:
-  - claim:claude-mythos-5-same-underlying-model-as-fable-5

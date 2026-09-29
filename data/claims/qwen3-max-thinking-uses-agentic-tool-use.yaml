@@ -1,6 +1,6 @@
 id: claim:qwen3-max-thinking-uses-agentic-tool-use
 type: claim
-subject: release:qwen3-max-thinking
+subject: variant:qwen3-max-thinking
 predicate: uses_technique
 object: technique:agentic-tool-use
 status: confirmed_primary

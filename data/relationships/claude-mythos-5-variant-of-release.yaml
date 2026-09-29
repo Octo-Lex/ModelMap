@@ -1,0 +1,7 @@
+id: relationship:claude-mythos-5-variant-of-release
+type: relationship
+subject: variant:claude-mythos-5
+predicate: variant_of
+object: release:claude-fable-mythos-5
+claim_refs:
+  - claim:claude-mythos-5-variant-of-release

@@ -1,7 +1,0 @@
-id: relationship:claude-fable-5.1-release-of-claude
-type: relationship
-subject: release:claude-fable-5.1
-predicate: release_of
-object: family:claude
-claim_refs:
-  - claim:claude-fable-5.1-release-of-claude
