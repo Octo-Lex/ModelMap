@@ -1,0 +1,97 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://modelmap.dev/schemas/architecture.schema.json",
+  "title": "ModelMap ArchitectureSpec",
+  "type": "object",
+  "required": ["id", "type", "name", "topology"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^arch:[a-z0-9][a-z0-9._-]*$"},
+    "type": {"const": "architecture_spec"},
+    "name": {"type": "string", "minLength": 1},
+    "topology": {
+      "type": "object",
+      "required": ["type"],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["decoder_only", "encoder_decoder", "encoder_only", "hybrid", "multimodal_hybrid", "unknown"]
+        },
+        "pre_norm": {"type": ["boolean", "null"]}
+      },
+      "additionalProperties": false
+    },
+    "dimensions": {
+      "type": "object",
+      "properties": {
+        "layers": {"type": ["integer", "null"], "minimum": 1},
+        "d_model": {"type": ["integer", "null"], "minimum": 1},
+        "head_dim": {"type": ["integer", "null"], "minimum": 1},
+        "total_parameters": {"type": ["integer", "null"], "minimum": 1},
+        "active_parameters": {"type": ["integer", "null"], "minimum": 1}
+      },
+      "additionalProperties": false
+    },
+    "tokenization": {
+      "type": "object",
+      "properties": {
+        "tokenizer": {"type": ["string", "null"]},
+        "vocab_size": {"type": ["integer", "null"], "minimum": 1}
+      },
+      "additionalProperties": false
+    },
+    "context": {
+      "type": "object",
+      "properties": {
+        "pretrained_length": {"type": ["integer", "null"], "minimum": 1},
+        "continued_training_length": {"type": ["integer", "null"], "minimum": 1},
+        "evaluated_length": {"type": ["integer", "null"], "minimum": 1},
+        "api_supported_length": {"type": ["integer", "null"], "minimum": 1},
+        "recommended_length": {"type": ["integer", "null"], "minimum": 1},
+        "output_limit": {"type": ["integer", "null"], "minimum": 1},
+        "extension_method": {"type": ["string", "null"]}
+      },
+      "additionalProperties": false
+    },
+    "components": {
+      "type": "object",
+      "properties": {
+        "normalization": {"type": ["string", "null"]},
+        "position": {"type": ["string", "null"]},
+        "attention": {"type": ["string", "null"]},
+        "ffn": {"type": ["string", "null"]},
+        "routing": {"type": ["string", "null"]}
+      },
+      "additionalProperties": false
+    },
+    "blocks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["range"],
+        "properties": {
+          "range": {
+            "type": "array",
+            "prefixItems": [{"type": "integer", "minimum": 0}, {"type": "integer", "minimum": 0}],
+            "minItems": 2,
+            "maxItems": 2
+          },
+          "attention": {"type": ["string", "null"]},
+          "ffn": {"type": ["string", "null"]},
+          "normalization": {"type": ["string", "null"]},
+          "notes": {"type": ["string", "null"]}
+        },
+        "additionalProperties": false
+      }
+    },
+    "modalities": {
+      "type": "object",
+      "properties": {
+        "input": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+        "output": {"type": "array", "items": {"type": "string"}, "uniqueItems": true}
+      },
+      "additionalProperties": false
+    },
+    "notes": {"type": ["string", "null"]}
+  },
+  "additionalProperties": false
+}
