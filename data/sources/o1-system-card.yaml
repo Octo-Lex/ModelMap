@@ -1,0 +1,8 @@
+id: source:o1-system-card
+type: source
+title: 'OpenAI o1 System Card'
+source_type: model_card
+url: https://openai.com/index/openai-o1-system-card/
+publisher: OpenAI
+published_at: '2024-12-05'
+retrieved_at: '2026-09-29T09:45:00Z'
